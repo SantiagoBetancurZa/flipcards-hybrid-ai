@@ -16,3 +16,9 @@ dist/
 node_modules/
 npm-debug.log*
 yarn-error.log*
+
+# Local-only Firebase config and generated bundles (rebuilt on Vercel)
+firebase-config.js
+ai.bundle.js
+ai.bundle.js.map
+.vercel/

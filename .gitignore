@@ -35,3 +35,4 @@ firebase-config.js
 ai.bundle.js
 ai.bundle.js.map
 node_modules/
+.env*
