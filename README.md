@@ -118,13 +118,16 @@ press **Download**. Until the model is ready, every task runs in the cloud and t
 
 ## Try it as a judge
 
-1. Open https://flipcards-hybrid-ai.vercel.app in desktop Chrome.
-2. On Home, start the **PMBOK® Guide 8** deck and open a card.
-3. Tap **Coach**. Try **Explain** with a rough answer, climb the **Hint** ladder, then run an
-   **Exam** question. Watch the source badge on each answer.
+1. Open https://flipcards-hybrid-ai.vercel.app in desktop Chrome. The first visit opens Home.
+2. Go to **Profile → Start short session** to open a card, then tap **Coach**.
+3. Try **Explain** with a rough answer, climb the **Hint** ladder, make a **Hook**, then run an
+   **Exam** question and a **Compare**. Watch the source badge on each answer
+   (**On-device · Gemini Nano** or **Cloud**, with its latency).
 4. Open **Profile → Hybrid AI** to see device status, per-language routing, and the ledger.
-   Switch routing to **Cloud only** or **On-device only** and repeat a task.
-5. With Gemini Nano downloaded, turn on airplane mode: Explain, Hint and Hook keep working.
+   Tap **Download** to get Gemini Nano if it isn't ready (Chrome needs about 22 GB free on the
+   drive that holds your profile). Switch routing to **Cloud only** or **On-device only** and
+   repeat a task.
+5. With Gemini Nano downloaded, go offline (turn off Wi-Fi): Explain, Hint and Hook keep working.
 
 No account or API key is needed.
 
@@ -162,6 +165,9 @@ optional server endpoint that asked OpenAI for definitions of custom cards.
 - English as the default language when the browser is not set to another supported language.
 - A new build pipeline (esbuild bundle and generated config), new tests including a secret
   scan, and an updated privacy policy.
+- Model text is cleaned to plain text before it reaches the UI, and the grading prompt asks for
+  covered and missing ideas taken from the reference definition, with feedback addressed to
+  the learner.
 
 ## Privacy
 

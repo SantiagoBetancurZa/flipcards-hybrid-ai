@@ -67,10 +67,10 @@ const SCHEMAS = {
     type: "object",
     properties: {
       score: { type: "integer", description: "0 to 100: how much of the meaning the learner recalled correctly" },
-      covered: { type: "array", items: { type: "string" }, description: "Up to 3 key ideas the learner got right, 2-6 words each" },
-      missing: { type: "array", items: { type: "string" }, description: "Up to 3 key ideas the learner missed, 2-6 words each" },
+      covered: { type: "array", items: { type: "string" }, description: "Up to 3 key ideas of the reference that the learner expressed, 2-6 words each" },
+      missing: { type: "array", items: { type: "string" }, description: "Up to 3 key ideas from the reference that the learner left out (empty if none), 2-6 words each" },
       misconception: { type: "string", description: "One wrong statement found in the learner's answer, or an empty string" },
-      feedback: { type: "string", description: "One short, encouraging sentence with the most useful fix" }
+      feedback: { type: "string", description: "One short, encouraging sentence to the learner (use \"you\") with the most useful fix" }
     },
     required: ["score", "covered", "missing", "misconception", "feedback"]
   },
@@ -137,7 +137,11 @@ const PROMPTS = {
     "",
     "Score from 0 to 100 how completely and correctly the learner explained the meaning of the term:",
     "90-100 = every key idea; 70-89 = the main idea with small gaps; 40-69 = partly right; 0-39 = wrong, off-topic or empty.",
-    `List up to 3 covered ideas and up to 3 missing ideas. Write every text field in ${languageName(language)}.`
+    "Covered: up to 3 key ideas of the reference definition that the learner expressed, even in other words.",
+    "Missing: up to 3 key ideas of the reference definition that the learner left out, never a rewording of a covered idea; an empty list if nothing important is missing.",
+    "Misconception: a statement in the learner's explanation that contradicts the reference definition, or an empty string.",
+    "Feedback: one short sentence that speaks to the learner as \"you\". Use plain text, no markdown.",
+    `Write every text field in ${languageName(language)}.`
   ].join("\n"),
   hint: ({ term, definition, level, language }) => (level === 1
     ? [
@@ -369,7 +373,10 @@ const parseJson = (text) => {
   }
 };
 
-const cleanText = (value, maxLength = 400) => String(value ?? "")
+// Models sometimes add markdown emphasis or code ticks; the coach shows plain text.
+const stripMarkdown = (text) => text.replace(/\*+|`+/g, "");
+
+const cleanText = (value, maxLength = 400) => stripMarkdown(String(value ?? ""))
   .replace(/\s+/g, " ")
   .replace(/^["'“”]+|["'“”]+$/g, "")
   .trim()
@@ -384,7 +391,7 @@ const cleanList = (value, max = 3, maxLength = 120) => (Array.isArray(value) ? v
 const cleanMultiline = (value, maxLength = 900) => String(value ?? "")
   .replace(/\r/g, "")
   .split("\n")
-  .map((line) => line.replace(/[ \t]+/g, " ").replace(/^[*•-]\s+/, "").trim())
+  .map((line) => stripMarkdown(line.replace(/[ \t]+/g, " ").replace(/^[*•-]\s+/, "")).trim())
   .filter(Boolean)
   .join("\n")
   .replace(/^["'“”]+|["'“”]+$/g, "")

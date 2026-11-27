@@ -2618,6 +2618,12 @@ body.is-study-mode .flip-card {
   padding-bottom: calc(88px + env(safe-area-inset-bottom));
 }
 
+/* On narrow screens the fixed back button (16px + 48px) would sit on the page title:
+   pad the title by exactly the overlap; centered desktop layouts get 0. */
+body:has(.app-back-button:not([hidden])) .profile-panel > h1 {
+  padding-left: max(0px, calc(76px - (100vw - min(86vw, 390px)) / 2));
+}
+
 .profile-panel h1 {
   margin: 0;
   color: var(--ink);

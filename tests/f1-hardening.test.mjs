@@ -1023,6 +1023,9 @@ test("FlipAI uses Firebase AI Logic hybrid inference behind App Check", () => {
   assert.match(engine, /responseMimeType: "application\/json", responseSchema: schema/);
   assert.match(engine, /inferenceSource/);
   assert.match(engine, /getRemoteConfig\(app\)/);
+  // Model text reaches the UI as plain text: markdown markers are stripped.
+  assert.match(engine, /const cleanText = \(value, maxLength = 400\) => stripMarkdown\(/);
+  assert.match(engine, /stripMarkdown\(line\.replace/);
   assert.doesNotMatch(engine, /api\.openai\.com|OPENAI_API_KEY/);
 });
 
