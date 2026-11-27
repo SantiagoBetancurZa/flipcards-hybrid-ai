@@ -950,6 +950,7 @@ const relabelTrigger = () => {
 
 let panel = null;
 let panelBusy = false;
+let downloadWatch = 0;
 
 const deviceLabel = (availability) => ({
   available: tr("deviceReady"),
@@ -967,27 +968,44 @@ const renderPanel = async () => {
   try {
     const language = currentLanguage();
     const [info, matrix] = await Promise.all([FlipAI.status(language), FlipAI.languageMatrix()]);
-    const progress = h("span", { class: "ai-panel__progress", hidden: true }, h("i"));
-    const download = info.device === "downloadable" || info.device === "downloading"
-      ? h("button", {
-        class: "ai-panel__download",
-        type: "button",
-        onclick: async (event) => {
-          const button = event.currentTarget;
-          button.disabled = true;
-          progress.hidden = false;
-          try {
-            await FlipAI.downloadDeviceModel((value) => {
-              progress.firstChild.style.width = `${Math.round(value * 100)}%`;
-            });
-          } catch (error) {
-            button.disabled = false;
-            button.textContent = errorMessage(error);
-          }
-          renderPanel();
+    const downloading = info.device === "downloading";
+    const progress = h("span", { class: "ai-panel__progress", hidden: !downloading, "data-indeterminate": String(downloading) }, h("i"));
+    const statusText = h("strong", { text: `Gemini Nano · ${deviceLabel(info.device)}` });
+    const showProgress = (value) => {
+      const pct = Math.max(0, Math.min(100, Math.round((Number(value) || 0) * 100)));
+      progress.hidden = false;
+      progress.dataset.indeterminate = "false";
+      progress.firstChild.style.width = `${pct}%`;
+      statusText.textContent = `Gemini Nano · ${deviceLabel("downloading")} ${pct}%`;
+    };
+    const startDownload = async (button) => {
+      if (button) {
+        button.disabled = true;
+        button.textContent = deviceLabel("downloading");
+      }
+      progress.hidden = false;
+      statusText.textContent = `Gemini Nano · ${deviceLabel("downloading")}`;
+      try {
+        await FlipAI.downloadDeviceModel(showProgress);
+      } catch (error) {
+        if (button) {
+          button.disabled = false;
+          button.textContent = errorMessage(error);
         }
-      }, tr("download"))
+      }
+      renderPanel();
+    };
+    const download = info.device === "downloadable"
+      ? h("button", { class: "ai-panel__download", type: "button", onclick: (event) => startDownload(event.currentTarget) }, tr("download"))
       : null;
+    if (downloading) {
+      // Chrome is already fetching the model (for example after a reload): watch it until it is ready.
+      clearTimeout(downloadWatch);
+      downloadWatch = setTimeout(async () => {
+        if ((await FlipAI.deviceAvailability(language)) !== "downloading") renderPanel();
+        else if (panel?.isConnected) renderPanel();
+      }, 4000);
+    }
 
     const route = info.route;
     const routes = [["auto", tr("routeAuto")], ["device", tr("routeDevice")], ["cloud", tr("routeCloud")]];
@@ -1003,7 +1021,7 @@ const renderPanel = async () => {
           "div",
           { class: "ai-panel__device", "data-availability": info.device },
           svg(ICONS.chip),
-          h("span", {}, h("small", { text: tr("deviceModel") }), h("strong", { text: `Gemini Nano · ${deviceLabel(info.device)}` })),
+          h("span", {}, h("small", { text: tr("deviceModel") }), statusText),
           download
         ),
         progress,

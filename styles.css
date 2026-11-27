@@ -3511,7 +3511,18 @@ body.is-study-mode.has-ai-coach .coach-trigger {
 }
 
 body.is-study-mode.has-ai-coach .bottom-nav {
+  /* A fixed element at left: 50% shrinks to half the viewport; size it to its content instead. */
+  width: max-content;
+  max-width: calc(100vw - 24px);
   grid-template-columns: 54px auto 54px auto;
+}
+
+body.is-study-mode.has-ai-coach .coach-trigger {
+  white-space: nowrap;
+}
+
+body.is-study-mode.has-ai-coach .coach-trigger svg {
+  flex: 0 0 auto;
 }
 
 .coach-trigger svg {
@@ -4360,6 +4371,24 @@ body.is-coach-open {
   height: 100%;
   background: var(--mastered);
   transition: width 200ms linear;
+}
+
+.ai-panel__progress[data-indeterminate="true"] i {
+  width: 34%;
+  animation: ai-panel-indeterminate 1.3s ease-in-out infinite;
+}
+
+@keyframes ai-panel-indeterminate {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(300%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ai-panel__progress[data-indeterminate="true"] i {
+    width: 100%;
+    animation: none;
+    opacity: 0.5;
+  }
 }
 
 .ai-panel__langs {

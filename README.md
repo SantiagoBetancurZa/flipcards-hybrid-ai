@@ -2,7 +2,7 @@
 
 **A PMBOK® Guide study coach that thinks on your device first and calls the cloud only when it has to.**
 
-FlipCards is a flashcard PWA for the 205 terms of the PMBOK® Guide 8 glossary, in nine
+FlipCards is a flashcard PWA for the 204 terms of the PMBOK® Guide 8 glossary, in nine
 languages. For **#BuildHybridAI 2026** it gained an AI study coach built on
 **Firebase AI Logic hybrid inference**: Chrome's built-in **Gemini Nano** handles the private,
 frequent tasks on the device, and **Gemini in the cloud** takes the heavy ones or steps in
