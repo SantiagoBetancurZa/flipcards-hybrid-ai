@@ -2,15 +2,15 @@
   "id": "pmbok-8",
   "name": "PMBOK 8 Glossary",
   "shortName": "PMBOK 8",
-  "sourceName": "PMBOK Guide 8th Edition Glossary",
+  "sourceName": "PMBOK Guide 8th Edition terms, with definitions written for FlipCards",
   "concepts": [
     {
       "id": "acceptance-criteria",
       "term": "Acceptance Criteria",
-      "spanishTerm": "Criterios de aceptacion",
+      "spanishTerm": "Criterios de aceptación",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "La lista de condiciones que un entregable debe cumplir para que el cliente o el patrocinador lo den por terminado y lo aprueben.",
+        "en": "The checklist of conditions a deliverable must satisfy for the customer or sponsor to sign it off as complete."
       }
     },
     {
@@ -18,8 +18,8 @@
       "term": "Accuracy",
       "spanishTerm": "Exactitud",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Qué tan cerca está un valor medido o estimado del valor verdadero. Un resultado puede ser exacto sin ser preciso, y al revés.",
+        "en": "How close a measured or estimated value is to the true value. A result can be accurate without being precise, and the other way around."
       }
     },
     {
@@ -27,8 +27,8 @@
       "term": "Actual Cost (AC)",
       "spanishTerm": "Costo real (AC)",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "El dinero que de verdad se gastó en el trabajo realizado durante un periodo, según la contabilidad. El análisis de valor ganado lo compara con el valor ganado (EV).",
+        "en": "The money really spent on the work done during a given period, as recorded in the accounts. Earned value analysis compares it with earned value (EV)."
       }
     },
     {
@@ -36,26 +36,26 @@
       "term": "Adaptive Approach",
       "spanishTerm": "Enfoque adaptativo",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Una forma de ejecutar un proyecto que da por hecho que los requisitos seguirán cambiando: el equipo planifica en ciclos cortos, recibe retroalimentación frecuente y se ajusta a medida que aprende. Los métodos ágiles e iterativos son ejemplos.",
+        "en": "A way of delivering a project that expects requirements to keep changing, so the team plans in short cycles, gets frequent feedback and adjusts as it learns. Agile and iterative methods are examples."
       }
     },
     {
       "id": "agile",
       "term": "Agile",
-      "spanishTerm": "Agil",
+      "spanishTerm": "Ágil",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Una mentalidad basada en el Manifiesto Ágil que prioriza la colaboración, entregar resultados que funcionen pronto y a menudo, la retroalimentación del cliente y la respuesta al cambio por encima de seguir un plan rígido.",
+        "en": "A mindset rooted in the Agile Manifesto that favors collaboration, working results delivered early and often, customer feedback and responding to change over following a rigid plan."
       }
     },
     {
       "id": "ambiguity",
       "term": "Ambiguity",
-      "spanishTerm": "Ambiguedad",
+      "spanishTerm": "Ambigüedad",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Falta de claridad sobre qué significa una situación, qué la causa o cuál de varias opciones elegir. Los equipos la reducen preguntando, probando y experimentando.",
+        "en": "Lack of clarity about what a situation means, what is causing it or which of several options to choose. Teams reduce it by asking, testing and experimenting."
       }
     },
     {
@@ -63,8 +63,8 @@
       "term": "Artifact",
       "spanishTerm": "Artefacto",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Cualquier elemento que un proyecto produce o usa para gestionar su trabajo, como un plan, un registro, un gráfico o un entregable.",
+        "en": "Any item a project produces or uses to manage its work, such as a plan, log, register, chart or deliverable."
       }
     },
     {
@@ -72,8 +72,8 @@
       "term": "Assumption",
       "spanishTerm": "Supuesto",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Una creencia en la que se apoya el plan y que todavía no se ha confirmado, por ejemplo, que un proveedor entregará a tiempo. Los supuestos que no se revisan pueden convertirse en riesgos.",
+        "en": "A belief the plan relies on that has not been confirmed yet, for example that a supplier will deliver on time. Unchecked assumptions can turn into risks."
       }
     },
     {
@@ -81,17 +81,17 @@
       "term": "Authority",
       "spanishTerm": "Autoridad",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Permiso formal para decidir en nombre del proyecto, por ejemplo, aprobar trabajo, comprometer presupuesto o dirigir personas, hasta un límite establecido.",
+        "en": "Formal permission to decide on behalf of the project, for instance to sign off work, commit budget or direct people, up to a stated limit."
       }
     },
     {
       "id": "baseline",
       "term": "Baseline",
-      "spanishTerm": "Linea base",
+      "spanishTerm": "Línea base",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "La versión de referencia aprobada del plan de alcance, cronograma o costos. El avance se mide contra ella y solo se actualiza cuando se aprueba una solicitud de cambio.",
+        "en": "The approved reference version of the scope, schedule or cost plan. Progress is measured against it, and it is updated only when a change request is approved."
       }
     },
     {
@@ -99,17 +99,17 @@
       "term": "Benefit",
       "spanishTerm": "Beneficio",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Una mejora que la organización o sus clientes obtienen realmente al usar lo que entrega un proyecto, como más ingresos, menores costos o un mejor servicio.",
+        "en": "An improvement the organization or its customers actually gain from using what a project delivers, such as higher revenue, lower cost or better service."
       }
     },
     {
       "id": "bid-documents",
       "term": "Bid Documents",
-      "spanishTerm": "Documentos de licitacion",
+      "spanishTerm": "Documentos de licitación",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "El paquete que un comprador envía a posibles proveedores para pedirles precios o propuestas, como una solicitud de propuesta (RFP), de cotización (RFQ) o de información (RFI).",
+        "en": "The package a buyer sends to potential suppliers to ask for prices or proposals, such as a request for proposal (RFP), request for quotation (RFQ) or request for information (RFI)."
       }
     },
     {
@@ -117,8 +117,8 @@
       "term": "Bidder Conference",
       "spanishTerm": "Conferencia de oferentes",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Una reunión que el comprador hace con todos los proveedores interesados antes del cierre de ofertas, para que todos reciban las mismas respuestas y la misma idea de lo que se va a comprar.",
+        "en": "A meeting the buyer holds with all interested suppliers before bids are due, so everyone gets the same answers and the same picture of what is being bought."
       }
     },
     {
@@ -126,8 +126,8 @@
       "term": "Blocker",
       "spanishTerm": "Bloqueador",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Algo que detiene una tarea hasta que se elimina, como una aprobación pendiente, un entorno que no funciona o una pregunta sin responder. Suele usarse como sinónimo de impedimento.",
+        "en": "Something that stops a piece of work from moving forward until it is removed, such as a missing approval, a broken environment or an unanswered question. Often used as a synonym for impediment."
       }
     },
     {
@@ -135,26 +135,26 @@
       "term": "Budget",
       "spanishTerm": "Presupuesto",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "El dinero aprobado para gastar en el proyecto, o en una parte de él, normalmente repartido en el tiempo para poder seguir el gasto.",
+        "en": "The amount of money approved to spend on the project, or on one part of it, usually spread over time so spending can be tracked."
       }
     },
     {
       "id": "budget-at-completion-bac",
       "term": "Budget at Completion (BAC)",
-      "spanishTerm": "Presupuesto hasta la conclusion (BAC)",
+      "spanishTerm": "Presupuesto hasta la conclusión (BAC)",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "El presupuesto total aprobado para todo el trabajo planificado del proyecto. Es igual al valor planificado (PV) en la fecha en que todo el trabajo debería estar terminado.",
+        "en": "The total budget approved for all the planned work of the project. It equals the planned value (PV) on the date all the work is scheduled to be finished."
       }
     },
     {
       "id": "burn-chart",
       "term": "Burn Chart",
-      "spanishTerm": "Grafica burn chart",
+      "spanishTerm": "Gráfica burn chart",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Un gráfico que sigue el trabajo en el tiempo: el burndown muestra cuánto falta y el burnup, cuánto se ha terminado frente al total.",
+        "en": "A chart that tracks work over time: a burndown shows how much is left, while a burnup shows how much has been finished against the total."
       }
     },
     {
@@ -162,8 +162,8 @@
       "term": "Business Value",
       "spanishTerm": "Valor de negocio",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Lo que una iniciativa vale para la organización una vez descontados sus costos, ya sea medible en dinero o intangible, como la reputación o la confianza de los clientes.",
+        "en": "What an initiative is worth to the organization once its costs are taken into account, whether measurable in money or intangible, like reputation or customer trust."
       }
     },
     {
@@ -171,8 +171,8 @@
       "term": "Cadence",
       "spanishTerm": "Cadencia",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "El ritmo regular y predecible de los eventos de un equipo, como planificar cada dos semanas o hacer una revisión al final de cada iteración.",
+        "en": "The regular, predictable rhythm of a team's events, such as planning every two weeks or holding a review at the end of each iteration."
       }
     },
     {
@@ -180,8 +180,8 @@
       "term": "Change",
       "spanishTerm": "Cambio",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Un ajuste a algo que el proyecto ya acordó, por ejemplo, un entregable, una línea base o una parte del plan. Los elementos controlados solo cambian mediante una solicitud de cambio.",
+        "en": "An adjustment to something the project has already agreed on, for example a deliverable, a baseline or part of the plan. Controlled items change only through a change request."
       }
     },
     {
@@ -189,35 +189,35 @@
       "term": "Change Control",
       "spanishTerm": "Control de cambios",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "La rutina para manejar solicitudes de cambio: cada una se registra, se evalúa su efecto en alcance, tiempo, costo y riesgo, y luego la autoridad correspondiente la acepta o la rechaza.",
+        "en": "The routine for handling change requests: each one is logged, assessed for its effect on scope, time, cost and risk, then accepted or turned down by the right authority."
       }
     },
     {
       "id": "change-control-board-ccb",
       "term": "Change Control Board (CCB)",
-      "spanishTerm": "Comite de control de cambios (CCB)",
+      "spanishTerm": "Comité de control de cambios (CCB)",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Un grupo designado de interesados que revisa las solicitudes de cambio, decide cuáles avanzan, esperan o se rechazan, y deja constancia de esas decisiones.",
+        "en": "A designated group of stakeholders that reviews change requests, decides which ones go ahead, wait or are turned down, and keeps a record of those decisions."
       }
     },
     {
       "id": "change-management",
       "term": "Change Management",
-      "spanishTerm": "Gestion del cambio",
+      "spanishTerm": "Gestión del cambio",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Ayudar a las personas y a la organización a pasar de la forma de trabajar anterior a la nueva que introduce un proyecto, con comunicación, capacitación y apoyo, para que los beneficios se adopten de verdad.",
+        "en": "Helping people and the organization move from the old way of working to the new one a project introduces, through communication, training and support, so the benefits are actually adopted."
       }
     },
     {
       "id": "closing-focus-area",
       "term": "Closing Focus Area",
-      "spanishTerm": "Area de Enfoque de Cierre",
+      "spanishTerm": "Área de Enfoque de Cierre",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Las actividades que terminan formalmente un proyecto, una fase o un contrato: confirmar la aceptación, entregar los resultados, liberar recursos, cerrar contratos y registrar las lecciones aprendidas.",
+        "en": "The activities that formally finish a project, phase or contract: confirming acceptance, handing over results, releasing resources, settling contracts and recording lessons learned."
       }
     },
     {
@@ -225,17 +225,17 @@
       "term": "Complexity",
       "spanishTerm": "Complejidad",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Qué tan difícil es entender y predecir un proyecto por sus muchas partes que interactúan, el comportamiento de las personas y la información poco clara. Pequeños cambios pueden tener efectos desproporcionados.",
+        "en": "How hard a project is to understand and predict because of many interacting parts, people's behavior and unclear information. Small changes can have outsized effects."
       }
     },
     {
       "id": "confirmation-bias",
       "term": "Confirmation Bias",
-      "spanishTerm": "Sesgo de confirmacion",
+      "spanishTerm": "Sesgo de confirmación",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "La tendencia a fijarse en la información que confirma lo que ya creemos y a restar peso a la evidencia en contra, por ejemplo, confiar solo en las estimaciones que coinciden con nuestro plan.",
+        "en": "The tendency to notice and favor information that supports what we already believe while discounting evidence against it, for example trusting only the estimates that match our plan."
       }
     },
     {
@@ -243,17 +243,17 @@
       "term": "Conformance",
       "spanishTerm": "Conformidad",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "El grado en que un resultado coincide con su especificación. Un producto es conforme cuando cada característica medida cae dentro de su rango permitido.",
+        "en": "The degree to which a result matches its specification. A product conforms when every measured characteristic falls inside its allowed range."
       }
     },
     {
       "id": "constraint",
       "term": "Constraint",
-      "spanishTerm": "Restriccion",
+      "spanishTerm": "Restricción",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Un límite fijo dentro del cual debe trabajar el proyecto, como una fecha límite, un tope de presupuesto, una norma o una tecnología obligatoria.",
+        "en": "A fixed limit the project has to work within, such as a deadline, a budget cap, a regulation or a required technology."
       }
     },
     {
@@ -261,8 +261,8 @@
       "term": "Contingency",
       "spanishTerm": "Contingencia",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Un posible evento futuro que afectaría al proyecto si ocurriera y para el cual el plan se prepara, a menudo apartando dinero o tiempo.",
+        "en": "A possible future event that would affect the project if it happened, and that the plan prepares for, often by setting money or time aside."
       }
     },
     {
@@ -270,8 +270,8 @@
       "term": "Contingency Reserve",
       "spanishTerm": "Reserva para contingencias",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Presupuesto o tiempo extra incluido en la línea base para riesgos ya identificados (las incógnitas conocidas). Por lo general, el director del proyecto puede usarla sin pedir un cambio.",
+        "en": "Extra budget or schedule time built into the baseline for risks that have already been identified (the known unknowns). The project manager can usually use it without asking for a change."
       }
     },
     {
@@ -279,8 +279,8 @@
       "term": "Continuous Delivery",
       "spanishTerm": "Entrega continua",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Una práctica en la que cada cambio pequeño y probado se mantiene listo para publicarse, con compilación, pruebas y despliegue automatizados, para que el valor llegue a los usuarios de forma rápida y segura.",
+        "en": "A practice in which every small, tested change is kept ready to release, using automated build, test and deployment, so value reaches users quickly and safely."
       }
     },
     {
@@ -288,8 +288,8 @@
       "term": "Contract",
       "spanishTerm": "Contrato",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Un acuerdo legalmente exigible entre un comprador y un vendedor que detalla qué se entregará, el precio, las fechas y las condiciones que ambas partes deben respetar.",
+        "en": "A legally enforceable deal between a buyer and a seller that spells out what will be delivered, the price, the dates and the terms both sides must respect."
       }
     },
     {
@@ -297,26 +297,26 @@
       "term": "Control",
       "spanishTerm": "Control",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Revisar cómo va realmente el trabajo frente al plan y actuar sobre las brechas, con acciones correctivas o preventivas o con una solicitud de cambio cuando haga falta.",
+        "en": "Checking how the work is actually going against the plan and acting on the gaps, through corrective or preventive actions or a change request when needed."
       }
     },
     {
       "id": "cost-performance-index-cpi",
       "term": "Cost Performance Index (CPI)",
-      "spanishTerm": "Indice de desempeno del costo (CPI)",
+      "spanishTerm": "Índice de desempeño del costo (CPI)",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "El valor ganado dividido entre el costo real (CPI = EV / AC). Si es mayor que 1, el trabajo cuesta menos de lo previsto; si es menor que 1, cuesta más.",
+        "en": "Earned value divided by actual cost (CPI = EV / AC). Above 1.0 the work is costing less than planned; below 1.0 it is costing more."
       }
     },
     {
       "id": "cost-variance-cv",
       "term": "Cost Variance (CV)",
-      "spanishTerm": "Variacion del costo (CV)",
+      "spanishTerm": "Variación del costo (CV)",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "El valor ganado menos el costo real (CV = EV - AC). Un resultado negativo indica que el proyecto va por encima del presupuesto para el trabajo hecho hasta ahora.",
+        "en": "Earned value minus actual cost (CV = EV - AC). A negative result means the project is over budget for the work done so far."
       }
     },
     {
@@ -324,17 +324,17 @@
       "term": "Cost-Reimbursable Contract",
       "spanishTerm": "Contrato de costos reembolsables",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Un contrato en el que al vendedor se le reembolsan los gastos permitidos en que incurre, más una tarifa o un incentivo acordado. Es útil cuando el alcance no se puede definir con precisión al principio.",
+        "en": "A contract in which the seller is paid back for the allowable expenses it incurs, plus an agreed fee or incentive on top. Useful when the scope cannot be pinned down early."
       }
     },
     {
       "id": "crashing",
       "term": "Crashing",
-      "spanishTerm": "Compresion por recursos",
+      "spanishTerm": "Compresión por recursos",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Ganar tiempo con recursos: poner más personas, horas extra o equipos en las actividades de la ruta crítica para terminar antes, eligiendo la forma más barata de ganar cada día.",
+        "en": "Buying time: putting extra people, overtime or equipment on critical-path activities to finish sooner, picking the cheapest way to gain each day."
       }
     },
     {
@@ -342,17 +342,17 @@
       "term": "Criteria",
       "spanishTerm": "Criterios",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Las varas de medir con las que se juzga o elige algo, como las condiciones que debe cumplir un entregable o los factores para ordenar opciones.",
+        "en": "The yardsticks used to judge or choose something, such as the conditions a deliverable must meet or the factors used to rank options."
       }
     },
     {
       "id": "critical-path",
       "term": "Critical Path",
-      "spanishTerm": "Ruta critica",
+      "spanishTerm": "Ruta crítica",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "La cadena más larga de actividades dependientes desde el inicio hasta el final. Fija la fecha más temprana en que puede terminar el proyecto, así que cualquier retraso en ella retrasa todo el proyecto.",
+        "en": "The longest chain of dependent activities from start to finish. It sets the earliest date the project can end, so any delay on it delays the whole project."
       }
     },
     {
@@ -360,8 +360,8 @@
       "term": "Cumulative Flow Diagram",
       "spanishTerm": "Diagrama de flujo acumulado",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Un gráfico de áreas apiladas que muestra cuántos elementos de trabajo hay en cada estado (por hacer, en curso, terminado) a lo largo del tiempo. Las bandas que se ensanchan revelan cuellos de botella.",
+        "en": "A stacked area chart showing how many work items sit in each state (to do, in progress, done) over time. Widening bands reveal bottlenecks."
       }
     },
     {
@@ -369,26 +369,26 @@
       "term": "Dashboard",
       "spanishTerm": "Tablero de control",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Una sola pantalla o página que reúne las medidas clave del proyecto, a menudo con códigos de color, para entender el estado de un vistazo.",
+        "en": "A single screen or page that brings together the key project measures, often with color codes, so status can be grasped at a glance."
       }
     },
     {
       "id": "definition-of-done-dod",
       "term": "Definition of Done (DoD)",
-      "spanishTerm": "Definicion de terminado (DoD)",
+      "spanishTerm": "Definición de terminado (DoD)",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "La lista compartida de condiciones de calidad que todo elemento de trabajo debe cumplir antes de que el equipo lo dé por terminado, como estar probado, revisado y documentado.",
+        "en": "The shared list of quality conditions every work item must meet before the team calls it finished, such as tested, reviewed and documented."
       }
     },
     {
       "id": "duration",
       "term": "Duration",
-      "spanishTerm": "Duracion",
+      "spanishTerm": "Duración",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Cuánto tarda una actividad de principio a fin, contado en periodos de trabajo como días o semanas. Es distinta del esfuerzo, que cuenta horas-persona.",
+        "en": "How long an activity takes from start to finish, counted in work periods such as days or weeks. It differs from effort, which counts person-hours."
       }
     },
     {
@@ -396,8 +396,8 @@
       "term": "Earned Value (EV)",
       "spanishTerm": "Valor ganado (EV)",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "El valor presupuestado del trabajo realmente completado hasta ahora. Si una tarea de 1.000 USD va por la mitad, su EV es de 500 USD.",
+        "en": "The budgeted worth of the work actually completed so far. If a 1,000 USD task is half done, its EV is 500 USD."
       }
     },
     {
@@ -405,53 +405,53 @@
       "term": "Effort",
       "spanishTerm": "Esfuerzo",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "La cantidad total de tiempo de trabajo que las personas necesitan para completar algo, contada en horas-persona o días-persona. Dos personas durante tres días son seis días-persona de esfuerzo.",
+        "en": "The total amount of work time people need to complete something, counted in person-hours or person-days. Two people for three days is six person-days of effort."
       }
     },
     {
       "id": "epic",
       "term": "Epic",
-      "spanishTerm": "Epica",
+      "spanishTerm": "Épica",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Un trabajo grande, demasiado para una sola iteración, que se divide en funcionalidades o historias de usuario más pequeñas.",
+        "en": "A large piece of work, too big for one iteration, that is broken down into smaller features or user stories."
       }
     },
     {
       "id": "estimate",
       "term": "Estimate",
-      "spanishTerm": "Estimacion",
+      "spanishTerm": "Estimación",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Un cálculo razonado, basado en datos y experiencia, de cuánto tiempo, dinero o trabajo tomará algo; lo ideal es darlo como un rango con un nivel de confianza.",
+        "en": "A reasoned guess, based on data and experience, of how much time, money or work something will take, best given as a range with a confidence level."
       }
     },
     {
       "id": "estimate-at-completion-eac",
       "term": "Estimate at Completion (EAC)",
-      "spanishTerm": "Estimacion a la conclusion (EAC)",
+      "spanishTerm": "Estimación a la conclusión (EAC)",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "El pronóstico de cuánto costará todo el proyecto al final, según el desempeño hasta ahora. Una fórmula común es EAC = AC + ETC; otra es EAC = BAC / CPI.",
+        "en": "The forecast of what the whole project will cost by the end, given performance so far. One common formula is EAC = AC + ETC; another is EAC = BAC / CPI."
       }
     },
     {
       "id": "estimate-to-complete-etc",
       "term": "Estimate to Complete (ETC)",
-      "spanishTerm": "Estimacion hasta completar (ETC)",
+      "spanishTerm": "Estimación hasta completar (ETC)",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Cuánto más se espera que gaste el proyecto desde hoy hasta terminar todo el trabajo pendiente (ETC = EAC - AC).",
+        "en": "How much more the project is expected to spend from today until all remaining work is done (ETC = EAC - AC)."
       }
     },
     {
       "id": "executing-focus-area",
       "term": "Executing Focus Area",
-      "spanishTerm": "Area de Enfoque de Ejecucion",
+      "spanishTerm": "Área de Enfoque de Ejecución",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Las actividades que ponen en marcha el plan: hacer el trabajo del proyecto, dirigir al equipo y a los proveedores, comunicar y producir los entregables.",
+        "en": "The activities that carry out the plan: doing the project work, leading the team and suppliers, communicating, and producing the deliverables."
       }
     },
     {
@@ -459,17 +459,17 @@
       "term": "Expected Monetary Value (EMV)",
       "spanishTerm": "Valor monetario esperado (EMV)",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Probabilidad por impacto, en dinero, sumado sobre los posibles resultados. Una probabilidad del 20 % de perder 10.000 USD tiene un EMV de -2.000 USD.",
+        "en": "Probability times impact, in money, added up over the possible outcomes. A 20% chance of losing 10,000 USD has an EMV of -2,000 USD."
       }
     },
     {
       "id": "explicit-knowledge",
       "term": "Explicit Knowledge",
-      "spanishTerm": "Conocimiento explicito",
+      "spanishTerm": "Conocimiento explícito",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Saber que se puede escribir y compartir con facilidad, por ejemplo, en procedimientos, informes, bases de datos o archivos de lecciones aprendidas.",
+        "en": "Know-how that can be written down and shared easily, for example in procedures, reports, databases or lessons-learned files."
       }
     },
     {
@@ -477,17 +477,17 @@
       "term": "External Dependencies",
       "spanishTerm": "Dependencias externas",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Vínculos entre el trabajo del proyecto y algo que está fuera del control del equipo, como la entrega de un proveedor, la aprobación de un regulador o el resultado de otro proyecto.",
+        "en": "Links between project work and something outside the team's control, such as a supplier delivery, a regulator's approval or another project's output."
       }
     },
     {
       "id": "fast-tracking",
       "term": "Fast Tracking",
-      "spanishTerm": "Ejecucion rapida",
+      "spanishTerm": "Ejecución rápida",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Comprimir el cronograma superponiendo actividades que normalmente irían una después de otra. Ahorra tiempo, pero aumenta el riesgo de retrabajo.",
+        "en": "Compressing the schedule by overlapping activities that would normally run one after another. It saves time but adds the risk of rework."
       }
     },
     {
@@ -495,8 +495,8 @@
       "term": "Feature",
       "spanishTerm": "Funcionalidad",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Una capacidad concreta de un producto que los usuarios pueden ver y valorar, por ejemplo, exportar a PDF. Normalmente se divide en historias de usuario más pequeñas.",
+        "en": "A distinct capability of a product that users can see and value, for example export to PDF. It is usually split into smaller user stories."
       }
     },
     {
@@ -504,8 +504,8 @@
       "term": "Fixed-Price Contract",
       "spanishTerm": "Contrato de precio fijo",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Un contrato con un precio total acordado para un alcance bien definido. El vendedor asume la mayor parte del riesgo de costo: si el trabajo cuesta más, lo absorbe él.",
+        "en": "A contract with an agreed total price for a well-defined scope. The seller carries most of the cost risk: if the work costs more, the seller absorbs it."
       }
     },
     {
@@ -513,26 +513,26 @@
       "term": "Flow",
       "spanishTerm": "Flujo",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "El movimiento continuo y estable de los elementos de trabajo desde el inicio hasta el final. Los equipos mejoran el flujo limitando el trabajo en curso y eliminando las esperas.",
+        "en": "The smooth, steady movement of work items from start to finish. Teams improve flow by limiting work in progress and removing wait times."
       }
     },
     {
       "id": "forecast",
       "term": "Forecast",
-      "spanishTerm": "Pronostico",
+      "spanishTerm": "Pronóstico",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Una predicción de los resultados futuros del proyecto, como la fecha de fin o el costo final, basada en cómo ha ido el proyecto hasta ahora y en lo que se sabe hoy.",
+        "en": "A prediction of future project results, such as the end date or final cost, based on how the project has performed so far and what is known today."
       }
     },
     {
       "id": "function-point",
       "term": "Function Point",
-      "spanishTerm": "Punto de funcion",
+      "spanishTerm": "Punto de función",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Una unidad para medir el tamaño del software según las funciones que ofrece a los usuarios, como entradas, salidas, consultas y archivos, sin importar el lenguaje de programación.",
+        "en": "A unit for sizing software by the functions it offers users, such as inputs, outputs, inquiries and files, independent of the programming language."
       }
     },
     {
@@ -540,8 +540,8 @@
       "term": "Gantt Chart",
       "spanishTerm": "Diagrama de Gantt",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Una línea de tiempo en la que cada actividad aparece como una barra cuya longitud y posición muestran cuándo empieza y termina. También puede mostrar dependencias e hitos.",
+        "en": "A timeline in which each activity appears as a bar whose length and position show when it starts and ends. It may also show dependencies and milestones."
       }
     },
     {
@@ -549,8 +549,8 @@
       "term": "Governance",
       "spanishTerm": "Gobernanza",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "La estructura de reglas, roles y derechos de decisión que orienta cómo se dirige, supervisa y rinde cuentas una organización o un proyecto.",
+        "en": "The structure of rules, roles and decision rights that guides how an organization or project is directed, overseen and held accountable."
       }
     },
     {
@@ -558,17 +558,17 @@
       "term": "Histogram",
       "spanishTerm": "Histograma",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Un gráfico de barras verticales que muestra con qué frecuencia aparece cada valor o rango de valores en un conjunto de datos, por ejemplo, defectos por causa.",
+        "en": "A chart of vertical bars that shows how often each value or range of values appears in a data set, for example defects by cause."
       }
     },
     {
       "id": "hybrid-approach",
       "term": "Hybrid Approach",
-      "spanishTerm": "Enfoque hibrido",
+      "spanishTerm": "Enfoque híbrido",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Un enfoque de entrega que combina prácticas predictivas y adaptativas, por ejemplo, un plan fijo para la construcción e iteraciones cortas para el software.",
+        "en": "A delivery approach that blends predictive and adaptive practices, for example a fixed plan for construction and short iterations for the software."
       }
     },
     {
@@ -576,8 +576,8 @@
       "term": "Impediment",
       "spanishTerm": "Impedimento",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Cualquier cosa que estorba el avance del equipo, desde una herramienta que falta hasta una decisión pendiente. Despejarlos es una parte central del trabajo de un líder servicial; también se llama bloqueador.",
+        "en": "Anything getting in the way of the team's progress, from a missing tool to a pending decision. Clearing these is a core part of a servant leader's job; also called a blocker."
       }
     },
     {
@@ -585,17 +585,17 @@
       "term": "Incremental Approach",
       "spanishTerm": "Enfoque incremental",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Construir y entregar un producto en una serie de partes utilizables, cada una con más capacidad, para que los usuarios obtengan valor antes de que la solución completa esté lista.",
+        "en": "Building and handing over a product in a series of usable slices, each one adding capability, so users get value before the full solution is finished."
       }
     },
     {
       "id": "initiating-focus-area",
       "term": "Initiating Focus Area",
-      "spanishTerm": "Area de Enfoque de Inicio",
+      "spanishTerm": "Área de Enfoque de Inicio",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Las actividades que arrancan un proyecto o una fase: aclarar la necesidad del negocio, identificar a los interesados, aprobar el acta de constitución y nombrar al director del proyecto.",
+        "en": "The activities that start a project or phase: clarifying the business need, identifying stakeholders, getting the charter approved and naming the project manager."
       }
     },
     {
@@ -603,8 +603,8 @@
       "term": "Internal Dependencies",
       "spanishTerm": "Dependencias internas",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Vínculos entre actividades que están todas dentro del proyecto y bajo el control del equipo, por ejemplo, pruebas que no pueden empezar hasta que termine la programación.",
+        "en": "Links between activities that are all within the project and under the team's control, for example testing that cannot start until coding ends."
       }
     },
     {
@@ -612,44 +612,44 @@
       "term": "Issue",
       "spanishTerm": "Problema",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Un problema que ya está ocurriendo y requiere acción, a diferencia de un riesgo, que puede ocurrir o no. Los problemas se siguen en un registro de problemas.",
+        "en": "A problem that is already happening and needs action, unlike a risk, which may or may not occur. Issues are tracked in an issue log."
       }
     },
     {
       "id": "iteration",
       "term": "Iteration",
-      "spanishTerm": "Iteracion",
+      "spanishTerm": "Iteración",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Un periodo corto y fijo, a menudo de una a cuatro semanas, en el que el equipo planifica, construye, prueba y revisa una parte funcional del producto.",
+        "en": "A short, fixed period, often one to four weeks, in which the team plans, builds, tests and reviews a working part of the product."
       }
     },
     {
       "id": "iteration-plan",
       "term": "Iteration Plan",
-      "spanishTerm": "Plan de iteracion",
+      "spanishTerm": "Plan de iteración",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "El acuerdo del equipo sobre qué elementos del backlog entregará en la próxima iteración y cómo abordará el trabajo.",
+        "en": "The team's agreement on which backlog items it will deliver in the coming iteration and how it will approach the work."
       }
     },
     {
       "id": "iteration-planning",
       "term": "Iteration Planning",
-      "spanishTerm": "Planificacion de la iteracion",
+      "spanishTerm": "Planificación de la iteración",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "La reunión al inicio de una iteración en la que el equipo elige los elementos del backlog que puede terminar, los aclara y los divide en tareas.",
+        "en": "The meeting at the start of an iteration where the team selects the backlog items it can finish, clarifies them and breaks them into tasks."
       }
     },
     {
       "id": "iteration-review",
       "term": "Iteration Review",
-      "spanishTerm": "Revision de la iteracion",
+      "spanishTerm": "Revisión de la iteración",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "La sesión de cierre de cada iteración, en la que los interesados ven una demostración de lo construido y sus comentarios reorganizan el backlog.",
+        "en": "The closing session of each iteration, where stakeholders see a demo of what was built and their feedback reshapes the backlog."
       }
     },
     {
@@ -657,8 +657,8 @@
       "term": "Iterative Approach",
       "spanishTerm": "Enfoque iterativo",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Desarrollar una solución mediante ciclos repetidos, mejorando el producto en cada uno según la retroalimentación hasta que quede bien.",
+        "en": "Developing a solution through repeated cycles, refining the product each time based on feedback until it is right."
       }
     },
     {
@@ -666,8 +666,8 @@
       "term": "Kanban Board",
       "spanishTerm": "Tablero kanban",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Un tablero con una columna por cada etapa del trabajo (como por hacer, haciendo, hecho) en el que las tarjetas avanzan de izquierda a derecha, a menudo con límites al trabajo en curso.",
+        "en": "A board with a column for each stage of work (such as to do, doing, done) where cards move from left to right, often with limits on work in progress."
       }
     },
     {
@@ -675,8 +675,8 @@
       "term": "Knowledge",
       "spanishTerm": "Conocimiento",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Lo que las personas saben y pueden aplicar, desde datos documentados hasta experiencia personal, habilidades y criterio, y que ayuda al proyecto a decidir mejor.",
+        "en": "What people know and can apply, from documented facts to personal experience, skills and judgment, that helps the project make better decisions."
       }
     },
     {
@@ -684,8 +684,8 @@
       "term": "Lessons Learned",
       "spanishTerm": "Lecciones aprendidas",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Aprendizajes del proyecto sobre lo que funcionó y lo que no, registrados y compartidos para que este y los próximos proyectos lo hagan mejor.",
+        "en": "Insights from the project about what worked and what did not, recorded and shared so this and future projects can do better."
       }
     },
     {
@@ -693,8 +693,8 @@
       "term": "Life Cycle",
       "spanishTerm": "Ciclo de vida",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "La serie de etapas por las que pasa algo desde su comienzo hasta su fin; en un proyecto, desde el arranque hasta el cierre.",
+        "en": "The series of stages something passes through from its beginning to its end; for a project, from start-up to closure."
       }
     },
     {
@@ -702,17 +702,17 @@
       "term": "Log",
       "spanishTerm": "Registro",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Un registro continuo de elementos a medida que surgen, como problemas, cambios, supuestos o decisiones, con su estado y su responsable.",
+        "en": "A running record of items as they come up, such as issues, changes, assumptions or decisions, with their status and owner."
       }
     },
     {
       "id": "management-reserve",
       "term": "Management Reserve",
-      "spanishTerm": "Reserva de gestion",
+      "spanishTerm": "Reserva de gestión",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Dinero o tiempo que se guarda fuera de la línea base para sorpresas que nadie pudo identificar de antemano (las incógnitas desconocidas). Usarla suele requerir la aprobación de la dirección.",
+        "en": "Money or time kept outside the baseline for surprises nobody could identify in advance (the unknown unknowns). Using it normally requires management approval."
       }
     },
     {
@@ -720,35 +720,35 @@
       "term": "Mandatory Dependency",
       "spanishTerm": "Dependencia obligatoria",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Una secuencia que no se puede cambiar porque la física, la ley o un contrato la exigen, como fundir los cimientos antes de levantar los muros. También se llama lógica dura.",
+        "en": "A sequence that cannot be changed because physics, the law or a contract demands it, such as pouring a foundation before building walls. Also called hard logic."
       }
     },
     {
       "id": "method",
       "term": "Method",
-      "spanishTerm": "Metodo",
+      "spanishTerm": "Método",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Una técnica o manera concreta de hacer algo para obtener un resultado, como una sesión de planning poker para estimar.",
+        "en": "A specific technique or way of doing something to get a result, such as a planning poker session for estimating."
       }
     },
     {
       "id": "methodology",
       "term": "Methodology",
-      "spanishTerm": "Metodologia",
+      "spanishTerm": "Metodología",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Una forma de trabajar empaquetada que le indica a un equipo qué pasos, roles, herramientas y reglas seguir, por ejemplo, Scrum o PRINCE2.",
+        "en": "A packaged way of working that tells a team which steps, roles, tools and rules to follow, for example Scrum or PRINCE2."
       }
     },
     {
       "id": "metric",
       "term": "Metric",
-      "spanishTerm": "Metrica",
+      "spanishTerm": "Métrica",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Una medida definida, con su fórmula o método, que se usa para seguir algo importante, como la tasa de defectos o el tiempo de ciclo.",
+        "en": "A defined measure, with its formula or method, used to track something that matters, such as defect rate or cycle time."
       }
     },
     {
@@ -756,8 +756,8 @@
       "term": "Milestone",
       "spanishTerm": "Hito",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Un momento clave del proyecto, como la firma de un contrato o el final de una fase. Marca un evento y tiene duración cero.",
+        "en": "A key moment in the project, such as a signed contract or a finished phase. It marks an event and has zero duration."
       }
     },
     {
@@ -765,17 +765,17 @@
       "term": "Milestone Schedule",
       "spanishTerm": "Cronograma de hitos",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Un cronograma resumido de alto nivel que solo muestra los hitos clave y sus fechas objetivo; es útil para directivos y patrocinadores.",
+        "en": "A high-level summary schedule that lists only the key milestones and their target dates, useful for executives and sponsors."
       }
     },
     {
       "id": "minimum-viable-product-mvp",
       "term": "Minimum Viable Product (MVP)",
-      "spanishTerm": "Producto minimo viable (MVP)",
+      "spanishTerm": "Producto mínimo viable (MVP)",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "La versión más pequeña de un producto que se puede lanzar a usuarios reales para entregar valor y comprobar si la idea funciona.",
+        "en": "The smallest version of a product that can be released to real users to deliver value and test whether the idea works."
       }
     },
     {
@@ -783,8 +783,8 @@
       "term": "Modeling",
       "spanishTerm": "Modelado",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Usar un diagrama, una simulación, una maqueta o un esquema matemático para explorar cómo funciona algo o cómo podría comportarse antes de comprometerse con ello.",
+        "en": "Using a diagram, simulation, mock-up or mathematical scheme to explore how something works or might behave before committing to it."
       }
     },
     {
@@ -792,26 +792,26 @@
       "term": "Monitoring",
       "spanishTerm": "Monitoreo",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Seguir los datos del proyecto a medida que avanza el trabajo, compararlos con el plan y compartir los resultados con quienes los necesitan.",
+        "en": "Keeping track of project data as work goes on, comparing it with the plan and sharing the results with those who need them."
       }
     },
     {
       "id": "monitoring-and-controlling-focus-area",
       "term": "Monitoring and Controlling Focus Area",
-      "spanishTerm": "Area de Enfoque de Monitoreo y Control",
+      "spanishTerm": "Área de Enfoque de Monitoreo y Control",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Las actividades que siguen el avance frente al plan, detectan desviaciones y vuelven a encauzar el proyecto, incluida la gestión de las solicitudes de cambio.",
+        "en": "The activities that track progress against the plan, spot deviations and steer the project back on course, including handling change requests."
       }
     },
     {
       "id": "monte-carlo-analysis-simulation",
       "term": "Monte Carlo Analysis/Simulation",
-      "spanishTerm": "Analisis/simulacion Monte Carlo",
+      "spanishTerm": "Análisis/simulación Monte Carlo",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Una técnica por computadora que ejecuta el modelo del proyecto miles de veces con valores aleatorios tomados de los rangos de estimación, y da la probabilidad de terminar en cada fecha o con cada costo.",
+        "en": "A computer technique that runs the project model thousands of times with random values drawn from estimate ranges, giving the probability of finishing by each date or cost."
       }
     },
     {
@@ -819,8 +819,8 @@
       "term": "Net Promoter Score",
       "spanishTerm": "Net Promoter Score",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Una medida de lealtad de los clientes basada en una pregunta: ¿qué tan probable es que nos recomiende, de 0 a 10? Es el porcentaje de promotores (9-10) menos el porcentaje de detractores (0-6).",
+        "en": "A customer loyalty measure based on one question: how likely are you to recommend us, from 0 to 10? It is the percentage of promoters (9-10) minus the percentage of detractors (0-6)."
       }
     },
     {
@@ -828,8 +828,8 @@
       "term": "Network Path",
       "spanishTerm": "Ruta de red",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Cualquier cadena continua de actividades enlazadas en la red del cronograma, de un punto a otro. La más larga es la ruta crítica.",
+        "en": "Any continuous chain of linked activities in the schedule network, from one point to another. The longest one is the critical path."
       }
     },
     {
@@ -837,8 +837,8 @@
       "term": "Objective",
       "spanishTerm": "Objetivo",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Una meta concreta y medible que el trabajo debe alcanzar, como lanzar en junio o reducir el tiempo de proceso en un 30 %.",
+        "en": "A specific, measurable target the work is meant to reach, such as launching by June or cutting processing time by 30%."
       }
     },
     {
@@ -846,8 +846,8 @@
       "term": "Opportunity",
       "spanishTerm": "Oportunidad",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Un evento incierto que, si ocurriera, ayudaría al proyecto, por ejemplo, un descuento de un proveedor o una tecnología más rápida. Es el lado positivo del riesgo.",
+        "en": "An uncertain event that, if it happened, would help the project, for example a supplier discount or a faster technology. It is the positive side of risk."
       }
     },
     {
@@ -855,8 +855,8 @@
       "term": "Organizational Breakdown Structure",
       "spanishTerm": "Estructura de desglose organizacional",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Un árbol que muestra los departamentos, unidades o equipos de la organización y de qué partes del trabajo del proyecto se encarga cada uno.",
+        "en": "A tree that shows the organization's departments, units or teams and which pieces of project work each one is responsible for."
       }
     },
     {
@@ -864,17 +864,17 @@
       "term": "Outcome",
       "spanishTerm": "Outcome",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "El cambio o efecto que resulta de usar lo que entrega un proyecto, por ejemplo, un servicio más rápido cuando entra en operación un sistema nuevo.",
+        "en": "The change or effect that results from using what a project delivers, for example faster service after a new system goes live."
       }
     },
     {
       "id": "performance-measurement",
       "term": "Performance Measurement",
-      "spanishTerm": "Medicion del desempeno",
+      "spanishTerm": "Medición del desempeño",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Recoger y analizar datos sobre cómo va el trabajo, comparados con metas y líneas base, para ver si el proyecto va por buen camino.",
+        "en": "Collecting and analyzing data on how the work is going, compared with targets and baselines, to see whether the project is on track."
       }
     },
     {
@@ -882,8 +882,8 @@
       "term": "Phase Gate",
       "spanishTerm": "Puerta de fase",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Un punto de decisión de seguir o no seguir entre fases: los líderes revisan lo logrado y deciden si continuar, ajustar o cancelar.",
+        "en": "A go/no-go decision point between phases: leaders check what has been achieved and decide whether to proceed, adjust or cancel."
       }
     },
     {
@@ -891,8 +891,8 @@
       "term": "Plan",
       "spanishTerm": "Plan",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Una descripción de cómo se hará el trabajo: qué, cuándo, quién, con qué recursos y cómo se juzgará el éxito.",
+        "en": "A description of how the work will be done: what, when, by whom, with which resources and how success will be judged."
       }
     },
     {
@@ -900,17 +900,17 @@
       "term": "Planned Value (PV)",
       "spanishTerm": "Valor planificado (PV)",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "El valor presupuestado del trabajo que debía estar hecho en una fecha dada. Compararlo con el valor ganado muestra si el proyecto va adelantado o atrasado.",
+        "en": "The budgeted worth of the work that was scheduled to be done by a given date. Comparing it with earned value shows if the project is ahead or behind."
       }
     },
     {
       "id": "planning-focus-area",
       "term": "Planning Focus Area",
-      "spanishTerm": "Area de Enfoque de Planificacion",
+      "spanishTerm": "Área de Enfoque de Planificación",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Las actividades que definen cómo alcanzará el proyecto sus objetivos: definir el alcance, ordenar el trabajo, estimar tiempo y costo, y planificar los riesgos, la calidad y la comunicación.",
+        "en": "The activities that work out how the project will reach its objectives: defining scope, sequencing work, estimating time and cost, and planning for risk, quality and communication."
       }
     },
     {
@@ -918,26 +918,26 @@
       "term": "Portfolio",
       "spanishTerm": "Portafolio",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "El conjunto completo de iniciativas en las que una organización decide invertir, incluidos proyectos, programas y operaciones relacionadas, equilibrado como un todo para servir a su estrategia.",
+        "en": "The full mix of initiatives an organization chooses to invest in, including projects, programs and related operations, balanced as a whole to serve its strategy."
       }
     },
     {
       "id": "portfolio-management",
       "term": "Portfolio Management",
-      "spanishTerm": "Gestion de portafolios",
+      "spanishTerm": "Gestión de portafolios",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Elegir, priorizar y equilibrar las iniciativas de la organización para que su dinero y su gente, que son limitados, vayan al trabajo que mejor sirve a su estrategia.",
+        "en": "Choosing, prioritizing and balancing the organization's initiatives so that its limited money and people go to the work that best serves its strategy."
       }
     },
     {
       "id": "precision",
       "term": "Precision",
-      "spanishTerm": "Precision",
+      "spanishTerm": "Precisión",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Qué tan cerca están entre sí las mediciones repetidas, sin importar si están cerca del valor verdadero.",
+        "en": "How close repeated measurements are to one another, regardless of whether they are close to the true value."
       }
     },
     {
@@ -945,17 +945,17 @@
       "term": "Predictive Approach",
       "spanishTerm": "Enfoque predictivo",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Una forma de ejecutar un proyecto guiada por el plan, en la que el alcance, el cronograma y el costo se fijan al principio y el trabajo avanza por fases secuenciales. También se llama cascada.",
+        "en": "A plan-driven way of delivering a project in which scope, schedule and cost are set out early and work proceeds through sequential phases. Also called waterfall."
       }
     },
     {
       "id": "prioritization-matrix",
       "term": "Prioritization Matrix",
-      "spanishTerm": "Matriz de priorizacion",
+      "spanishTerm": "Matriz de priorización",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Una cuadrícula para ordenar opciones puntuándolas según criterios, por ejemplo, valor frente a esfuerzo, y decidir qué hacer primero.",
+        "en": "A grid used to rank options by scoring them against criteria, for example value versus effort, to decide what to do first."
       }
     },
     {
@@ -963,8 +963,8 @@
       "term": "Product",
       "spanishTerm": "Producto",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Un bien, servicio o solución digital creado para satisfacer una necesidad y ofrecido a usuarios o clientes. Los proyectos suelen crear o cambiar productos.",
+        "en": "A good, service or digital solution created to meet a need and offered to users or customers. Projects often create or change products."
       }
     },
     {
@@ -972,17 +972,17 @@
       "term": "Product Life Cycle",
       "spanishTerm": "Ciclo de vida del producto",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Las etapas por las que pasa un producto a lo largo de toda su vida, desde la idea y el lanzamiento, pasando por el crecimiento y la madurez, hasta su retiro. Dentro de él pueden darse varios proyectos.",
+        "en": "The stages a product goes through over its whole life, from idea and launch through growth and maturity to withdrawal. Several projects may happen within it."
       }
     },
     {
       "id": "product-management",
       "term": "Product Management",
-      "spanishTerm": "Gestion de productos",
+      "spanishTerm": "Gestión de productos",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Dirigir un producto durante toda su vida: decidir qué construir, para quién y por qué, y mejorarlo según la retroalimentación del mercado y de los usuarios.",
+        "en": "Steering a product over its whole life: deciding what to build, for whom and why, and improving it based on market and user feedback."
       }
     },
     {
@@ -990,8 +990,8 @@
       "term": "Product Owner",
       "spanishTerm": "Product owner",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "La persona que representa a los clientes y al negocio en un equipo ágil y ordena el backlog para que el equipo siempre trabaje en lo más importante.",
+        "en": "The person who represents customers and the business on an agile team, ordering the backlog so the team always works on what matters most."
       }
     },
     {
@@ -999,8 +999,8 @@
       "term": "Product Scope",
       "spanishTerm": "Alcance del producto",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Lo que el producto debe ser y hacer: sus funcionalidades, funciones y características. Se contrasta con el alcance del proyecto, que es el trabajo necesario para entregarlo.",
+        "en": "What the product must be and do: its features, functions and characteristics. Contrast with project scope, the work needed to deliver it."
       }
     },
     {
@@ -1008,26 +1008,26 @@
       "term": "Program",
       "spanishTerm": "Programa",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Varios proyectos y actividades conectados que se dirigen como uno solo, porque sus beneficios combinados son mayores que lo que cada uno lograría por separado.",
+        "en": "Several connected projects and activities steered as one, because their combined benefits are bigger than what each could deliver on its own."
       }
     },
     {
       "id": "program-management",
       "term": "Program Management",
-      "spanishTerm": "Gestion de programas",
+      "spanishTerm": "Gestión de programas",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Coordinar los proyectos y actividades de un programa, con sus recursos compartidos, dependencias y riesgos, para lograr los beneficios generales del programa.",
+        "en": "Coordinating the projects and activities of a program, with their shared resources, dependencies and risks, so that the program's overall benefits are delivered."
       }
     },
     {
       "id": "progressive-elaboration",
       "term": "Progressive Elaboration",
-      "spanishTerm": "Elaboracion progresiva",
+      "spanishTerm": "Elaboración progresiva",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Afinar planes y estimaciones por etapas: empezar con lo que se sabe y completar el detalle a medida que llega mejor información.",
+        "en": "Refining plans and estimates in stages: start with what is known and fill in detail as better information arrives."
       }
     },
     {
@@ -1035,8 +1035,8 @@
       "term": "Project",
       "spanishTerm": "Proyecto",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Trabajo organizado por un tiempo limitado para crear algo que no existía antes exactamente de esa forma, como un edificio, una aplicación o un proceso nuevos.",
+        "en": "Work organized for a limited time to create something that has not existed in exactly this form before, such as a new building, app or process."
       }
     },
     {
@@ -1044,8 +1044,8 @@
       "term": "Project Calendar",
       "spanishTerm": "Calendario del proyecto",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "El registro de los días y las horas en que el equipo del proyecto puede trabajar, teniendo en cuenta fines de semana, festivos y turnos, y que se usa para calcular las fechas del cronograma.",
+        "en": "The record of which days and hours the project team can work, accounting for weekends, holidays and shifts, used to compute schedule dates."
       }
     },
     {
@@ -1053,17 +1053,17 @@
       "term": "Project Governance",
       "spanishTerm": "Gobernanza del proyecto",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "La forma en que se supervisa un proyecto: quién decide qué, cómo fluyen las decisiones y los escalamientos, y cómo se mantiene alineado con las metas de la organización.",
+        "en": "The way a project is overseen: who decides what, how decisions and escalations flow, and how the project stays aligned with the organization's goals."
       }
     },
     {
       "id": "project-lead",
       "term": "Project Lead",
-      "spanishTerm": "Lider del proyecto",
+      "spanishTerm": "Líder del proyecto",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Quien guía el esfuerzo diario hacia las metas del proyecto y mantiene sincronizadas a las personas y las tareas, tenga o no el título de director del proyecto.",
+        "en": "Whoever steers the day-to-day effort toward the project's goals, keeping people and tasks in sync, whether or not they hold the title of project manager."
       }
     },
     {
@@ -1071,53 +1071,53 @@
       "term": "Project Life Cycle",
       "spanishTerm": "Ciclo de vida del proyecto",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Cómo se divide un proyecto en etapas a lo largo del tiempo, por ejemplo, concepto, diseño, construcción, pruebas y entrega, ya sea que esas etapas vayan una tras otra o se superpongan.",
+        "en": "How a project is divided into stages over time, for example concept, design, build, test and handover, whether those stages run one after another or overlap."
       }
     },
     {
       "id": "project-management",
       "term": "Project Management",
-      "spanishTerm": "Gestion de proyectos",
+      "spanishTerm": "Gestión de proyectos",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Liderar a las personas y organizar el trabajo de un proyecto para que entregue los resultados esperados dentro de sus límites de tiempo, dinero, calidad y riesgo.",
+        "en": "Leading people and organizing the work of a project so it delivers the intended results within its limits of time, money, quality and risk."
       }
     },
     {
       "id": "project-management-body-of-knowledge-pmbok",
       "term": "Project Management Body of Knowledge (PMBOK)",
-      "spanishTerm": "Cuerpo de conocimientos de gestion de proyectos (PMBOK)",
+      "spanishTerm": "Cuerpo de conocimientos de gestión de proyectos (PMBOK)",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "El conjunto de conocimientos y prácticas aceptadas en la dirección de proyectos, que el PMI recoge en la Guía del PMBOK y en sus estándares relacionados.",
+        "en": "The sum of accepted knowledge and practice in project management, gathered by PMI in the PMBOK Guide and related standards."
       }
     },
     {
       "id": "project-management-focus-areas",
       "term": "Project Management Focus Areas",
-      "spanishTerm": "Areas de Enfoque de Gestion de Proyectos",
+      "spanishTerm": "Áreas de Enfoque de Gestión de Proyectos",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Las cinco agrupaciones que usa el PMBOK 8 para organizar el trabajo de gestión a lo largo de la vida de un proyecto: inicio, planificación, ejecución, monitoreo y control, y cierre.",
+        "en": "PMBOK 8's five ways of grouping the management work over a project's life: initiating, planning, executing, monitoring and controlling, and closing."
       }
     },
     {
       "id": "project-management-office-pmo",
       "term": "Project Management Office (PMO)",
-      "spanishTerm": "Oficina de gestion de proyectos (PMO)",
+      "spanishTerm": "Oficina de gestión de proyectos (PMO)",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Un grupo dentro de una organización que fija estándares para los proyectos y los apoya o supervisa, por ejemplo, con métodos, plantillas, capacitación e informes.",
+        "en": "A group within an organization that sets project standards and supports or oversees projects, for example by providing methods, templates, training and reporting."
       }
     },
     {
       "id": "project-management-team",
       "term": "Project Management Team",
-      "spanishTerm": "Equipo de gestion del proyecto",
+      "spanishTerm": "Equipo de gestión del proyecto",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Las personas del proyecto que comparten el trabajo de liderazgo y gestión, como la planificación, la coordinación y los informes, junto con el director del proyecto.",
+        "en": "The people on the project who share the leadership and management work, such as planning, coordination and reporting, alongside the project manager."
       }
     },
     {
@@ -1125,8 +1125,8 @@
       "term": "Project Manager",
       "spanishTerm": "Director del proyecto",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "La persona que rinde cuentas de sacar adelante el proyecto: coordina al equipo, equilibra demandas que compiten entre sí y mantiene informados a los interesados.",
+        "en": "The individual accountable for getting the project done: they coordinate the team, balance competing demands and keep stakeholders informed."
       }
     },
     {
@@ -1134,17 +1134,17 @@
       "term": "Project Phase",
       "spanishTerm": "Fase del proyecto",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Una etapa del proyecto con su propio conjunto de trabajo y entregables relacionados, que a menudo termina con una revisión antes de que empiece la siguiente.",
+        "en": "A stage of the project with its own set of related work and deliverables, often ending in a review before the next stage starts."
       }
     },
     {
       "id": "project-review",
       "term": "Project Review",
-      "spanishTerm": "Revision del proyecto",
+      "spanishTerm": "Revisión del proyecto",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Una mirada estructurada a un proyecto en un momento dado, o al final, para revisar el desempeño, confirmar el valor y recoger lecciones.",
+        "en": "A structured look at a project at a given point, or at its end, to check performance, confirm value and capture lessons."
       }
     },
     {
@@ -1152,8 +1152,8 @@
       "term": "Project Scope",
       "spanishTerm": "Alcance del proyecto",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Todo el trabajo que el equipo debe hacer para entregar el producto acordado, desde el diseño hasta la entrega. Se contrasta con el alcance del producto, que describe el producto en sí.",
+        "en": "The total work the team must do to deliver the agreed product, from design to handover. Contrast with product scope, which describes the product itself."
       }
     },
     {
@@ -1161,17 +1161,17 @@
       "term": "Project Sponsor",
       "spanishTerm": "Patrocinador del proyecto",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "La persona de alto nivel que impulsa un proyecto concreto, aporta su financiación y respaldo, y toma las decisiones clave que superan la autoridad del director del proyecto.",
+        "en": "The senior person who champions a specific project, provides its funding and backing, and makes the key decisions that are beyond the project manager's authority."
       }
     },
     {
       "id": "project-success",
       "term": "Project Success",
-      "spanishTerm": "Exito del proyecto",
+      "spanishTerm": "Éxito del proyecto",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Lograr lo que el proyecto se propuso, juzgado no solo por tiempo, costo y alcance, sino por si se obtienen el valor y los beneficios esperados.",
+        "en": "Achieving what the project set out to do, judged not only by time, cost and scope but by whether the expected value and benefits are realized."
       }
     },
     {
@@ -1179,8 +1179,8 @@
       "term": "Project Team",
       "spanishTerm": "Equipo del proyecto",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Todas las personas que trabajan juntas, lideradas por el director del proyecto, para producir los entregables del proyecto, incluidos los miembros a tiempo parcial y los contratistas.",
+        "en": "Everyone working together, led by the project manager, to produce the project's deliverables, including part-time members and contractors."
       }
     },
     {
@@ -1188,8 +1188,8 @@
       "term": "Prototype",
       "spanishTerm": "Prototipo",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Una maqueta rápida o una versión funcional aproximada que permite a los usuarios probar una idea y reaccionar, para encontrar los errores cuando todavía es barato corregirlos.",
+        "en": "A quick mock-up or rough working version that lets users try an idea and react to it, so mistakes are found while they are cheap to fix."
       }
     },
     {
@@ -1197,8 +1197,8 @@
       "term": "Quality",
       "spanishTerm": "Calidad",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Aptitud para el propósito: si un entregable satisface las necesidades y expectativas para las que se hizo.",
+        "en": "Fitness for purpose: whether a deliverable meets the needs and expectations it was made for."
       }
     },
     {
@@ -1206,8 +1206,8 @@
       "term": "Register",
       "spanishTerm": "Registro",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Una lista estructurada que se mantiene al día durante el proyecto, con datos como responsable, estado y calificación de elementos como riesgos o interesados.",
+        "en": "A structured list kept up to date during the project, holding details such as owner, status and rating for items like risks or stakeholders."
       }
     },
     {
@@ -1215,26 +1215,26 @@
       "term": "Regulations",
       "spanishTerm": "Regulaciones",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Reglas emitidas por gobiernos o autoridades oficiales que el proyecto debe cumplir, como las leyes de seguridad, privacidad o medio ambiente.",
+        "en": "Rules issued by governments or official authorities that the project must comply with, such as safety, privacy or environmental laws."
       }
     },
     {
       "id": "release",
       "term": "Release",
-      "spanishTerm": "Liberacion",
+      "spanishTerm": "Liberación",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Un conjunto de funcionalidades o incrementos del producto que se ponen a disposición de los usuarios a la vez, normalmente después de varias iteraciones.",
+        "en": "A set of product features or increments made available to users together, usually after several iterations."
       }
     },
     {
       "id": "release-planning",
       "term": "Release Planning",
-      "spanishTerm": "Planificacion de la liberacion",
+      "spanishTerm": "Planificación de la liberación",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Decidir qué funcionalidades van en cada una de las próximas liberaciones y aproximadamente cuándo, según las prioridades, la capacidad del equipo y las dependencias.",
+        "en": "Deciding which features go into which upcoming releases and roughly when, based on priorities, team capacity and dependencies."
       }
     },
     {
@@ -1242,8 +1242,8 @@
       "term": "Report",
       "spanishTerm": "Informe",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Un documento que informa a los interesados sobre el estado, el avance, los resultados o los problemas, escrito para un público y un propósito concretos.",
+        "en": "A document that tells stakeholders about status, progress, results or problems, written for a particular audience and purpose."
       }
     },
     {
@@ -1251,8 +1251,8 @@
       "term": "Requirement",
       "spanishTerm": "Requisito",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Una declaración de lo que una solución debe hacer o ser, por ejemplo, que la aplicación funcione sin conexión, para que quienes la pagan obtengan lo que necesitan.",
+        "en": "A statement of what a solution must do or be, for example the app works offline, so that the people paying for it get what they need."
       }
     },
     {
@@ -1260,8 +1260,8 @@
       "term": "Reserve",
       "spanishTerm": "Reserva",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Tiempo o dinero extra que se guarda para cubrir riesgos. Puede ser una reserva para contingencias, para riesgos conocidos, o una reserva de gestión, para los imprevistos.",
+        "en": "Extra time or money held back to cover risk. It is either a contingency reserve for known risks or a management reserve for unforeseen ones."
       }
     },
     {
@@ -1269,8 +1269,8 @@
       "term": "Responsibility",
       "spanishTerm": "Responsabilidad",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "La obligación de realizar un trabajo asignado. Se puede delegar en otra persona, mientras que la rendición de cuentas por el resultado sigue en una sola persona.",
+        "en": "An obligation to carry out an assigned piece of work. It can be handed to someone else, while accountability for the result stays with one person."
       }
     },
     {
@@ -1278,8 +1278,8 @@
       "term": "Result",
       "spanishTerm": "Resultado",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Lo que sale de hacer el trabajo más allá de los productos físicos, por ejemplo, un estudio, un proceso revisado o un equipo ya capacitado.",
+        "en": "What comes out of doing the work beyond physical products, for instance a study, a revised process or a team that has been trained."
       }
     },
     {
@@ -1287,8 +1287,8 @@
       "term": "Rework",
       "spanishTerm": "Retrabajo",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Volver a hacer un trabajo que se hizo mal o que no cumplió los requisitos la primera vez. Cuesta tiempo y dinero, y es una forma común de desperdicio.",
+        "en": "Redoing work that was done wrong or did not meet requirements the first time. It costs time and money and is a common form of waste."
       }
     },
     {
@@ -1296,17 +1296,17 @@
       "term": "Risk",
       "spanishTerm": "Riesgo",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Incertidumbre que importa: un posible evento o situación futura que desviaría uno o más objetivos, en una dirección buena (oportunidad) o mala (amenaza).",
+        "en": "Uncertainty that matters: a possible future event or situation that would push one or more objectives off target, in a good direction (opportunity) or a bad one (threat)."
       }
     },
     {
       "id": "risk-acceptance",
       "term": "Risk Acceptance",
-      "spanishTerm": "Aceptacion del riesgo",
+      "spanishTerm": "Aceptación del riesgo",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Decidir convivir con un riesgo en lugar de actuar sobre él ahora, ya sea sin hacer nada o apartando una reserva por si ocurre. Se aplica a amenazas y oportunidades.",
+        "en": "Choosing to live with a risk instead of acting on it now, either doing nothing or setting aside a reserve in case it happens. It applies to threats and opportunities."
       }
     },
     {
@@ -1314,17 +1314,17 @@
       "term": "Risk Appetite",
       "spanishTerm": "Apetito al riesgo",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "El nivel general de incertidumbre con el que una organización se siente cómoda para perseguir sus metas, de prudente a audaz. Los umbrales lo convierten en números.",
+        "en": "The general level of uncertainty an organization is comfortable living with to chase its goals, from cautious to bold. Thresholds turn it into numbers."
       }
     },
     {
       "id": "risk-avoidance",
       "term": "Risk Avoidance",
-      "spanishTerm": "Evitacion del riesgo",
+      "spanishTerm": "Evitación del riesgo",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Cambiar el plan para que una amenaza ya no pueda ocurrir o ya no pueda afectar al proyecto, por ejemplo, eliminando una funcionalidad riesgosa.",
+        "en": "Changing the plan so a threat can no longer happen or can no longer affect the project, for example by dropping a risky feature."
       }
     },
     {
@@ -1332,8 +1332,8 @@
       "term": "Risk Breakdown Structure (RBS)",
       "spanishTerm": "Estructura de desglose de riesgos (RBS)",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Un árbol que agrupa las posibles fuentes de riesgo en categorías, como técnicas, externas, de la organización o de la dirección del proyecto, para ayudar a identificar riesgos.",
+        "en": "A tree that groups possible sources of risk into categories, such as technical, external, organizational and project management, to help identify risks."
       }
     },
     {
@@ -1341,8 +1341,8 @@
       "term": "Risk Enhancement",
       "spanishTerm": "Mejora del riesgo",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Actuar para que una oportunidad sea más probable o su beneficio más grande, por ejemplo, sumar recursos para terminar antes y ganar una bonificación.",
+        "en": "Acting to make an opportunity more likely to happen or its benefit larger, for example adding resources to finish early and earn a bonus."
       }
     },
     {
@@ -1350,53 +1350,53 @@
       "term": "Risk Escalation",
       "spanishTerm": "Escalamiento del riesgo",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Pasar una amenaza o una oportunidad a un nivel superior, como el programa o el patrocinador, cuando su manejo supera la autoridad del proyecto.",
+        "en": "Passing a threat or opportunity to a higher level, such as the program or the sponsor, when it falls outside the project's authority to handle."
       }
     },
     {
       "id": "risk-exploiting",
       "term": "Risk Exploiting",
-      "spanishTerm": "Explotacion del riesgo",
+      "spanishTerm": "Explotación del riesgo",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Tomar medidas para asegurar que una oportunidad ocurra sin falta, por ejemplo, asignar a las mejores personas para que una tarea termine antes.",
+        "en": "Taking action to make sure an opportunity definitely happens, for example assigning the best people so a task finishes early."
       }
     },
     {
       "id": "risk-exposure",
       "term": "Risk Exposure",
-      "spanishTerm": "Exposicion al riesgo",
+      "spanishTerm": "Exposición al riesgo",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Cuánto puede ganar o perder el proyecto por sus riesgos en conjunto, normalmente probabilidad por impacto sumado en todo el registro de riesgos.",
+        "en": "How much the project stands to gain or lose from its risks taken together, typically probability times impact added up across the risk register."
       }
     },
     {
       "id": "risk-mitigation",
       "term": "Risk Mitigation",
-      "spanishTerm": "Mitigacion del riesgo",
+      "spanishTerm": "Mitigación del riesgo",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Actuar con anticipación para bajar la probabilidad de que una amenaza ocurra o suavizar su impacto, por ejemplo, con pruebas adicionales para reducir el riesgo de defectos.",
+        "en": "Acting early to lower the chance that a threat happens or to soften its impact, for example extra testing to cut the risk of defects."
       }
     },
     {
       "id": "risk-review",
       "term": "Risk Review",
-      "spanishTerm": "Revision del riesgo",
+      "spanishTerm": "Revisión del riesgo",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Una revisión periódica del registro de riesgos para ver qué riesgos cambiaron, qué respuestas funcionan y si han aparecido riesgos nuevos.",
+        "en": "A regular check of the risk register to see which risks have changed, which responses are working and whether new risks have appeared."
       }
     },
     {
       "id": "risk-sharing",
       "term": "Risk Sharing",
-      "spanishTerm": "Comparticion del riesgo",
+      "spanishTerm": "Compartición del riesgo",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Asociarse con otra parte que está mejor situada para aprovechar una oportunidad y repartir el beneficio, por ejemplo, mediante una empresa conjunta.",
+        "en": "Partnering with another party that is better placed to capture an opportunity and splitting the benefit, for example through a joint venture."
       }
     },
     {
@@ -1404,8 +1404,8 @@
       "term": "Risk Threshold",
       "spanishTerm": "Umbral de riesgo",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "El límite concreto, como un sobrecosto del 10 %, a partir del cual un riesgo deja de ser aceptable y hay que actuar. Convierte el apetito al riesgo en números.",
+        "en": "The specific limit, such as a 10% cost overrun, beyond which a risk is no longer acceptable and must be acted on. It puts risk appetite into numbers."
       }
     },
     {
@@ -1413,8 +1413,8 @@
       "term": "Risk Transference",
       "spanishTerm": "Transferencia del riesgo",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Pagar o contratar a otro para que cargue con las consecuencias de una amenaza, por ejemplo, con un seguro, una garantía o un contrato de precio fijo. El riesgo sigue existiendo; cambia quién lo asume.",
+        "en": "Paying or contracting someone else to carry the consequences of a threat, for example through insurance, a warranty or a fixed-price contract. The risk still exists; who bears it changes."
       }
     },
     {
@@ -1422,8 +1422,8 @@
       "term": "Roadmap",
       "spanishTerm": "Hoja de ruta",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Un plan visual y general que muestra cómo se espera que evolucione un producto o una iniciativa en el tiempo, con las liberaciones principales, metas e hitos.",
+        "en": "A high-level visual plan showing how a product or initiative is expected to evolve over time, with major releases, goals and milestones."
       }
     },
     {
@@ -1431,8 +1431,8 @@
       "term": "Role",
       "spanishTerm": "Rol",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Un conjunto de responsabilidades que alguien asume en el proyecto, como probador, product owner o patrocinador, independiente de su cargo.",
+        "en": "A set of responsibilities someone takes on in the project, such as tester, product owner or sponsor, separate from their job title."
       }
     },
     {
@@ -1440,8 +1440,8 @@
       "term": "S-Curve Diagram",
       "spanishTerm": "Diagrama de curva S",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Un gráfico del costo, el trabajo o el valor acumulados en el tiempo. Suele tener forma de S: lento al principio, rápido en el medio y de nuevo lento al final.",
+        "en": "A graph of cumulative cost, work or value over time. It usually looks like an S: slow at the start, fast in the middle and slow again at the end."
       }
     },
     {
@@ -1449,26 +1449,26 @@
       "term": "Schedule Model",
       "spanishTerm": "Modelo de cronograma",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Los datos detrás del cronograma, guardados en una herramienta de programación: actividades, cuánto dura cada una, qué depende de qué y quién la hace. Si cambian los datos, las fechas se recalculan.",
+        "en": "The data behind the schedule, held in a scheduling tool: activities, how long each takes, what depends on what, and who does it. Change the inputs and the dates recalculate."
       }
     },
     {
       "id": "schedule-performance-index-spi",
       "term": "Schedule Performance Index (SPI)",
-      "spanishTerm": "Indice de desempeno del cronograma (SPI)",
+      "spanishTerm": "Índice de desempeño del cronograma (SPI)",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "El valor ganado dividido entre el valor planificado (SPI = EV / PV). Si es menor que 1, el proyecto ha completado menos trabajo del previsto para esta fecha.",
+        "en": "Earned value divided by planned value (SPI = EV / PV). Below 1.0 the project has completed less work than planned by this date."
       }
     },
     {
       "id": "schedule-variance-sv",
       "term": "Schedule Variance (SV)",
-      "spanishTerm": "Variacion del cronograma (SV)",
+      "spanishTerm": "Variación del cronograma (SV)",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "El valor ganado menos el valor planificado (SV = EV - PV). Un valor negativo significa que el proyecto va por detrás de donde decía el cronograma.",
+        "en": "Earned value minus planned value (SV = EV - PV). A negative value means the project is behind where the schedule said it would be."
       }
     },
     {
@@ -1476,17 +1476,17 @@
       "term": "Scope",
       "spanishTerm": "Alcance",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Lo que el proyecto entregará y lo que no, tanto las funcionalidades del producto como el trabajo necesario para producirlas.",
+        "en": "What the project will and will not deliver, covering both the product's features and the work needed to produce them."
       }
     },
     {
       "id": "scope-creep",
       "term": "Scope Creep",
-      "spanishTerm": "Corrupcion del alcance",
+      "spanishTerm": "Corrupción del alcance",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Funcionalidades o trabajo extra que se cuelan en el proyecto poco a poco, por fuera del control de cambios, mientras la fecha límite y el presupuesto siguen iguales.",
+        "en": "Extra features or work that slip into the project bit by bit, outside change control, while the deadline and budget stay the same."
       }
     },
     {
@@ -1494,17 +1494,17 @@
       "term": "Self-Organizing Team",
       "spanishTerm": "Equipo autoorganizado",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Un equipo que decide por sí mismo cómo hacer su trabajo y quién hace qué, en lugar de esperar a que un jefe le asigne las tareas.",
+        "en": "A team that decides for itself how to do its work and who does what, rather than waiting for a manager to assign tasks."
       }
     },
     {
       "id": "specification",
       "term": "Specification",
-      "spanishTerm": "Especificacion",
+      "spanishTerm": "Especificación",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Una descripción detallada y exacta de lo que debe ser un producto, un material o un servicio, que a menudo incluye valores medibles y métodos de prueba.",
+        "en": "A detailed, exact description of what a product, material or service must be, often including measurable values and test methods."
       }
     },
     {
@@ -1512,8 +1512,8 @@
       "term": "Sponsor",
       "spanishTerm": "Patrocinador",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Un líder de alto nivel que respalda el trabajo: lo defiende, consigue su financiación, quita obstáculos fuera del alcance del director del proyecto y es dueño de su caso de negocio.",
+        "en": "A senior leader who backs the work: argues for it, gets it funded, clears obstacles beyond the project manager's reach and owns its business case."
       }
     },
     {
@@ -1521,8 +1521,8 @@
       "term": "Sprint",
       "spanishTerm": "Sprint",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "El nombre que da Scrum a una iteración: un periodo fijo de un mes o menos en el que el equipo convierte los elementos elegidos del backlog en un incremento utilizable.",
+        "en": "Scrum's name for an iteration: a fixed period of one month or less in which the team turns selected backlog items into a usable increment."
       }
     },
     {
@@ -1530,17 +1530,17 @@
       "term": "Stakeholder",
       "spanishTerm": "Interesado",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Cualquiera con algo en juego en el resultado del proyecto, desde el patrocinador y los usuarios hasta proveedores, reguladores o vecinos, incluidas las personas que solo creen que se verán afectadas.",
+        "en": "Anyone with a stake in how the project turns out, from the sponsor and users to suppliers, regulators or neighbors, including people who only think they will be affected."
       }
     },
     {
       "id": "standard",
       "term": "Standard",
-      "spanishTerm": "Estandar",
+      "spanishTerm": "Estándar",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Una referencia publicada, como ISO 9001 o la Guía del PMBOK, que recoge buenas prácticas o características requeridas. Seguirla suele ser voluntario, salvo que un contrato o una ley lo exijan.",
+        "en": "A published benchmark, such as ISO 9001 or the PMBOK Guide, that sets out good practice or required characteristics. Following it is usually voluntary unless a contract or law requires it."
       }
     },
     {
@@ -1548,26 +1548,26 @@
       "term": "Statement of Work (SOW)",
       "spanishTerm": "Enunciado del trabajo (SOW)",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Un documento que describe en detalle el trabajo que debe realizar un proveedor o un equipo, incluidos los entregables, el cronograma y las condiciones de aceptación.",
+        "en": "A document describing in detail the work a supplier or team is to perform, including deliverables, schedule and acceptance terms."
       }
     },
     {
       "id": "status-meeting",
       "term": "Status Meeting",
-      "spanishTerm": "Reunion de estado",
+      "spanishTerm": "Reunión de estado",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Una reunión periódica en la que el equipo y los interesados revisan el avance, el trabajo que viene, los riesgos y los problemas, y acuerdan acciones.",
+        "en": "A regular meeting where the team and stakeholders review progress, upcoming work, risks and issues, and agree on actions."
       }
     },
     {
       "id": "steering-committee",
       "term": "Steering Committee",
-      "spanishTerm": "Comite directivo",
+      "spanishTerm": "Comité directivo",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Un grupo de interesados de alto nivel que da dirección a un proyecto o programa, aprueba las decisiones importantes y resuelve los problemas escalados.",
+        "en": "A group of senior stakeholders that gives a project or program direction, approves major decisions and resolves escalated issues."
       }
     },
     {
@@ -1575,17 +1575,17 @@
       "term": "Story Point",
       "spanishTerm": "Punto de historia",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Una unidad relativa que los equipos usan para dimensionar historias de usuario comparando esfuerzo, complejidad e incertidumbre, en lugar de estimar en horas.",
+        "en": "A relative unit teams use to size user stories by comparing effort, complexity and uncertainty, rather than estimating in hours."
       }
     },
     {
       "id": "strategic-plan",
       "term": "Strategic Plan",
-      "spanishTerm": "Plan estrategico",
+      "spanishTerm": "Plan estratégico",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "La dirección a largo plazo de una organización: su visión, sus metas y las principales iniciativas que emprenderá en los próximos años. Los proyectos deberían poder vincularse a él.",
+        "en": "An organization's long-term direction: its vision, goals and the main initiatives it will pursue over the next several years. Projects should trace back to it."
       }
     },
     {
@@ -1593,26 +1593,26 @@
       "term": "Swarm",
       "spanishTerm": "Swarm",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Cuando varios miembros del equipo dejan lo que están haciendo para trabajar juntos en un mismo elemento o problema hasta terminarlo.",
+        "en": "When several team members drop what they are doing to work together on one item or problem until it is finished."
       }
     },
     {
       "id": "tacit-knowledge",
       "term": "Tacit Knowledge",
-      "spanishTerm": "Conocimiento tacito",
+      "spanishTerm": "Conocimiento tácito",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Saber que las personas llevan en la cabeza gracias a la experiencia, como el criterio o la intuición; es difícil de escribir y suele transmitirse trabajando juntos.",
+        "en": "Know-how people carry in their heads from experience, such as judgment or intuition, which is hard to write down and usually passes on through working together."
       }
     },
     {
       "id": "tailoring",
       "term": "Tailoring",
-      "spanishTerm": "Adaptacion",
+      "spanishTerm": "Adaptación",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Elegir cuánto proceso, documentación y ceremonia necesita de verdad un proyecto, según su tamaño, su riesgo y su contexto, en lugar de aplicar un método al pie de la letra.",
+        "en": "Choosing how much process, documentation and ceremony a project really needs, given its size, risk and context, rather than applying a method by the book."
       }
     },
     {
@@ -1620,17 +1620,17 @@
       "term": "Task Board",
       "spanishTerm": "Tablero de tareas",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Un tablero de pared o en línea con una tarjeta por tarea, ordenadas en columnas como por hacer, haciendo y hecho, que el equipo actualiza a medida que avanza el trabajo.",
+        "en": "A wall or online board of cards, one per task, sorted into columns like to do, doing and done, which the team updates as work moves."
       }
     },
     {
       "id": "technical-performance-measures",
       "term": "Technical Performance Measures",
-      "spanishTerm": "Medidas de desempeno tecnico",
+      "spanishTerm": "Medidas de desempeño técnico",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Características técnicas medibles de un producto, como el peso, la velocidad o el tiempo de respuesta, que se comparan con metas para ver si el diseño va por buen camino.",
+        "en": "Measurable technical characteristics of a product, such as weight, speed or response time, tracked against targets to show whether the design is on course."
       }
     },
     {
@@ -1638,8 +1638,8 @@
       "term": "Template",
       "spanishTerm": "Plantilla",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Un formato listo para usar, como un registro de riesgos en blanco o el esquema de un informe, que ahorra tiempo y mantiene los documentos coherentes entre proyectos.",
+        "en": "A ready-made format, such as a blank risk register or report layout, that saves time and keeps documents consistent across projects."
       }
     },
     {
@@ -1647,8 +1647,8 @@
       "term": "Threat",
       "spanishTerm": "Amenaza",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Un evento incierto que perjudicaría al proyecto si ocurriera, por ejemplo, que quiebre un proveedor clave. Es el lado negativo del riesgo.",
+        "en": "An uncertain event that would harm the project if it happened, for example a key supplier going out of business. It is the negative side of risk."
       }
     },
     {
@@ -1656,8 +1656,8 @@
       "term": "Threshold",
       "spanishTerm": "Umbral",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Una línea trazada de antemano sobre una medida, por ejemplo, un retraso del 5 % en el cronograma: cuando el desempeño la cruza, alguien tiene que actuar o escalar.",
+        "en": "A line drawn in advance on a measure, for example a 5% schedule slip: once performance crosses it, someone has to act or escalate."
       }
     },
     {
@@ -1665,8 +1665,8 @@
       "term": "Throughput",
       "spanishTerm": "Rendimiento",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Cuántos elementos de trabajo termina un equipo en un periodo dado, por ejemplo, ocho historias por semana.",
+        "en": "How many work items a team finishes in a given period, for example eight stories per week."
       }
     },
     {
@@ -1674,8 +1674,8 @@
       "term": "Time and Materials (T&M) Contract",
       "spanishTerm": "Contrato por tiempo y materiales (T&M)",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Un contrato en el que el comprador paga tarifas acordadas por hora o por día por el tiempo trabajado, más el costo de los materiales usados. Es común cuando el alcance no está claro o el trabajo es pequeño.",
+        "en": "A contract where the buyer pays agreed hourly or daily rates for the time worked plus the cost of materials used. It is common when scope is unclear or the work is small."
       }
     },
     {
@@ -1683,8 +1683,8 @@
       "term": "Timebox",
       "spanishTerm": "Timebox",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Una cantidad fija de tiempo reservada para una actividad, como una reunión diaria de 15 minutos o un sprint de dos semanas, que termina cuando se acaba el tiempo, se haya hecho todo o no.",
+        "en": "A fixed amount of time set aside for an activity, such as a 15-minute stand-up or a two-week sprint, which ends when time is up whether or not everything is done."
       }
     },
     {
@@ -1692,8 +1692,8 @@
       "term": "Tolerance",
       "spanishTerm": "Tolerancia",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "El rango permitido alrededor de un valor objetivo, por ejemplo, una pieza de 50 mm con 0,2 mm de más o de menos. Los resultados dentro de él son aceptables.",
+        "en": "The allowed range around a target value, for example a part length of 50 mm plus or minus 0.2 mm. Results inside it are acceptable."
       }
     },
     {
@@ -1701,8 +1701,8 @@
       "term": "Triple Bottom Line",
       "spanishTerm": "Triple resultado",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Evaluar una organización o un proyecto por tres resultados y no solo por uno: su impacto social, ambiental y financiero (personas, planeta y ganancias).",
+        "en": "Judging an organization or project by three results, not just one: its social, environmental and financial impact (people, planet, profit)."
       }
     },
     {
@@ -1710,8 +1710,8 @@
       "term": "Uncertainty",
       "spanishTerm": "Incertidumbre",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "No saber qué pasará ni cómo saldrán las cosas. El riesgo es la incertidumbre que afectaría a los objetivos; la ambigüedad y la volatilidad son ideas relacionadas.",
+        "en": "Not knowing what will happen or how things will turn out. Risk is uncertainty that would affect objectives; ambiguity and volatility are related ideas."
       }
     },
     {
@@ -1719,17 +1719,17 @@
       "term": "Use Case",
       "spanishTerm": "Caso de uso",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Un relato paso a paso de lo que ocurre entre una persona y un sistema mientras la persona persigue una meta, que cubre el camino normal, las alternativas y los errores.",
+        "en": "A step-by-step story of what happens between a person and a system while the person pursues a goal, covering the normal path, alternatives and errors."
       }
     },
     {
       "id": "validation",
       "term": "Validation",
-      "spanishTerm": "Validacion",
+      "spanishTerm": "Validación",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Confirmar con el cliente que el producto de verdad satisface sus necesidades y sirve para su propósito: ¿construimos lo correcto? Se contrasta con la verificación.",
+        "en": "Confirming with the customer that the product actually meets their needs and is fit for its purpose: did we build the right thing? Contrast with verification."
       }
     },
     {
@@ -1737,8 +1737,8 @@
       "term": "Value",
       "spanishTerm": "Valor",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "El beneficio que algo aporta a las personas para quienes existe, ya sea económico, práctico o social. Los proyectos existen para entregarlo.",
+        "en": "The benefit something brings to the people it is for, whether financial, practical or social. Projects exist to deliver it."
       }
     },
     {
@@ -1746,8 +1746,8 @@
       "term": "Value Delivery System",
       "spanishTerm": "Sistema de entrega de valor",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "La forma en que una organización convierte su estrategia en resultados: portafolios, programas, proyectos, productos y operaciones que trabajan juntos para crear valor.",
+        "en": "The way an organization turns strategy into results: portfolios, programs, projects, products and operations working together to create value."
       }
     },
     {
@@ -1755,53 +1755,53 @@
       "term": "Value Proposition",
       "spanishTerm": "Propuesta de valor",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Una explicación clara de por qué vale la pena elegir un producto o una solución: el problema que resuelve, para quién y en qué supera a las alternativas.",
+        "en": "A clear statement of why a product or solution is worth choosing: the problem it solves, for whom, and how it beats the alternatives."
       }
     },
     {
       "id": "vanity-metric",
       "term": "Vanity Metric",
-      "spanishTerm": "Metrica de vanidad",
+      "spanishTerm": "Métrica de vanidad",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Un número que luce impresionante pero no ayuda a tomar decisiones ni muestra un avance real, como el total de registros sin uso activo.",
+        "en": "A number that looks impressive but does not help make decisions or show real progress, such as total sign-ups without active use."
       }
     },
     {
       "id": "variance",
       "term": "Variance",
-      "spanishTerm": "Variacion",
+      "spanishTerm": "Variación",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "La diferencia entre lo planificado y lo que realmente ocurrió, como ir 5 días atrasado o 2.000 USD por encima del presupuesto.",
+        "en": "The gap between what was planned and what actually happened, such as being 5 days late or 2,000 USD over budget."
       }
     },
     {
       "id": "variance-at-completion-vac",
       "term": "Variance at Completion (VAC)",
-      "spanishTerm": "Variacion a la conclusion (VAC)",
+      "spanishTerm": "Variación a la conclusión (VAC)",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "La diferencia esperada entre el presupuesto total y el costo final pronosticado (VAC = BAC - EAC). Un valor negativo anticipa un sobrecosto.",
+        "en": "The expected difference between the total budget and the forecast final cost (VAC = BAC - EAC). A negative value predicts an overrun."
       }
     },
     {
       "id": "verification",
       "term": "Verification",
-      "spanishTerm": "Verificacion",
+      "spanishTerm": "Verificación",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Comprobar que un producto cumple sus especificaciones y requisitos: ¿lo construimos bien? Suele hacerse internamente antes de la validación.",
+        "en": "Checking that a product meets its specifications and requirements: did we build it right? It is often done internally before validation."
       }
     },
     {
       "id": "vision-statement",
       "term": "Vision Statement",
-      "spanishTerm": "Declaracion de vision",
+      "spanishTerm": "Declaración de visión",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Una descripción breve e inspiradora del futuro que el proyecto o el producto quiere crear, y que mantiene alineado al equipo cuando cambian los detalles.",
+        "en": "A short, inspiring description of the future the project or product aims to create, which keeps the team aligned when details change."
       }
     },
     {
@@ -1809,8 +1809,8 @@
       "term": "Volatility",
       "spanishTerm": "Volatilidad",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "La tendencia de las condiciones alrededor del proyecto, como los precios, la tecnología o los requisitos, a cambiar rápido y sin aviso.",
+        "en": "The tendency of conditions around the project, such as prices, technology or requirements, to shift fast and without warning."
       }
     },
     {
@@ -1818,8 +1818,8 @@
       "term": "Waste",
       "spanishTerm": "Desperdicio",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Cualquier actividad que consume tiempo o recursos sin aportar valor al cliente, como las esperas, el retrabajo, los traspasos o las funcionalidades que nadie usa.",
+        "en": "Any activity that uses time or resources without adding value for the customer, such as waiting, rework, handoffs or unused features."
       }
     },
     {
@@ -1827,8 +1827,8 @@
       "term": "Wideband Delphi",
       "spanishTerm": "Delphi de banda ancha",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Una técnica de estimación en grupo en la que los expertos estiman por separado, discuten abiertamente sus diferencias y vuelven a estimar hasta que sus cifras convergen.",
+        "en": "A group estimation technique in which experts estimate separately, discuss their differences openly and re-estimate until their numbers converge."
       }
     },
     {
@@ -1836,8 +1836,8 @@
       "term": "Work Package",
       "spanishTerm": "Paquete de trabajo",
       "definitions": {
-        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
-        "en": "[Removed from the repository history. The current version has an original definition.]"
+        "es": "Un bloque de trabajo en la base de la EDT (estructura de desglose del trabajo), lo bastante pequeño para que una persona o un equipo lo asuma, con su propia estimación, presupuesto y cronograma.",
+        "en": "A bottom-level chunk of the work breakdown structure that one person or team can own, with its own estimate, budget and schedule."
       }
     }
   ]

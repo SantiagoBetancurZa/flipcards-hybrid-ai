@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "build:standards": "node scripts/build-standards-bundle.mjs",
+    "translate:definitions": "node scripts/generate-standard-translations.mjs --definitions-only",
     "build:ai": "esbuild src/main.js --bundle --format=esm --minify --sourcemap --target=es2022 --legal-comments=none --outfile=ai.bundle.js",
     "build": "npm run build:standards && npm run build:ai && node scripts/build-dist.mjs",
     "dev": "npm run build:ai && python3 server.py",

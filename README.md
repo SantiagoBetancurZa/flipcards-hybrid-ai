@@ -2,8 +2,8 @@
 
 **A PMBOK® Guide study coach that thinks on your device first and calls the cloud only when it has to.**
 
-FlipCards is a flashcard PWA for the 204 terms of the PMBOK® Guide 8 glossary, in nine
-languages. For **#BuildHybridAI 2026** it gained an AI study coach built on
+FlipCards is a flashcard PWA for the 204 terms of the PMBOK® Guide 8 glossary, with original
+definitions in nine languages. For **#BuildHybridAI 2026** it gained an AI study coach built on
 **Firebase AI Logic hybrid inference**: Chrome's built-in **Gemini Nano** handles the private,
 frequent tasks on the device, and **Gemini in the cloud** takes the heavy ones or steps in
 whenever the device can't.
@@ -135,7 +135,7 @@ No account or API key is needed.
 
 ```
 index.html, styles.css, script.js   the FlipCards app (vanilla JS)
-data/standards/                     PMBOK 8 glossary dataset, 9 languages
+data/standards/                     204 PMBOK 8 terms, original definitions, 9 languages
 src/flip-ai.js                      hybrid engine: Firebase AI Logic, App Check, Remote Config
 src/coach.js                        coach sheet and Hybrid AI profile panel
 src/coach-strings.js                interface copy (en, es)
@@ -168,6 +168,8 @@ optional server endpoint that asked OpenAI for definitions of custom cards.
 - Model text is cleaned to plain text before it reaches the UI, and the grading prompt asks for
   covered and missing ideas taken from the reference definition, with feedback addressed to
   the learner.
+- All 204 definitions rewritten in our own words, in English and Spanish, and machine-translated
+  again into the other seven languages, so the dataset carries no text from the PMBOK® Guide.
 
 ## Privacy
 
@@ -180,10 +182,10 @@ ads or analytics. Full policy: [privacy.html](privacy.html).
 
 The code is licensed under the Apache License 2.0. See [LICENSE](LICENSE) and [NOTICE](NOTICE).
 
-The glossary terms and definitions in `data/standards/` follow the PMBOK® Guide 8th Edition
-glossary, © Project Management Institute, Inc. They are included for personal study, are
-credited in the app as the card source, and are **not** covered by this project's Apache 2.0
-license.
+The 204 terms in `data/standards/` are the terms of the PMBOK® Guide 8th Edition glossary. The
+definitions are original: they were written for FlipCards in English and Spanish and
+machine-translated into the other seven languages. They are not PMI's text and are covered by
+the Apache 2.0 license like the rest of the project.
 
 FlipCards is not affiliated with, endorsed by or sponsored by the Project Management
 Institute (PMI). PMBOK® is a registered mark of the Project Management Institute, Inc.

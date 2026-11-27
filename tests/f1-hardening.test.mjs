@@ -367,7 +367,7 @@ test("standard catalog contains the captured PMBOK 8 glossary concepts", () => {
 	    "معايير القبول"
 	  );
 	  assert.match(html, />PMBOK 8</);
-	  assert.match(html, /data\/standards\/bundle\.js\?v=file-standards-nine-languages-2-2026-05-29[\s\S]*script\.js\?v=hybrid-ai-2026-11-26/);
+	  assert.match(html, /data\/standards\/bundle\.js\?v=original-definitions-2026-11-27[\s\S]*script\.js\?v=hybrid-ai-2026-11-26/);
 	  assert.match(bundle, /window\.FLIPCARDS_STANDARDS_BUNDLE = /);
 	  assert.match(bundle, /"path":"data\/standards\/pmbok-8\.json"/);
 	  assert.match(bundle, /"translationsPath":"data\/standards\/pmbok-8\.translations\.json"/);

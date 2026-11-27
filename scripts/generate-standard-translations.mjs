@@ -14,6 +14,8 @@ const targets = [
   { appLanguage: "ar", translateLanguage: "ar" }
 ];
 const chunkSize = 18;
+// --definitions-only re-translates the definitions and keeps the localized terms already in the output file.
+const definitionsOnly = process.argv.includes("--definitions-only");
 const termOverrides = {
   agile: { hi: "एजाइल" },
   artifact: { hi: "आर्टिफैक्ट", zh: "工件" },
@@ -115,28 +117,41 @@ const translateTexts = async (texts, targetLanguage) => {
 };
 
 const standard = JSON.parse(await readFile(fromRoot(sourcePath), "utf8"));
+const existing = definitionsOnly
+  ? JSON.parse(await readFile(fromRoot(outputPath), "utf8"))
+  : null;
 const concepts = {};
 
 for (const concept of standard.concepts) {
+  const localizedTerms = definitionsOnly ? { ...(existing.concepts[concept.id]?.localizedTerms ?? {}) } : {};
+
+  if (definitionsOnly && targets.some((target) => !localizedTerms[target.appLanguage])) {
+    throw new Error(`Missing localized terms for ${concept.id}; run without --definitions-only`);
+  }
+
   concepts[concept.id] = {
-    localizedTerms: {},
+    localizedTerms,
     definitions: {}
   };
 }
 
 for (const target of targets) {
-  const termTranslations = await translateTexts(
-    standard.concepts.map((concept) => concept.term),
-    target.translateLanguage
-  );
+  const termTranslations = definitionsOnly
+    ? null
+    : await translateTexts(
+      standard.concepts.map((concept) => concept.term),
+      target.translateLanguage
+    );
   const definitionTranslations = await translateTexts(
     standard.concepts.map((concept) => concept.definitions.en),
     target.translateLanguage
   );
 
   standard.concepts.forEach((concept, index) => {
-    concepts[concept.id].localizedTerms[target.appLanguage] =
-      termOverrides[concept.id]?.[target.appLanguage] || termTranslations[index];
+    if (!definitionsOnly) {
+      concepts[concept.id].localizedTerms[target.appLanguage] =
+        termOverrides[concept.id]?.[target.appLanguage] || termTranslations[index];
+    }
     concepts[concept.id].definitions[target.appLanguage] = definitionTranslations[index];
   });
 }
