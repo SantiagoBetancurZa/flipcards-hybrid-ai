@@ -1,0 +1,1844 @@
+{
+  "id": "pmbok-8",
+  "name": "PMBOK 8 Glossary",
+  "shortName": "PMBOK 8",
+  "sourceName": "PMBOK Guide 8th Edition Glossary",
+  "concepts": [
+    {
+      "id": "acceptance-criteria",
+      "term": "Acceptance Criteria",
+      "spanishTerm": "Criterios de aceptacion",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "accuracy",
+      "term": "Accuracy",
+      "spanishTerm": "Exactitud",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "actual-cost-ac",
+      "term": "Actual Cost (AC)",
+      "spanishTerm": "Costo real (AC)",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "adaptive-approach",
+      "term": "Adaptive Approach",
+      "spanishTerm": "Enfoque adaptativo",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "agile",
+      "term": "Agile",
+      "spanishTerm": "Agil",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "ambiguity",
+      "term": "Ambiguity",
+      "spanishTerm": "Ambiguedad",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "artifact",
+      "term": "Artifact",
+      "spanishTerm": "Artefacto",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "assumption",
+      "term": "Assumption",
+      "spanishTerm": "Supuesto",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "authority",
+      "term": "Authority",
+      "spanishTerm": "Autoridad",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "baseline",
+      "term": "Baseline",
+      "spanishTerm": "Linea base",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "benefit",
+      "term": "Benefit",
+      "spanishTerm": "Beneficio",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "bid-documents",
+      "term": "Bid Documents",
+      "spanishTerm": "Documentos de licitacion",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "bidder-conference",
+      "term": "Bidder Conference",
+      "spanishTerm": "Conferencia de oferentes",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "blocker",
+      "term": "Blocker",
+      "spanishTerm": "Bloqueador",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "budget",
+      "term": "Budget",
+      "spanishTerm": "Presupuesto",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "budget-at-completion-bac",
+      "term": "Budget at Completion (BAC)",
+      "spanishTerm": "Presupuesto hasta la conclusion (BAC)",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "burn-chart",
+      "term": "Burn Chart",
+      "spanishTerm": "Grafica burn chart",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "business-value",
+      "term": "Business Value",
+      "spanishTerm": "Valor de negocio",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "cadence",
+      "term": "Cadence",
+      "spanishTerm": "Cadencia",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "change",
+      "term": "Change",
+      "spanishTerm": "Cambio",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "change-control",
+      "term": "Change Control",
+      "spanishTerm": "Control de cambios",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "change-control-board-ccb",
+      "term": "Change Control Board (CCB)",
+      "spanishTerm": "Comite de control de cambios (CCB)",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "change-management",
+      "term": "Change Management",
+      "spanishTerm": "Gestion del cambio",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "closing-focus-area",
+      "term": "Closing Focus Area",
+      "spanishTerm": "Area de Enfoque de Cierre",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "complexity",
+      "term": "Complexity",
+      "spanishTerm": "Complejidad",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "confirmation-bias",
+      "term": "Confirmation Bias",
+      "spanishTerm": "Sesgo de confirmacion",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "conformance",
+      "term": "Conformance",
+      "spanishTerm": "Conformidad",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "constraint",
+      "term": "Constraint",
+      "spanishTerm": "Restriccion",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "contingency",
+      "term": "Contingency",
+      "spanishTerm": "Contingencia",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "contingency-reserve",
+      "term": "Contingency Reserve",
+      "spanishTerm": "Reserva para contingencias",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "continuous-delivery",
+      "term": "Continuous Delivery",
+      "spanishTerm": "Entrega continua",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "contract",
+      "term": "Contract",
+      "spanishTerm": "Contrato",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "control",
+      "term": "Control",
+      "spanishTerm": "Control",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "cost-performance-index-cpi",
+      "term": "Cost Performance Index (CPI)",
+      "spanishTerm": "Indice de desempeno del costo (CPI)",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "cost-variance-cv",
+      "term": "Cost Variance (CV)",
+      "spanishTerm": "Variacion del costo (CV)",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "cost-reimbursable-contract",
+      "term": "Cost-Reimbursable Contract",
+      "spanishTerm": "Contrato de costos reembolsables",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "crashing",
+      "term": "Crashing",
+      "spanishTerm": "Compresion por recursos",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "criteria",
+      "term": "Criteria",
+      "spanishTerm": "Criterios",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "critical-path",
+      "term": "Critical Path",
+      "spanishTerm": "Ruta critica",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "cumulative-flow-diagram",
+      "term": "Cumulative Flow Diagram",
+      "spanishTerm": "Diagrama de flujo acumulado",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "dashboard",
+      "term": "Dashboard",
+      "spanishTerm": "Tablero de control",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "definition-of-done-dod",
+      "term": "Definition of Done (DoD)",
+      "spanishTerm": "Definicion de terminado (DoD)",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "duration",
+      "term": "Duration",
+      "spanishTerm": "Duracion",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "earned-value-ev",
+      "term": "Earned Value (EV)",
+      "spanishTerm": "Valor ganado (EV)",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "effort",
+      "term": "Effort",
+      "spanishTerm": "Esfuerzo",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "epic",
+      "term": "Epic",
+      "spanishTerm": "Epica",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "estimate",
+      "term": "Estimate",
+      "spanishTerm": "Estimacion",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "estimate-at-completion-eac",
+      "term": "Estimate at Completion (EAC)",
+      "spanishTerm": "Estimacion a la conclusion (EAC)",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "estimate-to-complete-etc",
+      "term": "Estimate to Complete (ETC)",
+      "spanishTerm": "Estimacion hasta completar (ETC)",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "executing-focus-area",
+      "term": "Executing Focus Area",
+      "spanishTerm": "Area de Enfoque de Ejecucion",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "expected-monetary-value-emv",
+      "term": "Expected Monetary Value (EMV)",
+      "spanishTerm": "Valor monetario esperado (EMV)",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "explicit-knowledge",
+      "term": "Explicit Knowledge",
+      "spanishTerm": "Conocimiento explicito",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "external-dependencies",
+      "term": "External Dependencies",
+      "spanishTerm": "Dependencias externas",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "fast-tracking",
+      "term": "Fast Tracking",
+      "spanishTerm": "Ejecucion rapida",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "feature",
+      "term": "Feature",
+      "spanishTerm": "Funcionalidad",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "fixed-price-contract",
+      "term": "Fixed-Price Contract",
+      "spanishTerm": "Contrato de precio fijo",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "flow",
+      "term": "Flow",
+      "spanishTerm": "Flujo",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "forecast",
+      "term": "Forecast",
+      "spanishTerm": "Pronostico",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "function-point",
+      "term": "Function Point",
+      "spanishTerm": "Punto de funcion",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "gantt-chart",
+      "term": "Gantt Chart",
+      "spanishTerm": "Diagrama de Gantt",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "governance",
+      "term": "Governance",
+      "spanishTerm": "Gobernanza",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "histogram",
+      "term": "Histogram",
+      "spanishTerm": "Histograma",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "hybrid-approach",
+      "term": "Hybrid Approach",
+      "spanishTerm": "Enfoque hibrido",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "impediment",
+      "term": "Impediment",
+      "spanishTerm": "Impedimento",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "incremental-approach",
+      "term": "Incremental Approach",
+      "spanishTerm": "Enfoque incremental",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "initiating-focus-area",
+      "term": "Initiating Focus Area",
+      "spanishTerm": "Area de Enfoque de Inicio",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "internal-dependencies",
+      "term": "Internal Dependencies",
+      "spanishTerm": "Dependencias internas",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "issue",
+      "term": "Issue",
+      "spanishTerm": "Problema",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "iteration",
+      "term": "Iteration",
+      "spanishTerm": "Iteracion",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "iteration-plan",
+      "term": "Iteration Plan",
+      "spanishTerm": "Plan de iteracion",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "iteration-planning",
+      "term": "Iteration Planning",
+      "spanishTerm": "Planificacion de la iteracion",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "iteration-review",
+      "term": "Iteration Review",
+      "spanishTerm": "Revision de la iteracion",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "iterative-approach",
+      "term": "Iterative Approach",
+      "spanishTerm": "Enfoque iterativo",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "kanban-board",
+      "term": "Kanban Board",
+      "spanishTerm": "Tablero kanban",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "knowledge",
+      "term": "Knowledge",
+      "spanishTerm": "Conocimiento",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "lessons-learned",
+      "term": "Lessons Learned",
+      "spanishTerm": "Lecciones aprendidas",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "life-cycle",
+      "term": "Life Cycle",
+      "spanishTerm": "Ciclo de vida",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "log",
+      "term": "Log",
+      "spanishTerm": "Registro",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "management-reserve",
+      "term": "Management Reserve",
+      "spanishTerm": "Reserva de gestion",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "mandatory-dependency",
+      "term": "Mandatory Dependency",
+      "spanishTerm": "Dependencia obligatoria",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "method",
+      "term": "Method",
+      "spanishTerm": "Metodo",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "methodology",
+      "term": "Methodology",
+      "spanishTerm": "Metodologia",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "metric",
+      "term": "Metric",
+      "spanishTerm": "Metrica",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "milestone",
+      "term": "Milestone",
+      "spanishTerm": "Hito",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "milestone-schedule",
+      "term": "Milestone Schedule",
+      "spanishTerm": "Cronograma de hitos",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "minimum-viable-product-mvp",
+      "term": "Minimum Viable Product (MVP)",
+      "spanishTerm": "Producto minimo viable (MVP)",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "modeling",
+      "term": "Modeling",
+      "spanishTerm": "Modelado",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "monitoring",
+      "term": "Monitoring",
+      "spanishTerm": "Monitoreo",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "monitoring-and-controlling-focus-area",
+      "term": "Monitoring and Controlling Focus Area",
+      "spanishTerm": "Area de Enfoque de Monitoreo y Control",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "monte-carlo-analysis-simulation",
+      "term": "Monte Carlo Analysis/Simulation",
+      "spanishTerm": "Analisis/simulacion Monte Carlo",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "net-promoter-score",
+      "term": "Net Promoter Score",
+      "spanishTerm": "Net Promoter Score",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "network-path",
+      "term": "Network Path",
+      "spanishTerm": "Ruta de red",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "objective",
+      "term": "Objective",
+      "spanishTerm": "Objetivo",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "opportunity",
+      "term": "Opportunity",
+      "spanishTerm": "Oportunidad",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "organizational-breakdown-structure",
+      "term": "Organizational Breakdown Structure",
+      "spanishTerm": "Estructura de desglose organizacional",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "outcome",
+      "term": "Outcome",
+      "spanishTerm": "Outcome",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "performance-measurement",
+      "term": "Performance Measurement",
+      "spanishTerm": "Medicion del desempeno",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "phase-gate",
+      "term": "Phase Gate",
+      "spanishTerm": "Puerta de fase",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "plan",
+      "term": "Plan",
+      "spanishTerm": "Plan",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "planned-value-pv",
+      "term": "Planned Value (PV)",
+      "spanishTerm": "Valor planificado (PV)",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "planning-focus-area",
+      "term": "Planning Focus Area",
+      "spanishTerm": "Area de Enfoque de Planificacion",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "portfolio",
+      "term": "Portfolio",
+      "spanishTerm": "Portafolio",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "portfolio-management",
+      "term": "Portfolio Management",
+      "spanishTerm": "Gestion de portafolios",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "precision",
+      "term": "Precision",
+      "spanishTerm": "Precision",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "predictive-approach",
+      "term": "Predictive Approach",
+      "spanishTerm": "Enfoque predictivo",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "prioritization-matrix",
+      "term": "Prioritization Matrix",
+      "spanishTerm": "Matriz de priorizacion",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "product",
+      "term": "Product",
+      "spanishTerm": "Producto",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "product-life-cycle",
+      "term": "Product Life Cycle",
+      "spanishTerm": "Ciclo de vida del producto",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "product-management",
+      "term": "Product Management",
+      "spanishTerm": "Gestion de productos",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "product-owner",
+      "term": "Product Owner",
+      "spanishTerm": "Product owner",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "product-scope",
+      "term": "Product Scope",
+      "spanishTerm": "Alcance del producto",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "program",
+      "term": "Program",
+      "spanishTerm": "Programa",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "program-management",
+      "term": "Program Management",
+      "spanishTerm": "Gestion de programas",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "progressive-elaboration",
+      "term": "Progressive Elaboration",
+      "spanishTerm": "Elaboracion progresiva",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "project",
+      "term": "Project",
+      "spanishTerm": "Proyecto",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "project-calendar",
+      "term": "Project Calendar",
+      "spanishTerm": "Calendario del proyecto",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "project-governance",
+      "term": "Project Governance",
+      "spanishTerm": "Gobernanza del proyecto",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "project-lead",
+      "term": "Project Lead",
+      "spanishTerm": "Lider del proyecto",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "project-life-cycle",
+      "term": "Project Life Cycle",
+      "spanishTerm": "Ciclo de vida del proyecto",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "project-management",
+      "term": "Project Management",
+      "spanishTerm": "Gestion de proyectos",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "project-management-body-of-knowledge-pmbok",
+      "term": "Project Management Body of Knowledge (PMBOK)",
+      "spanishTerm": "Cuerpo de conocimientos de gestion de proyectos (PMBOK)",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "project-management-focus-areas",
+      "term": "Project Management Focus Areas",
+      "spanishTerm": "Areas de Enfoque de Gestion de Proyectos",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "project-management-office-pmo",
+      "term": "Project Management Office (PMO)",
+      "spanishTerm": "Oficina de gestion de proyectos (PMO)",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "project-management-team",
+      "term": "Project Management Team",
+      "spanishTerm": "Equipo de gestion del proyecto",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "project-manager",
+      "term": "Project Manager",
+      "spanishTerm": "Director del proyecto",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "project-phase",
+      "term": "Project Phase",
+      "spanishTerm": "Fase del proyecto",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "project-review",
+      "term": "Project Review",
+      "spanishTerm": "Revision del proyecto",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "project-scope",
+      "term": "Project Scope",
+      "spanishTerm": "Alcance del proyecto",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "project-sponsor",
+      "term": "Project Sponsor",
+      "spanishTerm": "Patrocinador del proyecto",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "project-success",
+      "term": "Project Success",
+      "spanishTerm": "Exito del proyecto",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "project-team",
+      "term": "Project Team",
+      "spanishTerm": "Equipo del proyecto",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "prototype",
+      "term": "Prototype",
+      "spanishTerm": "Prototipo",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "quality",
+      "term": "Quality",
+      "spanishTerm": "Calidad",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "register",
+      "term": "Register",
+      "spanishTerm": "Registro",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "regulations",
+      "term": "Regulations",
+      "spanishTerm": "Regulaciones",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "release",
+      "term": "Release",
+      "spanishTerm": "Liberacion",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "release-planning",
+      "term": "Release Planning",
+      "spanishTerm": "Planificacion de la liberacion",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "report",
+      "term": "Report",
+      "spanishTerm": "Informe",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "requirement",
+      "term": "Requirement",
+      "spanishTerm": "Requisito",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "reserve",
+      "term": "Reserve",
+      "spanishTerm": "Reserva",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "responsibility",
+      "term": "Responsibility",
+      "spanishTerm": "Responsabilidad",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "result",
+      "term": "Result",
+      "spanishTerm": "Resultado",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "rework",
+      "term": "Rework",
+      "spanishTerm": "Retrabajo",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "risk",
+      "term": "Risk",
+      "spanishTerm": "Riesgo",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "risk-acceptance",
+      "term": "Risk Acceptance",
+      "spanishTerm": "Aceptacion del riesgo",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "risk-appetite",
+      "term": "Risk Appetite",
+      "spanishTerm": "Apetito al riesgo",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "risk-avoidance",
+      "term": "Risk Avoidance",
+      "spanishTerm": "Evitacion del riesgo",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "risk-breakdown-structure-rbs",
+      "term": "Risk Breakdown Structure (RBS)",
+      "spanishTerm": "Estructura de desglose de riesgos (RBS)",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "risk-enhancement",
+      "term": "Risk Enhancement",
+      "spanishTerm": "Mejora del riesgo",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "risk-escalation",
+      "term": "Risk Escalation",
+      "spanishTerm": "Escalamiento del riesgo",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "risk-exploiting",
+      "term": "Risk Exploiting",
+      "spanishTerm": "Explotacion del riesgo",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "risk-exposure",
+      "term": "Risk Exposure",
+      "spanishTerm": "Exposicion al riesgo",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "risk-mitigation",
+      "term": "Risk Mitigation",
+      "spanishTerm": "Mitigacion del riesgo",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "risk-review",
+      "term": "Risk Review",
+      "spanishTerm": "Revision del riesgo",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "risk-sharing",
+      "term": "Risk Sharing",
+      "spanishTerm": "Comparticion del riesgo",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "risk-threshold",
+      "term": "Risk Threshold",
+      "spanishTerm": "Umbral de riesgo",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "risk-transference",
+      "term": "Risk Transference",
+      "spanishTerm": "Transferencia del riesgo",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "roadmap",
+      "term": "Roadmap",
+      "spanishTerm": "Hoja de ruta",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "role",
+      "term": "Role",
+      "spanishTerm": "Rol",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "s-curve-diagram",
+      "term": "S-Curve Diagram",
+      "spanishTerm": "Diagrama de curva S",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "schedule-model",
+      "term": "Schedule Model",
+      "spanishTerm": "Modelo de cronograma",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "schedule-performance-index-spi",
+      "term": "Schedule Performance Index (SPI)",
+      "spanishTerm": "Indice de desempeno del cronograma (SPI)",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "schedule-variance-sv",
+      "term": "Schedule Variance (SV)",
+      "spanishTerm": "Variacion del cronograma (SV)",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "scope",
+      "term": "Scope",
+      "spanishTerm": "Alcance",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "scope-creep",
+      "term": "Scope Creep",
+      "spanishTerm": "Corrupcion del alcance",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "self-organizing-team",
+      "term": "Self-Organizing Team",
+      "spanishTerm": "Equipo autoorganizado",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "specification",
+      "term": "Specification",
+      "spanishTerm": "Especificacion",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "sponsor",
+      "term": "Sponsor",
+      "spanishTerm": "Patrocinador",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "sprint",
+      "term": "Sprint",
+      "spanishTerm": "Sprint",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "stakeholder",
+      "term": "Stakeholder",
+      "spanishTerm": "Interesado",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "standard",
+      "term": "Standard",
+      "spanishTerm": "Estandar",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "statement-of-work-sow",
+      "term": "Statement of Work (SOW)",
+      "spanishTerm": "Enunciado del trabajo (SOW)",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "status-meeting",
+      "term": "Status Meeting",
+      "spanishTerm": "Reunion de estado",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "steering-committee",
+      "term": "Steering Committee",
+      "spanishTerm": "Comite directivo",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "story-point",
+      "term": "Story Point",
+      "spanishTerm": "Punto de historia",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "strategic-plan",
+      "term": "Strategic Plan",
+      "spanishTerm": "Plan estrategico",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "swarm",
+      "term": "Swarm",
+      "spanishTerm": "Swarm",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "tacit-knowledge",
+      "term": "Tacit Knowledge",
+      "spanishTerm": "Conocimiento tacito",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "tailoring",
+      "term": "Tailoring",
+      "spanishTerm": "Adaptacion",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "task-board",
+      "term": "Task Board",
+      "spanishTerm": "Tablero de tareas",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "technical-performance-measures",
+      "term": "Technical Performance Measures",
+      "spanishTerm": "Medidas de desempeno tecnico",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "template",
+      "term": "Template",
+      "spanishTerm": "Plantilla",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "threat",
+      "term": "Threat",
+      "spanishTerm": "Amenaza",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "threshold",
+      "term": "Threshold",
+      "spanishTerm": "Umbral",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "throughput",
+      "term": "Throughput",
+      "spanishTerm": "Rendimiento",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "time-and-materials-t-and-m-contract",
+      "term": "Time and Materials (T&M) Contract",
+      "spanishTerm": "Contrato por tiempo y materiales (T&M)",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "timebox",
+      "term": "Timebox",
+      "spanishTerm": "Timebox",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "tolerance",
+      "term": "Tolerance",
+      "spanishTerm": "Tolerancia",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "triple-bottom-line",
+      "term": "Triple Bottom Line",
+      "spanishTerm": "Triple resultado",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "uncertainty",
+      "term": "Uncertainty",
+      "spanishTerm": "Incertidumbre",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "use-case",
+      "term": "Use Case",
+      "spanishTerm": "Caso de uso",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "validation",
+      "term": "Validation",
+      "spanishTerm": "Validacion",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "value",
+      "term": "Value",
+      "spanishTerm": "Valor",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "value-delivery-system",
+      "term": "Value Delivery System",
+      "spanishTerm": "Sistema de entrega de valor",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "value-proposition",
+      "term": "Value Proposition",
+      "spanishTerm": "Propuesta de valor",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "vanity-metric",
+      "term": "Vanity Metric",
+      "spanishTerm": "Metrica de vanidad",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "variance",
+      "term": "Variance",
+      "spanishTerm": "Variacion",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "variance-at-completion-vac",
+      "term": "Variance at Completion (VAC)",
+      "spanishTerm": "Variacion a la conclusion (VAC)",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "verification",
+      "term": "Verification",
+      "spanishTerm": "Verificacion",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "vision-statement",
+      "term": "Vision Statement",
+      "spanishTerm": "Declaracion de vision",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "volatility",
+      "term": "Volatility",
+      "spanishTerm": "Volatilidad",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "waste",
+      "term": "Waste",
+      "spanishTerm": "Desperdicio",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "wideband-delphi",
+      "term": "Wideband Delphi",
+      "spanishTerm": "Delphi de banda ancha",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    },
+    {
+      "id": "work-package",
+      "term": "Work Package",
+      "spanishTerm": "Paquete de trabajo",
+      "definitions": {
+        "es": "[Eliminada del historial del repositorio. La versión actual tiene una definición original.]",
+        "en": "[Removed from the repository history. The current version has an original definition.]"
+      }
+    }
+  ]
+}

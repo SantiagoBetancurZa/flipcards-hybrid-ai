@@ -1,0 +1,18 @@
+server.py
+check points/
+__pycache__/
+*.pyc
+.claude/
+tests/
+*.log
+*.tmp
+.DS_Store
+.env
+.env.*
+.netlify/
+android-twa/
+play-store/
+dist/
+node_modules/
+npm-debug.log*
+yarn-error.log*

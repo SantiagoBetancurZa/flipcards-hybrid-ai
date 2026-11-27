@@ -1,0 +1,31 @@
+.vercel
+.netlify
+.env
+.env.*
+!.env.example
+__pycache__/
+*.pyc
+.claude/
+dist/
+*.log
+*.tmp
+
+# Editor/OS cruft and runaway data snapshots (e.g. data/standards/*.backup-*)
+.DS_Store
+**/.DS_Store
+*.backup
+*.backup-*
+**/*.backup
+**/*.backup-*
+
+# Android local/build artifacts
+android-twa/.gradle/
+android-twa/**/build/
+android-twa/local.properties
+android-twa/signing.properties
+android-twa/*.keystore
+android-twa/**/*.keystore
+android-twa/*.apk
+android-twa/**/*.apk
+android-twa/*.aab
+android-twa/**/*.aab

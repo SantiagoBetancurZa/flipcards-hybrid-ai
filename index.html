@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="es" class="notranslate" translate="no">
+  <head>
+    <meta charset="utf-8">
+    <meta name="google" content="notranslate">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="FlipCards">
+    <title>FlipCards</title>
+    <link rel="icon" type="image/png" href="icon-512.png?v=appicon-2026-05-28">
+    <link rel="apple-touch-icon" href="icon-192.png?v=appicon-2026-05-28">
+    <link rel="manifest" href="manifest.json?v=appicon-2026-05-28">
+    <link rel="stylesheet" href="styles.css?v=free-screen-drag-2026-05-29">
+  </head>
+  <body>
+    <div class="top-actions">
+      <button class="app-back-button" type="button" data-app-back aria-label="Volver" hidden>
+        <svg aria-hidden="true" viewBox="0 0 24 24">
+          <path d="M15 5 8 12l7 7"/>
+        </svg>
+      </button>
+      <div class="study-toolbar" data-study-toolbar aria-label="Acciones de estudio">
+        <p class="study-feedback" data-study-feedback role="status" aria-live="polite"></p>
+      </div>
+      <nav class="bottom-nav" aria-label="Navegación principal">
+        <button class="nav-button is-active" type="button" data-view="home" aria-label="Inicio" title="Inicio" aria-current="page">
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path d="M4.5 10.5 12 4l7.5 6.5v8a1.5 1.5 0 0 1-1.5 1.5h-4.25v-5.5h-3.5V20H6a1.5 1.5 0 0 1-1.5-1.5v-8Z"/>
+          </svg>
+          <span class="nav-button__label" data-nav-home-label>Inicio</span>
+        </button>
+        <button class="nav-button" type="button" data-view="library" aria-label="Biblioteca" title="Biblioteca">
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path d="M5.5 4.5h10.25A2.75 2.75 0 0 1 18.5 7.25V20H8.25A2.75 2.75 0 0 1 5.5 17.25V4.5Z"/>
+            <path d="M5.5 4.5A2.75 2.75 0 0 1 8.25 1.75H18.5V17.5H8.25A2.75 2.75 0 0 0 5.5 20"/>
+          </svg>
+          <span class="nav-button__label" data-nav-library-label>Biblioteca</span>
+        </button>
+        <button class="nav-button" type="button" data-view="profile" aria-label="Perfil" title="Perfil">
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/>
+            <path d="M4.75 20c.85-4.05 3.25-6 7.25-6s6.4 1.95 7.25 6"/>
+          </svg>
+          <span class="nav-button__label" data-nav-profile-label>Perfil</span>
+        </button>
+        <button class="language-menu-trigger" type="button" data-language-menu-trigger aria-label="Cambiar idioma" title="Cambiar idioma" aria-haspopup="dialog" aria-expanded="false" aria-controls="languagePicker">
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path d="M4 5.5h9"/>
+            <path d="M8.5 3.5v2"/>
+            <path d="M11.5 5.5c-.9 3.7-3.35 6.45-6.5 8"/>
+            <path d="M5.5 8.25c1.2 2.15 3.05 3.75 5.5 4.8"/>
+            <path d="m14 20 3.75-9 3.75 9"/>
+            <path d="M15.25 17h5"/>
+          </svg>
+          <span class="language-menu-trigger__current" data-language-menu-current>ES</span>
+        </button>
+        <div class="language-switch" role="group" aria-label="Idioma de estudio">
+          <button type="button" data-language-option="es" aria-pressed="true">ES</button>
+          <button type="button" data-language-option="en" aria-pressed="false">EN</button>
+          <button type="button" data-language-option="hi" aria-pressed="false">HI</button>
+          <button type="button" data-language-option="zh" aria-pressed="false">ZH</button>
+          <button type="button" data-language-option="fr" aria-pressed="false">FR</button>
+          <button type="button" data-language-option="de" aria-pressed="false">DE</button>
+          <button type="button" data-language-option="ja" aria-pressed="false">JA</button>
+          <button type="button" data-language-option="ko" aria-pressed="false">KO</button>
+          <button type="button" data-language-option="ar" aria-pressed="false">AR</button>
+        </div>
+      </nav>
+    </div>
+
+    <div class="language-modal" data-language-modal hidden>
+      <div class="language-modal__backdrop" data-language-modal-close aria-hidden="true"></div>
+      <section class="language-modal__panel" id="languagePicker" role="dialog" aria-modal="true" aria-labelledby="languagePickerTitle">
+        <div class="language-modal__header">
+          <h2 id="languagePickerTitle" data-language-modal-title>Elige idioma</h2>
+          <button class="language-modal__close" type="button" data-language-modal-close aria-label="Cerrar selector de idioma">
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <path d="m6 6 12 12"/>
+              <path d="m18 6-12 12"/>
+            </svg>
+          </button>
+        </div>
+        <div class="language-modal__options" role="group" aria-label="Idioma de estudio">
+          <button type="button" data-language-dialog-option="es" aria-pressed="true">
+            <span data-language-dialog-label>Español</span>
+            <strong data-language-dialog-short>ES</strong>
+          </button>
+          <button type="button" data-language-dialog-option="en" aria-pressed="false">
+            <span data-language-dialog-label>Inglés</span>
+            <strong data-language-dialog-short>EN</strong>
+          </button>
+          <button type="button" data-language-dialog-option="hi" aria-pressed="false">
+            <span data-language-dialog-label>Hindi</span>
+            <strong data-language-dialog-short>HI</strong>
+          </button>
+          <button type="button" data-language-dialog-option="zh" aria-pressed="false">
+            <span data-language-dialog-label>Chino</span>
+            <strong data-language-dialog-short>ZH</strong>
+          </button>
+          <button type="button" data-language-dialog-option="fr" aria-pressed="false">
+            <span data-language-dialog-label>Francés</span>
+            <strong data-language-dialog-short>FR</strong>
+          </button>
+          <button type="button" data-language-dialog-option="de" aria-pressed="false">
+            <span data-language-dialog-label>Alemán</span>
+            <strong data-language-dialog-short>DE</strong>
+          </button>
+          <button type="button" data-language-dialog-option="ja" aria-pressed="false">
+            <span data-language-dialog-label>Japonés</span>
+            <strong data-language-dialog-short>JA</strong>
+          </button>
+          <button type="button" data-language-dialog-option="ko" aria-pressed="false">
+            <span data-language-dialog-label>Coreano</span>
+            <strong data-language-dialog-short>KO</strong>
+          </button>
+          <button type="button" data-language-dialog-option="ar" aria-pressed="false">
+            <span data-language-dialog-label>Árabe</span>
+            <strong data-language-dialog-short>AR</strong>
+          </button>
+        </div>
+      </section>
+    </div>
+
+    <main class="app" aria-label="FlipCards">
+      <section class="home-view" aria-label="Inicio">
+        <div class="home-panel">
+          <section class="home-standard" aria-label="Fuente de tarjetas">
+            <button class="home-standard__button" type="button" data-home-action="choose-standard" aria-label="Elegir fuente de tarjetas" aria-expanded="false" aria-controls="homeSourceList">
+              <strong data-home-standard-title>Cargando…</strong>
+              <span class="home-standard__meta">
+                <span data-home-standard-ratio>0/0</span>
+                <svg class="home-standard__chevron" aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M6 8h12l-6 8Z"/>
+                </svg>
+              </span>
+            </button>
+            <ul id="homeSourceList" class="home-source-list" data-home-source-list aria-label="Fuentes de tarjetas" hidden></ul>
+          </section>
+
+          <div class="home-actions" aria-label="Acciones principales">
+            <button class="home-action" type="button" data-home-action="create">
+              <span>Crear tarjeta</span>
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M12 5v14"/>
+                <path d="M5 12h14"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <form class="creator" aria-label="Crear tarjeta" hidden>
+        <label class="field">
+          <span data-standard-field-label>Estándar</span>
+          <select id="standardSelect" name="standard">
+            <option value="">Manual</option>
+          </select>
+        </label>
+
+        <section class="standard-panel" aria-label="Conceptos del estándar" hidden>
+          <div class="standard-summary">
+            <span>
+              <strong data-standard-title></strong>
+              <small data-standard-count></small>
+            </span>
+            <span data-standard-progress-text></span>
+          </div>
+          <div class="standard-progress" role="progressbar" aria-label="Progreso del estándar" aria-valuemin="0" aria-valuemax="0" aria-valuenow="0">
+            <span data-standard-progress-bar></span>
+          </div>
+          <label class="field field--compact">
+            <span data-standard-search-label>Buscar</span>
+            <input id="standardSearch" type="search" autocomplete="off" placeholder="Buscar concepto">
+          </label>
+          <p class="standard-status" data-standard-status role="status" aria-live="polite"></p>
+          <ul class="standard-concepts" data-standard-concepts aria-label="Conceptos disponibles"></ul>
+        </section>
+
+        <div class="manual-creator">
+          <section class="custom-set-panel" data-custom-set-panel aria-label="Conjunto de tarjetas">
+            <label class="field field--compact">
+              <span data-custom-set-label>Conjunto</span>
+              <select id="customSetSelect" name="customSet">
+                <option value="">Sin conjunto</option>
+                <option value="__new__">Crear conjunto nuevo</option>
+              </select>
+            </label>
+            <label class="field field--compact custom-set-name-field" data-custom-set-name-field hidden>
+              <span data-custom-set-name-label>Nombre del conjunto</span>
+              <input id="customSetName" name="customSetName" type="text" autocomplete="off" placeholder="Ej. Certificación Scrum">
+            </label>
+            <p class="custom-set-help" data-custom-set-help>Guarda esta tarjeta en un conjunto para activar conteos y rachas.</p>
+          </section>
+
+          <label class="field">
+            <span data-concept-field-label>Concepto</span>
+            <input id="frontText" name="front" type="text" autocomplete="off" placeholder="Ej. Diseño minimalista">
+          </label>
+
+          <div class="definition-mode" role="radiogroup" aria-label="Modo de definición">
+            <label>
+              <input type="radio" name="definitionMode" value="manual" checked>
+              <span>Manual</span>
+            </label>
+            <label>
+              <input type="radio" name="definitionMode" value="ai">
+              <span>IA</span>
+            </label>
+          </div>
+
+          <label class="field">
+            <span data-definition-field-label>Definición</span>
+            <textarea id="backText" name="back" rows="5" placeholder="Escribe una definición breve"></textarea>
+          </label>
+          <p id="definitionError" class="form-error" data-definition-error role="alert" hidden></p>
+
+          <div class="ai-tools" hidden>
+            <button class="ai-button" type="button" disabled>Generar con IA</button>
+            <span class="ai-status" role="status" aria-live="polite"></span>
+          </div>
+
+          <button class="generate-button" type="submit" disabled>Crear tarjeta</button>
+        </div>
+      </form>
+
+      <section class="card-stage" aria-label="Tarjeta creada" hidden>
+        <h1 class="sr-only" data-study-heading>Estudiar tarjeta</h1>
+        <div class="standard-study-hud" data-standard-study-hud aria-label="Progreso del estándar" hidden>
+          <span class="standard-study-hud__pill standard-study-hud__pill--review" data-standard-review-count>0</span>
+          <span class="standard-study-hud__center">
+            <strong data-standard-session-ratio>0/0</strong>
+            <span class="standard-study-hud__track" data-standard-session-track role="progressbar" aria-label="Progreso del estándar" aria-valuemin="0" aria-valuemax="0" aria-valuenow="0">
+            </span>
+          </span>
+          <span class="standard-study-hud__pill standard-study-hud__pill--mastered" data-standard-mastered-count>0</span>
+        </div>
+        <div class="study-shell">
+          <div class="flip-card" aria-label="Tarjeta de estudio">
+            <span class="flip-card__next-card" data-next-card-preview aria-hidden="true">
+              <span class="flip-card__next-text" data-next-card-output></span>
+            </span>
+            <span class="swipe-choice swipe-choice--review" data-swipe-review-label aria-hidden="true">Repasar</span>
+            <span class="swipe-choice swipe-choice--known" data-swipe-known-label aria-hidden="true">Dominado</span>
+            <span class="flip-card__inner">
+              <button class="flip-card__face flip-card__face--front" type="button" aria-label="Ver definición" aria-expanded="false">
+                <span class="flip-card__text" data-front-output></span>
+              </button>
+              <span class="flip-card__face flip-card__face--back" aria-label="Completar definición" aria-hidden="true">
+                <span class="answer-card">
+                  <span id="slotInstruction" class="sr-only">Completa las palabras clave de la definición.</span>
+                  <span class="study-status" data-study-status role="status" aria-live="polite"></span>
+                  <span class="definition-preview" data-definition-preview></span>
+                  <button class="ready-button" type="button" data-ready-answer>
+                    <span class="ready-button__fill" aria-hidden="true" data-definition-timer></span>
+                    <span class="ready-button__label" data-ready-answer-label>Completar</span>
+                  </button>
+                  <span id="wordSlots" class="word-slots" data-word-slots></span>
+                  <span class="difficulty-tracker" data-difficulty-tracker role="img" aria-label="Dificultad"></span>
+                </span>
+              </span>
+              <span class="flip-card__decision" data-swipe-decision aria-hidden="true">
+                <span class="flip-card__decision-label" data-swipe-decision-label>Dominado</span>
+                <span class="flip-card__decision-concept" data-swipe-decision-concept></span>
+                <span class="flip-card__decision-hint" data-swipe-decision-hint>Izquierda para repasar · derecha para guardar</span>
+                <button class="sr-only" type="button" data-swipe-review-action disabled>Repasar con menos huecos</button>
+                <button class="sr-only" type="button" data-swipe-known-action disabled>Guardar y seguir</button>
+              </span>
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <section class="library-view" aria-label="Biblioteca" hidden>
+        <div class="profile-panel">
+          <h1 data-library-title>Tu biblioteca</h1>
+          <p class="profile-summary" data-library-summary>0 conceptos aprendidos</p>
+          <label class="field field--compact library-search-field" hidden>
+            <span data-library-search-label>Buscar</span>
+            <input id="librarySearch" type="search" autocomplete="off" placeholder="Buscar concepto guardado">
+          </label>
+          <div class="alphabet-index" aria-label="Índice alfabético"></div>
+          <p class="library-empty">Aún no hay conceptos guardados.</p>
+          <button class="profile-empty-action" type="button" data-library-start hidden>Empezar sesión corta</button>
+          <ul class="completed-list" aria-label="Conceptos completados"></ul>
+        </div>
+      </section>
+
+      <section class="profile-view" aria-label="Perfil" hidden>
+        <div class="profile-panel">
+          <h1 data-profile-title>Perfil</h1>
+          <div class="profile-identity" data-profile-identity aria-label="Perfil del estudiante">
+            <span class="profile-avatar" aria-hidden="true">
+              <svg viewBox="0 0 64 64" focusable="false">
+                <circle cx="32" cy="25" r="12"/>
+                <path d="M13 55c3.2-12 11-18 19-18s15.8 6 19 18"/>
+              </svg>
+            </span>
+            <strong data-profile-name>Estudiante FlipCards</strong>
+            <p class="profile-summary" data-profile-summary>0/3 para recordar hoy</p>
+          </div>
+          <div class="profile-metrics" data-profile-metrics aria-label="Resumen del perfil">
+            <span class="profile-metric">
+              <small data-profile-today-label>Hoy</small>
+              <strong data-profile-today-value>0/3</strong>
+            </span>
+            <span class="profile-metric">
+              <small data-profile-library-label>Biblioteca</small>
+              <strong data-profile-library-value>0</strong>
+            </span>
+            <span class="profile-metric">
+              <small data-profile-standard-label>PMBOK 8</small>
+              <strong data-profile-standard-value>0/0</strong>
+            </span>
+          </div>
+          <div class="profile-preferences" data-profile-preferences aria-label="Preferencias">
+            <button class="theme-toggle" type="button" role="switch" aria-checked="false" data-theme-toggle>
+              <span class="theme-toggle__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false">
+                  <path d="M20 14.4A7.6 7.6 0 0 1 9.6 4 8.2 8.2 0 1 0 20 14.4Z"/>
+                </svg>
+              </span>
+              <span class="theme-toggle__copy">
+                <small data-theme-toggle-label>Modo oscuro</small>
+                <strong data-theme-toggle-value>Desactivado</strong>
+              </span>
+              <span class="theme-toggle__switch" aria-hidden="true"></span>
+            </button>
+            <button class="memory-reset" type="button" data-reset-memory aria-label="Reiniciar memoria">
+              <span class="memory-reset__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false">
+                  <path d="M3 3v6h6"/>
+                  <path d="M3.6 13A8.5 8.5 0 1 0 6 6.8L3 9"/>
+                </svg>
+              </span>
+              <span class="memory-reset__copy">
+                <strong data-reset-memory-label>Reiniciar memoria</strong>
+              </span>
+            </button>
+          </div>
+          <section class="profile-achievements" data-profile-achievements aria-label="Logros">
+            <div class="profile-section-heading">
+              <strong data-profile-achievements-title>Logros</strong>
+              <span data-profile-calendar-meta>Semana actual</span>
+            </div>
+            <div class="profile-calendar-card">
+              <strong class="profile-calendar-title" data-profile-calendar-title>1 semana</strong>
+              <span class="profile-calendar-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 56" focusable="false">
+                  <path class="profile-calendar-icon__flame" d="M25.2 1.8c5.7 7.1 4.4 12.1 2.9 16.1 4-2.1 6.9-5.3 8.4-9.3 6.4 6.4 9.7 13.7 9.7 22 0 14.8-9.6 24.9-22.3 24.9S1.8 45.7 1.8 31.5c0-10.6 6-19.1 17.2-27.5-.6 7.2 1 12.1 4.9 15.5 3.4-4.7 5-10.8 1.3-17.7Z"/>
+                  <rect class="profile-calendar-icon__page" x="13.5" y="23" width="21" height="22" rx="3"/>
+                  <path class="profile-calendar-icon__top" d="M13.5 31h21"/>
+                  <path class="profile-calendar-icon__ring" d="M19 20v7M29 20v7"/>
+                  <text x="24" y="40" text-anchor="middle" data-profile-calendar-badge>1</text>
+                </svg>
+              </span>
+              <p data-profile-calendar-copy>Empieza tu racha semanal.</p>
+              <div class="profile-week" data-profile-week aria-label="Calendario semanal"></div>
+            </div>
+          </section>
+          <button class="profile-empty-action" type="button" data-profile-start>Empezar sesión corta</button>
+          <a class="privacy-link" href="privacy.html" data-privacy-link>Privacidad</a>
+        </div>
+      </section>
+
+    </main>
+
+    <script src="data/standards/bundle.js?v=file-standards-nine-languages-2-2026-05-29"></script>
+    <script src="script.js?v=free-screen-drag-2026-05-29"></script>
+  </body>
+</html>

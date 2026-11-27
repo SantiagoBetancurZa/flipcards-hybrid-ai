@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "app.flipcards.mobile",
+      "sha256_cert_fingerprints": [
+        "ED:B3:3F:9E:FE:7F:65:53:41:76:1C:E0:D7:9D:D4:3D:65:93:5A:D7:93:AF:6A:EC:04:DB:7C:03:90:21:AC:1F",
+        "97:AE:09:57:47:41:E4:1B:71:1B:DF:44:37:08:0F:77:DB:53:B0:84:84:F0:9E:8D:44:C5:C0:41:4F:EE:66:64"
+      ]
+    }
+  }
+]
