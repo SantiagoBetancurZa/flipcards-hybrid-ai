@@ -1,0 +1,15 @@
+FlipCards Hybrid AI
+Copyright 2026 Santiago Betancur
+
+The source code is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+The glossary terms and definitions in data/standards/ follow the PMBOK Guide
+8th Edition glossary, (c) Project Management Institute, Inc. They are not
+covered by the Apache License.
+
+PMBOK is a registered mark of the Project Management Institute, Inc.
+This project is not affiliated with, endorsed by or sponsored by PMI.
+
+Third-party assets:
+- audio/: Kenney UI Audio, CC0 1.0 (see audio/README.md)
+- assets/flags/: flag-icons 7.5.0, MIT (see assets/flags/flag-icons-LICENSE.txt)

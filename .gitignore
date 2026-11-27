@@ -29,3 +29,9 @@ android-twa/*.apk
 android-twa/**/*.apk
 android-twa/*.aab
 android-twa/**/*.aab
+
+# Local Firebase project config
+firebase-config.js
+ai.bundle.js
+ai.bundle.js.map
+node_modules/

@@ -1,191 +1,51 @@
-# AGENTS.md - FlipCards
+# AGENTS.md - FlipCards Hybrid AI
 
-Este archivo orienta a cualquier agente que trabaje en esta copia local de FlipCards.
+Notes for coding agents working in this repository.
 
-## Estado de esta copia
+## What this is
 
-- Carpeta: `/Users/mac/Documents/App01.1 Flipcards`
-- Origen: copia funcional de `/Users/mac/Documents/App01. FlipCards`
-- Checkpoint de referencia: `check points/30-android-vercel-release/`
-- Version Android actual: `1.0.5` con `versionCode 6`
-- APK instalable actual: `play-store/release/flipcards-1.0.5-6-sideload.apk`
-- Netlify produccion: `https://flipcards-mobile-android-preview.netlify.app`
-- Vercel produccion web: `https://flipcards-mobile.vercel.app`
-- Deploy publicado en Vercel: `dpl_7oSA677NtE3xhPueaNBxAMA5Tmts`
-- Ultimo deploy publicado en Netlify antes del bloqueo: `6a1a3a8fa550af56615860ad`
-- Netlify bloqueado por `usage_exceeded` / `Forbidden`; usar Vercel para testers web y Android `1.0.5` mientras se resuelve.
+FlipCards is a vanilla-JS flashcard PWA (no framework) for the PMBOK® Guide 8 glossary in
+nine languages. The hybrid AI coach lives in `src/` and is bundled with esbuild into
+`ai.bundle.js`, which loads as an ES module after the classic `script.js`.
 
-## Arquitectura
+- `index.html`, `styles.css`, `script.js`: the app (state, study flow, cards, profile).
+- `data/standards/`: the PMBOK 8 dataset. Regenerate `bundle.js` with `npm run build:standards`
+  whenever a JSON file changes, so the app still loads from `file://`.
+- `src/flip-ai.js`: `window.FlipAI`, the hybrid engine (Firebase AI Logic, App Check,
+  Remote Config, routing, fallback, ledger).
+- `src/coach.js`: the coach sheet and the Hybrid AI profile panel.
+- `src/coach-strings.js`: interface copy (English and Spanish; other languages fall back to English).
+- `scripts/build-dist.mjs`: copies the app into `dist/` and writes `dist/firebase-config.js`.
 
-FlipCards es una app web vanilla. No usa React, Vite, Next ni bundler principal.
+`script.js` talks to the coach only through `window.FlipCardsBridge` and the
+`flipcards:card`, `flipcards:study` and `flipcards:language` events. Keep it that way.
 
-Archivos principales:
-
-- `index.html`: estructura de la app.
-- `styles.css`: estilos completos, tema claro/oscuro, tarjetas, perfil y estudio.
-- `script.js`: estado, navegacion, estudio, tarjetas, progreso y UI.
-- `data/standards/pmbok-8.json`: catalogo PMBOK 8 local.
-- `data/standards/bundle.js`: bundle JS usado para que el estandar cargue tambien en `file://`.
-- `api/definition.js`: endpoint compartido para definiciones con IA.
-- `netlify/functions/definition.js`: adaptador Netlify del endpoint anterior.
-- `vercel.json`: configuracion Vercel para publicar `dist/` y servir `/api/definition`.
-- `scripts/build-netlify.mjs`: copia la app a `dist/` para Netlify/Vercel.
-- `android-twa/`: proyecto Android Trusted Web Activity.
-- `play-store/release/`: APK/AAB y manifiesto de release.
-
-Persistencia:
-
-- La app usa `localStorage` para progreso, biblioteca, estandar activo, sets manuales, tema y memoria de estudio.
-- No hay base de datos ni login.
-
-## Comandos de verificacion
-
-Desde la raiz de esta carpeta:
+## Commands
 
 ```sh
-node --check script.js
-npm test
-npm run build
+npm install
+npm run build:ai   # bundle src/ into ai.bundle.js
+npm test           # node --test tests/*.test.mjs
+npm run build      # standards bundle + AI bundle + dist/
+npm run dev        # http://127.0.0.1:4173
 ```
 
-Para correr local:
+Do not deploy if `npm test` or `npm run build` fails.
 
-```sh
-npm run dev
-```
+## Secrets
 
-El servidor local sirve en:
+- `firebase-config.js` is git-ignored. It may hold a local App Check debug token. Never commit
+  it, print it or paste it into docs, issues or the submission.
+- `scripts/build-dist.mjs` always removes `appCheckDebugToken` from the generated config.
+- Production builds read the Firebase web config from environment variables
+  (`FIREBASE_API_KEY`, `FIREBASE_AUTH_DOMAIN`, `FIREBASE_PROJECT_ID`, `FIREBASE_STORAGE_BUCKET`,
+  `FIREBASE_MESSAGING_SENDER_ID`, `FIREBASE_APP_ID`, `RECAPTCHA_ENTERPRISE_SITE_KEY`).
+- A test scans every tracked file for Google API keys, OpenAI-style keys and debug tokens.
 
-```text
-http://127.0.0.1:4173/index.html
-```
+## Editing rules
 
-Tambien se puede abrir `index.html` con `file://`; el PMBOK 8 debe cargar por `data/standards/bundle.js`. Algunas capacidades como manifest/API pueden tener restricciones normales en `file://`.
-
-## Netlify
-
-Configuracion:
-
-- `netlify.toml`
-- Publish directory: `dist`
-- Build command: `npm run build`
-- Function route: `/api/definition`
-- Site vinculado en `.netlify/state.json`
-
-Deploy:
-
-```sh
-npx netlify status
-npx netlify deploy --prod --dir dist --functions netlify/functions
-```
-
-No publiques si `npm test` o `npm run build` fallan.
-
-## Vercel
-
-Configuracion:
-
-- `vercel.json`
-- Project: `flipcards-mobile`
-- Production URL: `https://flipcards-mobile.vercel.app`
-- Build command: `npm run build`
-- Output directory: `dist`
-- Function route: `/api/definition`
-- La variable `OPENAI_API_KEY` esta configurada en Production.
-
-Deploy:
-
-```sh
-npx vercel pull --yes --environment production
-npx vercel build --prod --yes
-npx vercel deploy --prebuilt --prod --yes
-```
-
-No publiques si `node --check script.js`, `npm test` o `npm run build` fallan.
-El APK/TWA `1.0.5` apunta a Vercel. Los APK anteriores `1.0.4` siguen abriendo
-Netlify.
-
-## Android TWA
-
-El contenedor Android apunta a:
-
-```text
-https://flipcards-mobile.vercel.app
-```
-
-Archivos versionados que deben mantenerse sincronizados al subir version:
-
-- `android-twa/twa-manifest.json`
-- `android-twa/app/build.gradle`
-- `android-twa/RELEASE_CHECKLIST.md`
-- `play-store/release/MANIFEST.md`
-
-Build Android en esta Mac:
-
-```sh
-cd android-twa
-JAVA_HOME="/Applications/Android Studio.app/Contents/jbr/Contents/Home" \
-ANDROID_HOME="$HOME/Library/Android/sdk" \
-./gradlew assembleRelease bundleRelease
-```
-
-Salidas principales:
-
-- APK: `android-twa/app/build/outputs/apk/release/app-release.apk`
-- AAB: `android-twa/app/build/outputs/bundle/release/app-release.aab`
-
-Copias de release:
-
-- `play-store/release/flipcards-1.0.5-6-sideload.apk`
-- `play-store/release/flipcards-1.0.5-6-release.aab`
-- `play-store/release/flipcards-latest.apk`
-
-## Secretos y archivos sensibles
-
-Esta copia conserva archivos locales necesarios para firmar APK en esta maquina:
-
-- `android-twa/signing.properties`
-- `android-twa/android.keystore`
-
-Reglas:
-
-- No imprimas estos valores en chat.
-- No los subas a repositorios.
-- No los copies a documentacion publica.
-- `.gitignore` ya protege esas rutas, pero revisa antes de cualquier commit.
-
-Variables de entorno:
-
-- `OPENAI_API_KEY` se usa en Netlify/local backend para definiciones IA.
-- No es necesaria para estudiar PMBOK 8 ni para tarjetas manuales.
-
-## Reglas de edicion
-
-- Edita primero archivos fuente raiz (`index.html`, `styles.css`, `script.js`, `data/`, `api/`).
-- No edites `dist/` a mano; se regenera con `npm run build`.
-- Evita tocar APK/AAB antiguos salvo que estes haciendo release.
-- Si cambias PMBOK 8 o `data/standards/*.json`, actualiza/regenera `data/standards/bundle.js` para que `file://` siga funcionando.
-- Si cambias UI importante, verifica mobile y desktop cuando sea posible.
-- Si cambias gestos/tarjeta, revisa que click, pointer, swipe y estado flipped no se bloqueen entre si.
-- Si cambias Android, sube `versionCode` antes de entregar APK a celular.
-
-## Checkpoints
-
-La convencion del proyecto esta en `check points/`.
-
-Un checkpoint util debe tener:
-
-- Un HTML descriptivo en `check points/<numero-nombre>.html`.
-- Una carpeta `check points/<numero-nombre>/`.
-- Un `README.md`.
-- Una carpeta `source/` con copia restaurable, evitando caches y secretos.
-
-Checkpoint actual:
-
-```text
-check points/18-post-parallel-audit/
-```
-
-## Nota para agentes futuros
-
-Esta carpeta es la nueva linea de trabajo. No modifiques `/Users/mac/Documents/App01. FlipCards` salvo que el usuario lo pida expresamente.
+- AI output is untrusted text: insert it with `textContent`, never `innerHTML`.
+- The same JSON schema must drive `responseConstraint` (on-device) and `responseSchema` (cloud).
+- On-device prompts ignore `systemInstruction`; put the system prompt in `initialPrompts`.
+- The service worker is disabled on localhost so edits show up; add `?sw` to test it.
+- Check mobile and desktop widths after UI changes.

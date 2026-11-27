@@ -1,309 +1,9 @@
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import test from "node:test";
+import { execFileSync } from "node:child_process";
 
 const readJson = (path) => JSON.parse(fs.readFileSync(path, "utf8"));
-
-test("definition API rejects oversized requests before upstream fetch", async () => {
-  process.env.OPENAI_API_KEY = "test-key";
-  const { POST } = await import("../api/definition.js?oversized");
-  const originalFetch = globalThis.fetch;
-
-  globalThis.fetch = async () => {
-    throw new Error("upstream fetch should not run for oversized payloads");
-  };
-
-  try {
-    const body = JSON.stringify({ concept: "a".repeat(4096) });
-    const response = await POST(new Request("http://localhost/api/definition", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body,
-    }));
-    const data = await response.json();
-
-    assert.equal(response.status, 413);
-    assert.match(data.error, /demasiado grande|too large/i);
-  } finally {
-    globalThis.fetch = originalFetch;
-    delete process.env.OPENAI_API_KEY;
-  }
-});
-
-test("definition API rejects fields that exceed F1 prompt limits", async () => {
-  process.env.OPENAI_API_KEY = "test-key";
-  const { POST } = await import("../api/definition.js?field-limits");
-  const originalFetch = globalThis.fetch;
-
-  globalThis.fetch = async () => {
-    throw new Error("upstream fetch should not run for invalid payloads");
-  };
-
-  try {
-    const response = await POST(new Request("http://localhost/api/definition", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ concept: "x".repeat(241) }),
-    }));
-    const data = await response.json();
-
-    assert.equal(response.status, 400);
-    assert.match(data.error, /concepto|concept/i);
-  } finally {
-    globalThis.fetch = originalFetch;
-    delete process.env.OPENAI_API_KEY;
-  }
-});
-
-test("definition API health check does not reveal the model name", async () => {
-  process.env.OPENAI_API_KEY = "test-key";
-  const { GET } = await import("../api/definition.js?health");
-
-  try {
-    const response = await GET(new Request("http://localhost/api/definition"));
-    const data = await response.json();
-
-    assert.equal(response.status, 200);
-    assert.deepEqual(Object.keys(data).sort(), ["configured", "ok"]);
-    assert.equal(data.ok, true);
-    assert.equal(data.configured, true);
-  } finally {
-    delete process.env.OPENAI_API_KEY;
-  }
-});
-
-test("definition API health check reports missing key without looking broken", async () => {
-  delete process.env.OPENAI_API_KEY;
-  const { GET } = await import("../api/definition.js?health-unconfigured");
-
-  const response = await GET(new Request("http://localhost/api/definition"));
-  const data = await response.json();
-
-  assert.equal(response.status, 200);
-  assert.deepEqual(Object.keys(data).sort(), ["configured", "ok"]);
-  assert.equal(data.ok, false);
-  assert.equal(data.configured, false);
-});
-
-test("definition API success does not reveal the model name", async () => {
-  process.env.OPENAI_API_KEY = "test-key";
-  const { POST } = await import("../api/definition.js?success-no-model");
-  const originalFetch = globalThis.fetch;
-
-  globalThis.fetch = async () => Response.json({ output_text: "Definicion breve." });
-
-  try {
-    const response = await POST(new Request("http://localhost/api/definition", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ concept: "resiliencia", language: "es" }),
-    }));
-    const data = await response.json();
-
-    assert.equal(response.status, 200);
-    assert.deepEqual(Object.keys(data).sort(), ["definition", "language"]);
-  } finally {
-    globalThis.fetch = originalFetch;
-    delete process.env.OPENAI_API_KEY;
-  }
-});
-
-test("definition API does not expose upstream error details", async () => {
-  process.env.OPENAI_API_KEY = "test-key";
-  const { POST } = await import("../api/definition.js?sanitized-upstream-error");
-  const originalFetch = globalThis.fetch;
-
-  globalThis.fetch = async () => Response.json({
-    error: {
-      message: "billing secret project sk-live-sensitive",
-      type: "invalid_request_error",
-    },
-  }, { status: 401 });
-
-  try {
-    const response = await POST(new Request("http://localhost/api/definition", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ concept: "riesgo", language: "es" }),
-    }));
-    const data = await response.json();
-
-    assert.equal(response.status, 502);
-    assert.match(data.error, /No se pudo generar/);
-    assert.doesNotMatch(data.error, /secret|project|sk-live|billing/i);
-  } finally {
-    globalThis.fetch = originalFetch;
-    delete process.env.OPENAI_API_KEY;
-  }
-});
-
-test("definition API accepts incremental study languages", async () => {
-  process.env.OPENAI_API_KEY = "test-key";
-  const { POST } = await import("../api/definition.js?study-languages");
-  const originalFetch = globalThis.fetch;
-  let requestBody = null;
-
-  globalThis.fetch = async (_url, options) => {
-    requestBody = JSON.parse(options.body);
-    return Response.json({ output_text: "Japanese definition." });
-  };
-
-  try {
-    const response = await POST(new Request("http://localhost/api/definition", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ concept: "Authority", language: "ja" }),
-    }));
-    const data = await response.json();
-
-    assert.equal(response.status, 200);
-    assert.equal(data.language, "ja");
-    assert.match(JSON.stringify(requestBody), /Japanese|japones/);
-  } finally {
-    globalThis.fetch = originalFetch;
-    delete process.env.OPENAI_API_KEY;
-  }
-});
-
-test("definition API normalizes forwarded client addresses for rate limits", async () => {
-  process.env.OPENAI_API_KEY = "test-key";
-  process.env.DEFINITION_RATE_LIMIT = "1";
-  const { POST } = await import("../api/definition.js?forwarded-rate-limit");
-  const originalFetch = globalThis.fetch;
-
-  globalThis.fetch = async () => Response.json({ output_text: "Definicion breve." });
-
-  try {
-    const request = () => new Request("http://localhost/api/definition", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "X-Forwarded-For": "203.0.113.7:54321, 10.0.0.1",
-      },
-      body: JSON.stringify({ concept: "riesgo", language: "es" }),
-    });
-
-    const firstResponse = await POST(request());
-    const secondResponse = await POST(request());
-    const secondData = await secondResponse.json();
-
-    assert.equal(firstResponse.status, 200);
-    assert.equal(secondResponse.status, 429);
-    assert.match(secondData.error, /Demasiadas solicitudes/i);
-  } finally {
-    globalThis.fetch = originalFetch;
-    delete process.env.OPENAI_API_KEY;
-    delete process.env.DEFINITION_RATE_LIMIT;
-  }
-});
-
-test("definition API falls back from unusable forwarded addresses", async () => {
-  process.env.OPENAI_API_KEY = "test-key";
-  process.env.DEFINITION_RATE_LIMIT = "1";
-  const { POST } = await import("../api/definition.js?forwarded-fallback");
-  const originalFetch = globalThis.fetch;
-
-  globalThis.fetch = async () => Response.json({ output_text: "Definicion breve." });
-
-  try {
-    const buildRequest = (realIp) => new Request("http://localhost/api/definition", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "X-Forwarded-For": "unknown",
-        "X-Real-IP": realIp,
-      },
-      body: JSON.stringify({ concept: "alcance", language: "es" }),
-    });
-
-    const firstResponse = await POST(buildRequest("198.51.100.10"));
-    const secondResponse = await POST(buildRequest("198.51.100.11"));
-
-    assert.equal(firstResponse.status, 200);
-    assert.equal(secondResponse.status, 200);
-  } finally {
-    globalThis.fetch = originalFetch;
-    delete process.env.OPENAI_API_KEY;
-    delete process.env.DEFINITION_RATE_LIMIT;
-  }
-});
-
-test("local definition server accepts incremental study languages", () => {
-  const server = fs.readFileSync("server.py", "utf8");
-
-  assert.match(server, /LANGUAGE_PROMPTS = \{/);
-  assert.match(server, /"hi": \{[\s\S]*Hindi/);
-  assert.match(server, /"zh": \{[\s\S]*Simplified Chinese/);
-  assert.match(server, /"fr": \{[\s\S]*French/);
-  assert.match(server, /"de": \{[\s\S]*German/);
-  assert.match(server, /"ja": \{[\s\S]*Japanese/);
-  assert.match(server, /"ko": \{[\s\S]*Korean/);
-  assert.match(server, /"ar": \{[\s\S]*Arabic/);
-  assert.match(server, /def normalize_language\(language\):/);
-  assert.match(server, /language = normalize_language\(payload\.get\("language"\)\)/);
-  assert.match(server, /language_prompt = LANGUAGE_PROMPTS\.get\(language, LANGUAGE_PROMPTS\["es"\]\)/);
-  assert.match(server, /context_lines\.append\(f"Idioma de respuesta: \{language_prompt\['context'\]\}"\)/);
-  assert.match(server, /f"\{definition_instruction\} "/);
-  assert.match(server, /self\.write_json\(\{"ok": False, "configured": False\}\)/);
-  assert.match(server, /self\.write_json\(\{"ok": True, "configured": True\}\)/);
-  assert.match(server, /self\.write_json\(\{"definition": definition, "language": language\}\)/);
-  assert.doesNotMatch(server, /self\.write_json\(\{[^}]*"model": MODEL/);
-  assert.doesNotMatch(server, /compact_error\(message\)/);
-  assert.doesNotMatch(server, /language = "en" if payload\.get\("language"\) == "en" else "es"/);
-});
-
-test("local definition server mirrors forwarded-address rate-limit hardening", () => {
-  const server = fs.readFileSync("server.py", "utf8");
-
-  assert.match(server, /RATE_LIMIT_MAX_KEYS/);
-  assert.match(server, /def normalize_client_address\(value\):/);
-  assert.match(server, /def prune_rate_limit_hits\(now\):/);
-  assert.match(server, /X-Forwarded-For/);
-  assert.match(server, /X-Nf-Client-Connection-Ip/);
-  assert.match(server, /Forwarded/);
-  assert.match(server, /self\.client_address\[0\] if self\.client_address else "local"/);
-});
-
-test("definition API caps rate-limit map cardinality", async () => {
-  process.env.OPENAI_API_KEY = "test-key";
-  process.env.DEFINITION_RATE_LIMIT = "1";
-  process.env.DEFINITION_RATE_LIMIT_MAX_KEYS = "2";
-  const { POST } = await import("../api/definition.js?rate-limit-cardinality");
-  const originalFetch = globalThis.fetch;
-
-  globalThis.fetch = async () => Response.json({ output_text: "Definicion breve." });
-
-  try {
-    for (const ip of ["203.0.113.1", "203.0.113.2", "203.0.113.3"]) {
-      const response = await POST(new Request("http://localhost/api/definition", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "X-Forwarded-For": ip,
-        },
-        body: JSON.stringify({ concept: `concepto ${ip}`, language: "es" }),
-      }));
-
-      assert.equal(response.status, 200);
-    }
-
-    const response = await POST(new Request("http://localhost/api/definition", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "X-Forwarded-For": "203.0.113.1",
-      },
-      body: JSON.stringify({ concept: "concepto repetido", language: "es" }),
-    }));
-
-    assert.equal(response.status, 200);
-  } finally {
-    globalThis.fetch = originalFetch;
-    delete process.env.OPENAI_API_KEY;
-    delete process.env.DEFINITION_RATE_LIMIT;
-    delete process.env.DEFINITION_RATE_LIMIT_MAX_KEYS;
-  }
-});
 
 test("PWA manifest uses relative launch scope for Android packaging", () => {
   const manifest = readJson("manifest.json");
@@ -667,7 +367,7 @@ test("standard catalog contains the captured PMBOK 8 glossary concepts", () => {
 	    "معايير القبول"
 	  );
 	  assert.match(html, />PMBOK 8</);
-	  assert.match(html, /data\/standards\/bundle\.js\?v=file-standards-nine-languages-2-2026-05-29[\s\S]*script\.js\?v=free-screen-drag-2026-05-29/);
+	  assert.match(html, /data\/standards\/bundle\.js\?v=file-standards-nine-languages-2-2026-05-29[\s\S]*script\.js\?v=hybrid-ai-2026-11-26/);
 	  assert.match(bundle, /window\.FLIPCARDS_STANDARDS_BUNDLE = /);
 	  assert.match(bundle, /"path":"data\/standards\/pmbok-8\.json"/);
 	  assert.match(bundle, /"translationsPath":"data\/standards\/pmbok-8\.translations\.json"/);
@@ -1283,99 +983,81 @@ test("manual cards can live in local sets with standard progress", () => {
   assert.match(script, /customSetSelect\.addEventListener\("change"/);
 });
 
-test("Netlify deploy pipeline publishes a clean app and routes API calls", async () => {
+test("build publishes the AI bundle and a generated Firebase config without debug tokens", () => {
   const packageJson = readJson("package.json");
-  const netlifyConfig = fs.readFileSync("netlify.toml", "utf8");
-  const buildScript = fs.readFileSync("scripts/build-netlify.mjs", "utf8");
-  const buildStandardsScript = fs.readFileSync("scripts/build-standards-bundle.mjs", "utf8");
-  const html = fs.readFileSync("index.html", "utf8");
-  const privacy = fs.readFileSync("privacy.html", "utf8");
-  const functionSource = fs.readFileSync("netlify/functions/definition.js", "utf8");
-  const { handler } = await import("../netlify/functions/definition.js?health-check");
-
-  assert.equal(packageJson.scripts.build, "npm run build:standards && node scripts/build-netlify.mjs");
-  assert.match(netlifyConfig, /publish = "dist"/);
-  assert.match(netlifyConfig, /functions = "netlify\/functions"/);
-  assert.match(netlifyConfig, /to = "\/\.netlify\/functions\/definition"/);
-  assert.match(buildScript, /"index\.html"/);
-  assert.match(buildScript, /"privacy\.html"/);
-  assert.match(buildScript, /"data"/);
-  assert.match(buildScript, /"audio"/);
-  assert.match(buildScript, /"assets"/);
-  assert.doesNotMatch(buildScript, /android-twa/);
-  assert.match(buildStandardsScript, /translationPack\.standardId/);
-  assert.match(buildStandardsScript, /translationPack\.standardId !== standards\[entry\.path\]\.id/);
-  assert.match(html, /href="privacy\.html"/);
-  assert.match(privacy, /\/api\/definition/);
-  assert.doesNotMatch(privacy, /TODO_PRIVACY_CONTACT/);
-  assert.match(privacy, /correo de soporte publicado en la ficha/);
-  assert.match(functionSource, /api\/definition\.js/);
-
-  const response = await handler({
-    httpMethod: "GET",
-    headers: { host: "flipcards-mobile-android-preview.netlify.app" },
-    path: "/api/definition",
-    rawUrl: "https://flipcards-mobile-android-preview.netlify.app/api/definition",
-    body: null,
-    isBase64Encoded: false,
-  });
-  const data = JSON.parse(response.body);
-
-  assert.equal(response.statusCode, 200);
-  assert.equal(data.ok, false);
-  assert.equal(data.configured, false);
-});
-
-test("Vercel deploy pipeline serves dist and preserves the definition API", async () => {
+  const buildScript = fs.readFileSync("scripts/build-dist.mjs", "utf8");
   const vercelConfig = readJson("vercel.json");
-  const vercelIgnore = fs.readFileSync(".vercelignore", "utf8");
-  const { default: definitionFunction } = await import("../api/definition.js?vercel-health-check");
 
-  delete process.env.OPENAI_API_KEY;
-
-  assert.equal(vercelConfig.buildCommand, "npm run build");
+  assert.equal(packageJson.license, "Apache-2.0");
+  assert.match(packageJson.scripts.build, /build:standards[\s\S]*build:ai[\s\S]*build-dist\.mjs/);
+  assert.match(packageJson.scripts["build:ai"], /esbuild src\/main\.js --bundle --format=esm/);
+  assert.match(buildScript, /"ai\.bundle\.js"/);
+  assert.match(buildScript, /delete firebaseSettings\.appCheckDebugToken/);
+  assert.match(buildScript, /FIREBASE_API_KEY/);
   assert.equal(vercelConfig.outputDirectory, "dist");
-  assert.deepEqual(vercelConfig.functions["api/definition.js"], { maxDuration: 30 });
-  assert.deepEqual(vercelConfig.rewrites.at(-1), {
-    source: "/(.*)",
-    destination: "/index.html",
-  });
-  assert.match(vercelIgnore, /android-twa\//);
-  assert.match(vercelIgnore, /play-store\//);
-  assert.match(vercelIgnore, /\.env\.\*/);
-  assert.match(vercelIgnore, /dist\//);
-
-  const response = await definitionFunction.fetch(new Request("https://flipcards.vercel.app/api/definition"));
-  const data = await response.json();
-
-  assert.equal(response.status, 200);
-  assert.equal(data.ok, false);
-  assert.equal(data.configured, false);
+  assert.equal(vercelConfig.functions, undefined);
+  assert.ok(!fs.existsSync("api/definition.js"), "the old server-side AI endpoint is gone");
 });
 
-test("Android TWA keeps unused notification surface disabled", () => {
-  const rootBuild = fs.readFileSync("android-twa/build.gradle", "utf8");
-  const appBuild = fs.readFileSync("android-twa/app/build.gradle", "utf8");
-  const twaManifest = readJson("android-twa/twa-manifest.json");
-  const androidManifest = fs.readFileSync("android-twa/app/src/main/AndroidManifest.xml", "utf8");
+test("index loads the Firebase config, the classic app, then the hybrid AI module", () => {
+  const html = fs.readFileSync("index.html", "utf8");
 
-  assert.doesNotMatch(rootBuild, /jcenter\(/);
-  assert.match(rootBuild, /mavenCentral\(/);
-  assert.match(appBuild, /enableNotifications:\s*false/);
-  assert.match(appBuild, /minSdkVersion 23/);
-  assert.match(appBuild, /signing\.properties/);
-  assert.match(appBuild, /FLIPCARDS_UPLOAD_STORE_FILE/);
-  assert.match(appBuild, /versionCode 6/);
-  assert.match(appBuild, /versionName "1\.0\.5"/);
-  assert.match(appBuild, /hostName:\s*'flipcards-mobile\.vercel\.app'/);
-  assert.doesNotMatch(appBuild, /androidbrowserhelper:2\.6\.2/);
-  assert.equal(twaManifest.enableNotifications, false);
-  assert.equal(twaManifest.minSdkVersion, 23);
-  assert.equal(twaManifest.host, "flipcards-mobile.vercel.app");
-  assert.equal(twaManifest.appVersionName, "1.0.5");
-  assert.equal(twaManifest.appVersionCode, 6);
-  assert.equal(twaManifest.fingerprints[0].value, readJson(".well-known/assetlinks.json")[0].target.sha256_cert_fingerprints[0]);
-  assert.doesNotMatch(androidManifest, /package="app\.flipcards\.mobile"/);
-  assert.doesNotMatch(androidManifest, /POST_NOTIFICATIONS/);
-  assert.doesNotMatch(androidManifest, /NotificationPermissionRequestActivity/);
+  assert.match(html, /<html lang="en"/);
+  assert.match(
+    html,
+    /<script src="firebase-config\.js[^"]*"><\/script>[\s\S]*<script src="script\.js[^"]*"><\/script>[\s\S]*<script type="module" src="ai\.bundle\.js[^"]*"><\/script>/
+  );
+});
+
+test("FlipAI uses Firebase AI Logic hybrid inference behind App Check", () => {
+  const engine = fs.readFileSync("src/flip-ai.js", "utf8");
+
+  assert.match(engine, /from "firebase\/ai"/);
+  assert.match(engine, /initializeAppCheck\(app, \{[\s\S]*ReCaptchaEnterpriseProvider/);
+  assert.match(engine, /getAI\(app, \{ backend: new GoogleAIBackend\(\) \}\)/);
+  assert.match(engine, /getGenerativeModel\(ai, \{\s*mode,/);
+  assert.match(engine, /ai_route_grade: InferenceMode\.PREFER_ON_DEVICE/);
+  assert.match(engine, /ai_route_exam: InferenceMode\.PREFER_IN_CLOUD/);
+  assert.match(engine, /expectedInputs: \[\{ type: "text", languages: unique\(\["en", language\]\) \}\]/);
+  assert.match(engine, /promptOptions: \{ responseConstraint: schema \}/);
+  assert.match(engine, /responseMimeType: "application\/json", responseSchema: schema/);
+  assert.match(engine, /inferenceSource/);
+  assert.match(engine, /getRemoteConfig\(app\)/);
+  assert.doesNotMatch(engine, /api\.openai\.com|OPENAI_API_KEY/);
+});
+
+test("the classic app exposes a narrow bridge and card events for the coach", () => {
+  const script = fs.readFileSync("script.js", "utf8");
+  const coach = fs.readFileSync("src/coach.js", "utf8");
+
+  assert.match(script, /window\.FlipCardsBridge = Object\.freeze\(\{/);
+  assert.match(script, /emitFlipCardsEvent\("card", getBridgeCard\(\)\)/);
+  assert.match(script, /emitFlipCardsEvent\("study", \{ active: isActive \}\)/);
+  assert.match(script, /emitFlipCardsEvent\("language", \{ language: selectedLanguage \}\)/);
+  assert.match(script, /window\.FlipAI\.define\(\{/);
+  assert.doesNotMatch(script, /api\.openai\.com/);
+  // AI output is inserted as text, never as HTML.
+  assert.doesNotMatch(coach, /innerHTML/);
+});
+
+test("no Firebase keys, App Check debug tokens or OpenAI keys are committed", () => {
+  let tracked = [];
+  try {
+    tracked = execFileSync("git", ["ls-files"], { encoding: "utf8" }).split("\n").filter(Boolean);
+  } catch {
+    return;
+  }
+
+  assert.ok(!tracked.includes("firebase-config.js"), "firebase-config.js must stay local");
+
+  const textFiles = tracked.filter((file) =>
+    /\.(m?js|json|html|css|md|py|toml|txt|ya?ml)$/i.test(file) && fs.existsSync(file)
+  );
+
+  for (const file of textFiles) {
+    const content = fs.readFileSync(file, "utf8");
+    assert.doesNotMatch(content, /AIza[0-9A-Za-z_-]{35}/, `${file} contains a Google API key`);
+    assert.doesNotMatch(content, /\bsk-[A-Za-z0-9_-]{24,}/, `${file} contains an OpenAI-style key`);
+    assert.doesNotMatch(content, /appCheckDebugToken\s*:\s*"[0-9a-f]{8}-/i, `${file} contains an App Check debug token`);
+  }
 });

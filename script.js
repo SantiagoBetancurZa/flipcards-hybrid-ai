@@ -2058,7 +2058,15 @@ const applyAiBackendAvailability = () => {
   updateButtonState();
 };
 
+let lastDefinitionSource = "";
+
 const detectAiBackend = async () => {
+  if (window.FlipAI?.isConfigured?.()) {
+    aiBackendAvailable = true;
+    applyAiBackendAvailability();
+    return;
+  }
+
   try {
     const response = await fetch(`${apiBaseUrl}/api/definition`, {
       method: "GET",
@@ -2238,8 +2246,19 @@ const normalizeLanguage = (language) =>
 const getLanguageMetadata = (language = selectedLanguage) =>
   languageMetadata[normalizeLanguage(language)] ?? languageMetadata.es;
 
+// First visit: follow the browser language when FlipCards supports it,
+// otherwise start in English.
+const getBrowserLanguage = () => {
+  const candidates = [...(navigator.languages || []), navigator.language].filter(Boolean);
+  const match = candidates
+    .map((candidate) => String(candidate).toLowerCase().slice(0, 2))
+    .find((code) => supportedLanguages.includes(code));
+
+  return match || "en";
+};
+
 const loadLanguage = () =>
-  normalizeLanguage(parseStoredJson(languageStorageKey, "es"));
+  normalizeLanguage(parseStoredJson(languageStorageKey, getBrowserLanguage()));
 
 const saveLanguage = (language) => {
   writeStoredJson(languageStorageKey, normalizeLanguage(language));
@@ -3838,6 +3857,25 @@ const requestDefinition = async (concept, standard = "", options = {}) => {
     concept,
     language: normalizeLanguage(options.language ?? selectedLanguage)
   };
+
+  // #BuildHybridAI: custom-card definitions come from Firebase AI Logic
+  // (Gemini Nano on the device first, Gemini in the cloud as fallback).
+  if (window.FlipAI?.isConfigured?.()) {
+    const result = await window.FlipAI.define({
+      concept,
+      standard,
+      alternateTerm: options.alternateTerm,
+      language: payload.language
+    });
+    const definition = String(result?.data ?? "").trim();
+
+    if (!definition) {
+      throw new Error(t("aiEmptyDefinition"));
+    }
+
+    lastDefinitionSource = result.source;
+    return definition;
+  }
   const controller = new AbortController();
   const timeout = window.setTimeout(() => {
     controller.abort();
@@ -6142,6 +6180,7 @@ const loadCard = (concept, definition, meta = {}) => {
   resetPageScroll();
   frontFaceButton.focus({ preventScroll: true });
   updateAppBackControl();
+  emitFlipCardsEvent("card", getBridgeCard());
 };
 
 const rememberCompletedConcept = () => {
@@ -6741,6 +6780,7 @@ const setLanguage = (language) => {
   refreshCurrentView();
   updateButtonState();
   closeLanguageModal();
+  emitFlipCardsEvent("language", { language: selectedLanguage });
 };
 
 const setActiveNav = (view) => {
@@ -6888,6 +6928,7 @@ const setBottomNavVisible = (isVisible) => {
 
 const setStudyChromeActive = (isActive) => {
   document.body.classList.toggle("is-study-mode", isActive);
+  emitFlipCardsEvent("study", { active: isActive });
 
   if (!isActive) {
     standardStudyHud.hidden = true;
@@ -7218,7 +7259,9 @@ aiButton.addEventListener("click", async () => {
 
     backInput.value = generatedDefinition;
     setDefinitionError("");
-    aiStatus.textContent = t("aiDefinitionReady");
+    aiStatus.textContent = lastDefinitionSource
+      ? `${t("aiDefinitionReady")} · ${lastDefinitionSource === "on_device" ? "Gemini Nano (on-device)" : "Gemini (cloud)"}`
+      : t("aiDefinitionReady");
   } catch (error) {
     aiStatus.textContent = getFriendlyDefinitionError(error);
   } finally {
@@ -7432,6 +7475,73 @@ swipeKnownAction.addEventListener("click", () => {
   commitSwipeDecision("known");
 });
 
+// ---------------------------------------------------------------------------
+// Bridge for the hybrid AI coach (src/coach.js, bundled into ai.bundle.js).
+// The coach only reads the current card and asks the app to record a
+// decision; the study loop above does not depend on it.
+// ---------------------------------------------------------------------------
+function getBridgeCard() {
+  if (stage.hidden || !definitionText) {
+    return null;
+  }
+
+  return {
+    term: currentConceptPrimaryTerm || currentConceptTerm,
+    englishTerm: currentConceptTerm,
+    secondaryTerm: currentConceptSecondaryTerm,
+    definition: definitionText,
+    language: currentDefinitionLanguage,
+    standardId: currentStandardId,
+    conceptId: currentStandardConceptId,
+    standardName: currentStandardId ? getStandardDisplayName(currentStandardId, "") : ""
+  };
+}
+
+function emitFlipCardsEvent(name, detail = {}) {
+  try {
+    window.dispatchEvent(new CustomEvent(`flipcards:${name}`, { detail }));
+  } catch {
+    // Events are best effort; the app works without listeners.
+  }
+}
+
+window.FlipCardsBridge = Object.freeze({
+  getLanguage: () => selectedLanguage,
+  getCard: () => getBridgeCard(),
+  canDecide: () => canSwipeCurrentCard(),
+  getConcepts: () => {
+    const standard = getStandardById(currentStandardId);
+    const concepts = Array.isArray(standard?.concepts) ? standard.concepts : [];
+
+    return concepts
+      .map((concept) => ({
+        id: concept.id,
+        englishTerm: concept.term,
+        term: getConceptDisplay(concept, selectedLanguage).primaryTerm,
+        definition: getConceptDefinition(concept, selectedLanguage)
+      }))
+      .filter((concept) => concept.term && concept.definition);
+  },
+  markKnown: async () => {
+    if (!canSwipeCurrentCard()) {
+      return false;
+    }
+    await completeConceptFromSwipe();
+    return true;
+  },
+  markReview: async () => {
+    if (!canSwipeCurrentCard()) {
+      return false;
+    }
+    await markConceptForReviewFromSwipe();
+    return true;
+  }
+});
+
+window.addEventListener("flipai:ready", () => {
+  detectAiBackend();
+});
+
 applyLanguageCopy();
 renderHome();
 showHome();
@@ -7440,8 +7550,18 @@ loadStandards();
 detectAiBackend();
 
 // Register the offline service worker on secure origins only (skipped on file://).
+// Local development skips it (add ?sw to test offline) so edits are never
+// hidden behind a stale cache.
+const isLocalDevelopmentHost = ["localhost", "127.0.0.1", "[::1]"].includes(location.hostname);
+
 if ("serviceWorker" in navigator && location.protocol.startsWith("http")) {
-  window.addEventListener("load", () => {
-    navigator.serviceWorker.register("sw.js").catch(() => {});
-  });
+  if (isLocalDevelopmentHost && !new URLSearchParams(location.search).has("sw")) {
+    navigator.serviceWorker.getRegistrations()
+      .then((registrations) => registrations.forEach((registration) => registration.unregister()))
+      .catch(() => {});
+  } else {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker.register("sw.js").catch(() => {});
+    });
+  }
 }

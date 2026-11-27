@@ -7,12 +7,13 @@
  *  - Work offline after the first online visit: same-origin GETs are cached
  *    with a stale-while-revalidate strategy keyed on the full URL (so the
  *    existing ?v= cache-busting keeps working).
- *  - Stay out of the way of the AI backend: /api/* is always network-only.
+ *  - Stay out of the way of AI traffic: Firebase AI Logic, App Check and
+ *    reCAPTCHA are cross-origin and never touched; /api/* stays network-only.
  *
  * Bump CACHE_VERSION whenever the offline contract changes; activate() purges
  * every older cache so devices self-heal on the next launch.
  */
-const CACHE_VERSION = "flipcards-v2";
+const CACHE_VERSION = "flipcards-hybrid-v1";
 const OFFLINE_FALLBACK = "index.html";
 const PRECACHE_URLS = ["index.html"];
 

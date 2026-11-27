@@ -1,12 +1,21 @@
 {
-  "name": "flipcards-mobile",
-  "version": "0.1.0",
+  "name": "flipcards-hybrid-ai",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
   "scripts": {
     "build:standards": "node scripts/build-standards-bundle.mjs",
-    "build": "npm run build:standards && node scripts/build-netlify.mjs",
-    "dev": "python3 server.py",
+    "build:ai": "esbuild src/main.js --bundle --format=esm --minify --sourcemap --target=es2022 --legal-comments=none --outfile=ai.bundle.js",
+    "build": "npm run build:standards && npm run build:ai && node scripts/build-dist.mjs",
+    "dev": "npm run build:ai && python3 server.py",
     "test": "node --test tests/*.test.mjs"
-  }
+  },
+  "dependencies": {
+    "firebase": "^13.4.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2"
+  },
+  "description": "FlipCards: PMBOK flashcards with a hybrid AI study coach (Gemini Nano on-device + Gemini in the cloud via Firebase AI Logic).",
+  "license": "Apache-2.0"
 }
