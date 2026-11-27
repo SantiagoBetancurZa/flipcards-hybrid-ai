@@ -9,7 +9,7 @@ frequent tasks on the device, and **Gemini in the cloud** takes the heavy ones o
 whenever the device can't.
 
 - Live app: https://flipcards-hybrid-ai.vercel.app
-- Demo video: _added at submission_
+- Demo video: https://youtu.be/nApfoLk8fIk
 - Platform: Web (desktop Chrome with built-in AI for on-device inference; any modern browser for cloud mode)
 
 ## Why hybrid
