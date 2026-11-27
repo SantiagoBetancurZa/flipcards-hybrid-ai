@@ -145,8 +145,11 @@ tests/                              node:test suite, including a secret scan
 
 ## Built during #BuildHybridAI
 
-FlipCards existed before the hackathon. Commit `97b6af5` in this repository is the May 2026
-baseline, so every change since then is visible in the history.
+FlipCards existed before the hackathon. Commit `0c0fcda` in this repository is the May 2026
+baseline, so every change since then is visible in the history. On November 27, 2026 the
+history was rewritten to take the PMBOK® Guide glossary text out of the dataset: earlier
+commits keep the terms but show a placeholder instead of each definition, and commit
+`7424eeb` adds the original definitions.
 
 **Before (May 2026):** the flashcard app itself: study flow, swipe gestures, cloze practice,
 profile and streaks, custom cards and sets, the PMBOK 8 dataset in nine languages, and an
