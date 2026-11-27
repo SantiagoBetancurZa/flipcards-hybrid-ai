@@ -1,8 +1,8 @@
 # FlipCards Hybrid AI
 
-**A PMBOK® Guide study coach that thinks on your device first and calls the cloud only when it has to.**
+**A project management study coach that thinks on your device first and calls the cloud only when it has to.**
 
-FlipCards is a flashcard PWA for the 204 terms of the PMBOK® Guide 8 glossary, with original
+FlipCards is a flashcard PWA for 204 project management terms, with original
 definitions in nine languages. For **#BuildHybridAI 2026** it gained an AI study coach built on
 **Firebase AI Logic hybrid inference**: Chrome's built-in **Gemini Nano** handles the private,
 frequent tasks on the device, and **Gemini in the cloud** takes the heavy ones or steps in
@@ -33,7 +33,7 @@ Open any card while studying and tap **Coach**.
 | **Explain** | Type the term in your own words. You get a 0–100 recall score with what you covered, what you missed and any misconception. A passing score can mark the card as known. | device first |
 | **Hint** | A three-step ladder: a nudge and then the key words (both streamed from the model), then a first-letters cloze built locally with no AI at all. | device first |
 | **Hook** | A mnemonic, an analogy and a real-project example. | device first |
-| **Exam** | A PMP-style situational question with four shuffled options and an explanation. "Next question" avoids repeats. | cloud first |
+| **Exam** | A situational question set in a real project, with four shuffled options and an explanation. "Next question" avoids repeats. | cloud first |
 | **Compare** | Pick a commonly confused term and get a side-by-side table, a tell-apart tip and an example. | cloud first |
 
 Custom cards you create also get AI definitions through the same engine (device first).
@@ -135,7 +135,7 @@ No account or API key is needed.
 
 ```
 index.html, styles.css, script.js   the FlipCards app (vanilla JS)
-data/standards/                     204 PMBOK 8 terms, original definitions, 9 languages
+data/standards/                     204 project management terms, original definitions, 9 languages
 src/flip-ai.js                      hybrid engine: Firebase AI Logic, App Check, Remote Config
 src/coach.js                        coach sheet and Hybrid AI profile panel
 src/coach-strings.js                interface copy (en, es)
@@ -147,12 +147,12 @@ tests/                              node:test suite, including a secret scan
 
 FlipCards existed before the hackathon. Commit `0c0fcda` in this repository is the May 2026
 baseline, so every change since then is visible in the history. On November 27, 2026 the
-history was rewritten to take the PMBOK® Guide glossary text out of the dataset: earlier
+history was rewritten to take third-party glossary text out of the dataset: earlier
 commits keep the terms but show a placeholder instead of each definition, and commit
 `7424eeb` adds the original definitions.
 
 **Before (May 2026):** the flashcard app itself: study flow, swipe gestures, cloze practice,
-profile and streaks, custom cards and sets, the PMBOK 8 dataset in nine languages, and an
+profile and streaks, custom cards and sets, the 204-term glossary in nine languages, and an
 optional server endpoint that asked OpenAI for definitions of custom cards.
 
 **Built for the hackathon (November 2026):**
@@ -172,7 +172,7 @@ optional server endpoint that asked OpenAI for definitions of custom cards.
   covered and missing ideas taken from the reference definition, with feedback addressed to
   the learner.
 - All 204 definitions rewritten in our own words, in English and Spanish, and machine-translated
-  again into the other seven languages, so the dataset carries no text from the PMBOK® Guide.
+  again into the other seven languages, so the dataset carries no third-party text.
 
 ## Privacy
 
@@ -181,14 +181,10 @@ the device. Cloud tasks send the card term and definition, the text you typed fo
 and your study language to the Gemini API through Firebase AI Logic. There are no accounts,
 ads or analytics. Full policy: [privacy.html](privacy.html).
 
-## License and trademarks
+## License
 
 The code is licensed under the Apache License 2.0. See [LICENSE](LICENSE) and [NOTICE](NOTICE).
 
-The 204 terms in `data/standards/` are the terms of the PMBOK® Guide 8th Edition glossary. The
-definitions are original: they were written for FlipCards in English and Spanish and
-machine-translated into the other seven languages. They are not PMI's text and are covered by
-the Apache 2.0 license like the rest of the project.
-
-FlipCards is not affiliated with, endorsed by or sponsored by the Project Management
-Institute (PMI). PMBOK® is a registered mark of the Project Management Institute, Inc.
+The definitions of the 204 terms in `data/standards/` are original: they were written for
+FlipCards in English and Spanish and machine-translated into the other seven languages. They
+are covered by the Apache 2.0 license like the rest of the project.

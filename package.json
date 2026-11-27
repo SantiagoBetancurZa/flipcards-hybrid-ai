@@ -17,6 +17,6 @@
   "devDependencies": {
     "esbuild": "^0.28.2"
   },
-  "description": "FlipCards: PMBOK flashcards with a hybrid AI study coach (Gemini Nano on-device + Gemini in the cloud via Firebase AI Logic).",
+  "description": "FlipCards: project management flashcards with a hybrid AI study coach (Gemini Nano on-device + Gemini in the cloud via Firebase AI Logic).",
   "license": "Apache-2.0"
 }

@@ -1,9 +1,9 @@
 [
   {
     "id": "pmbok-8",
-    "name": "PMBOK 8 Glossary",
-    "shortName": "PMBOK 8",
-    "sourceName": "PMBOK Guide 8th Edition terms, with definitions written for FlipCards",
+    "name": "Project Management Glossary",
+    "shortName": "PM Glossary",
+    "sourceName": "Project management terms, with definitions written for FlipCards",
     "path": "data/standards/pmbok-8.json",
     "translationsPath": "data/standards/pmbok-8.translations.json"
   }

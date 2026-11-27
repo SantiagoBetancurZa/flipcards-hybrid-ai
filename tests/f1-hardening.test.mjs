@@ -104,7 +104,7 @@ test("first-run study copy guides cloze and profile empty states", () => {
   assert.match(styles, /\.profile-week__day\.is-today strong/);
 });
 
-test("standard catalog contains the captured PMBOK 8 glossary concepts", () => {
+test("standard catalog contains the 204 project management glossary concepts", () => {
 	const index = readJson("data/standards/index.json");
 	const pmbok = readJson("data/standards/pmbok-8.json");
 	const pmbokTranslations = readJson("data/standards/pmbok-8.translations.json");
@@ -233,7 +233,7 @@ test("standard catalog contains the captured PMBOK 8 glossary concepts", () => {
     "Project Lead",
     "Project Life Cycle",
     "Project Management",
-    "Project Management Body of Knowledge (PMBOK)",
+    "Project Management Body of Knowledge",
     "Project Management Focus Areas",
     "Project Management Office (PMO)",
     "Project Management Team",
@@ -322,7 +322,7 @@ test("standard catalog contains the captured PMBOK 8 glossary concepts", () => {
 	  assert.deepEqual(index.map(({ id }) => id), ["pmbok-8"]);
 	  assert.equal(index[0].path, "data/standards/pmbok-8.json");
 	  assert.equal(index[0].translationsPath, "data/standards/pmbok-8.translations.json");
-	  assert.equal(pmbok.shortName, "PMBOK 8");
+	  assert.equal(pmbok.shortName, "PM Glossary");
 	  assert.deepEqual(pmbok.concepts.map(({ term }) => term), expectedTerms);
 	  assert.equal(new Set(pmbok.concepts.map(({ id }) => id)).size, expectedTerms.length);
 	  assert.equal(new Set(pmbok.concepts.map(({ term }) => term)).size, expectedTerms.length);
@@ -366,7 +366,7 @@ test("standard catalog contains the captured PMBOK 8 glossary concepts", () => {
 	    pmbokTranslations.concepts["acceptance-criteria"].localizedTerms.ar,
 	    "معايير القبول"
 	  );
-	  assert.match(html, />PMBOK 8</);
+	  assert.match(html, />PM Glossary</);
 	  assert.match(html, /data\/standards\/bundle\.js\?v=original-definitions-2026-11-27[\s\S]*script\.js\?v=hybrid-ai-2026-11-26/);
 	  assert.match(bundle, /window\.FLIPCARDS_STANDARDS_BUNDLE = /);
 	  assert.match(bundle, /"path":"data\/standards\/pmbok-8\.json"/);

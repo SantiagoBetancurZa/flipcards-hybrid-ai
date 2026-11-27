@@ -1,8 +1,8 @@
 {
   "id": "pmbok-8",
-  "name": "PMBOK 8 Glossary",
-  "shortName": "PMBOK 8",
-  "sourceName": "PMBOK Guide 8th Edition terms, with definitions written for FlipCards",
+  "name": "Project Management Glossary",
+  "shortName": "PM Glossary",
+  "sourceName": "Project management terms, with definitions written for FlipCards",
   "concepts": [
     {
       "id": "acceptance-criteria",
@@ -1086,11 +1086,11 @@
     },
     {
       "id": "project-management-body-of-knowledge-pmbok",
-      "term": "Project Management Body of Knowledge (PMBOK)",
-      "spanishTerm": "Cuerpo de conocimientos de gestión de proyectos (PMBOK)",
+      "term": "Project Management Body of Knowledge",
+      "spanishTerm": "Cuerpo de conocimientos de gestión de proyectos",
       "definitions": {
-        "es": "El conjunto de conocimientos y prácticas aceptadas en la dirección de proyectos, que el PMI recoge en la Guía del PMBOK y en sus estándares relacionados.",
-        "en": "The sum of accepted knowledge and practice in project management, gathered by PMI in the PMBOK Guide and related standards."
+        "es": "El conjunto de conocimientos y prácticas aceptadas en la dirección de proyectos, tal como lo recogen los estándares y guías de la profesión.",
+        "en": "The sum of accepted knowledge and practice in project management, as collected in the profession's standards and guides."
       }
     },
     {
@@ -1098,8 +1098,8 @@
       "term": "Project Management Focus Areas",
       "spanishTerm": "Áreas de Enfoque de Gestión de Proyectos",
       "definitions": {
-        "es": "Las cinco agrupaciones que usa el PMBOK 8 para organizar el trabajo de gestión a lo largo de la vida de un proyecto: inicio, planificación, ejecución, monitoreo y control, y cierre.",
-        "en": "PMBOK 8's five ways of grouping the management work over a project's life: initiating, planning, executing, monitoring and controlling, and closing."
+        "es": "Las cinco agrupaciones que organizan el trabajo de gestión a lo largo de la vida de un proyecto: inicio, planificación, ejecución, monitoreo y control, y cierre.",
+        "en": "The five ways of grouping the management work over a project's life: initiating, planning, executing, monitoring and controlling, and closing."
       }
     },
     {
@@ -1539,8 +1539,8 @@
       "term": "Standard",
       "spanishTerm": "Estándar",
       "definitions": {
-        "es": "Una referencia publicada, como ISO 9001 o la Guía del PMBOK, que recoge buenas prácticas o características requeridas. Seguirla suele ser voluntario, salvo que un contrato o una ley lo exijan.",
-        "en": "A published benchmark, such as ISO 9001 or the PMBOK Guide, that sets out good practice or required characteristics. Following it is usually voluntary unless a contract or law requires it."
+        "es": "Una referencia publicada, como ISO 9001 o ISO 21502, que recoge buenas prácticas o características requeridas. Seguirla suele ser voluntario, salvo que un contrato o una ley lo exijan.",
+        "en": "A published benchmark, such as ISO 9001 or ISO 21502, that sets out good practice or required characteristics. Following it is usually voluntary unless a contract or law requires it."
       }
     },
     {

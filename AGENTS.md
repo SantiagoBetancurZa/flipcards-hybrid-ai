@@ -4,12 +4,13 @@ Notes for coding agents working in this repository.
 
 ## What this is
 
-FlipCards is a vanilla-JS flashcard PWA (no framework) for the PMBOK® Guide 8 glossary in
+FlipCards is a vanilla-JS flashcard PWA (no framework) for 204 project management terms in
 nine languages. The hybrid AI coach lives in `src/` and is bundled with esbuild into
 `ai.bundle.js`, which loads as an ES module after the classic `script.js`.
 
 - `index.html`, `styles.css`, `script.js`: the app (state, study flow, cards, profile).
-- `data/standards/`: the PMBOK 8 dataset. Regenerate `bundle.js` with `npm run build:standards`
+- `data/standards/`: the glossary dataset. Keep its file names and the standard id as they are:
+  saved progress is keyed by them. Regenerate `bundle.js` with `npm run build:standards`
   whenever a JSON file changes, so the app still loads from `file://`.
 - `src/flip-ai.js`: `window.FlipAI`, the hybrid engine (Firebase AI Logic, App Check,
   Remote Config, routing, fallback, ledger).

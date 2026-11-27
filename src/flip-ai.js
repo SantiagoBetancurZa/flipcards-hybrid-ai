@@ -123,7 +123,7 @@ const SYSTEM = {
   hint: "You are a study coach. You help a learner recall a definition without revealing it. Never quote the definition. Reply with plain text only, at most two short sentences, no markdown.",
   hook: "You are a memory coach. You create vivid, short memory aids for project-management terms. Reply only with the requested JSON.",
   define: "You write concise glossary definitions for flashcards: one or two sentences, 15 to 45 words, plain language, no lists, no markdown, no quotes.",
-  exam: "You write realistic PMP-style situational exam questions that test applying a concept, not memorizing it. Exactly 4 options and exactly one correct option. Reply only with the requested JSON.",
+  exam: "You write realistic situational project-management exam questions that test applying a concept, not memorizing it. Exactly 4 options and exactly one correct option. Reply only with the requested JSON.",
   compare: "You are a project-management tutor who explains the difference between two commonly confused terms, clearly and briefly. Reply only with the requested JSON."
 };
 
@@ -176,7 +176,7 @@ const PROMPTS = {
     `Definition: ${definition}`,
     avoid ? `Do not reuse this earlier scenario: ${avoid}` : "",
     "",
-    "Write one situational multiple-choice question, in the style of the PMP exam, that checks whether the learner can APPLY this concept in a realistic project.",
+    "Write one situational multiple-choice question, in the style of a project management certification exam, that checks whether the learner can APPLY this concept in a realistic project.",
     "The scenario has 2-3 sentences. Give exactly 4 plausible options; \"answer\" is the 0-based index of the only correct one.",
     `Write all text in ${languageName(language)}.`
   ].filter(Boolean).join("\n"),

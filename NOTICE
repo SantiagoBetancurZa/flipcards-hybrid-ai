@@ -3,13 +3,9 @@ Copyright 2026 Santiago Betancur
 
 The source code is licensed under the Apache License, Version 2.0 (see LICENSE).
 
-The terms in data/standards/ are the terms of the PMBOK Guide 8th Edition
-glossary. Their definitions are original to this project (written in English
-and Spanish, machine-translated into seven more languages), contain no text
-from the PMBOK Guide and are covered by the Apache License.
-
-PMBOK is a registered mark of the Project Management Institute, Inc.
-This project is not affiliated with, endorsed by or sponsored by PMI.
+The definitions of the project management terms in data/standards/ are
+original to this project (written in English and Spanish, machine-translated
+into seven more languages) and are covered by the Apache License.
 
 Third-party assets:
 - audio/: Kenney UI Audio, CC0 1.0 (see audio/README.md)

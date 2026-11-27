@@ -533,7 +533,7 @@ const overlap = (a, b) => {
   return shared / Math.sqrt(a.size * b.size);
 };
 
-// Pairs that PMP candidates mix up, by English glossary term. Picked locally,
+// Pairs that learners often mix up, by English glossary term. Picked locally,
 // with no AI call: a curated group first, then lexical similarity.
 const CONFUSABLE_GROUPS = [
   ["Accuracy", "Precision"],

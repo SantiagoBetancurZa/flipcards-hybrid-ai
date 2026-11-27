@@ -2404,22 +2404,22 @@
     },
     "project-management-body-of-knowledge-pmbok": {
       "localizedTerms": {
-        "hi": "प्रोजेक्ट मैनेजमेंट बॉडी ऑफ नॉलेज (पीएमबीओके)",
-        "zh": "项目管理知识体系 (PMBOK)",
-        "fr": "Corps de connaissances en gestion de projet (PMBOK)",
-        "de": "Projektmanagement-Wissensbestand (PMBOK)",
-        "ja": "プロジェクト管理知識体系 (PMBOK)",
-        "ko": "프로젝트 관리 지식 기관(PMBOK)",
-        "ar": "الهيئة المعرفية لإدارة المشاريع (PMBOK)"
+        "hi": "प्रोजेक्ट मैनेजमेंट बॉडी ऑफ नॉलेज",
+        "zh": "项目管理知识体系",
+        "fr": "Corps de connaissances en gestion de projet",
+        "de": "Projektmanagement-Wissensbestand",
+        "ja": "プロジェクト管理知識体系",
+        "ko": "프로젝트 관리 지식 체계",
+        "ar": "مجموعة معارف إدارة المشاريع"
       },
       "definitions": {
-        "hi": "पीएमबीओके गाइड और संबंधित मानकों में पीएमआई द्वारा एकत्रित परियोजना प्रबंधन में स्वीकृत ज्ञान और अभ्यास का योग।",
-        "zh": "PMI 在 PMBOK 指南和相关标准中收集的项目管理公认知识和实践的总和。",
-        "fr": "La somme des connaissances et des pratiques acceptées en matière de gestion de projet, rassemblées par PMI dans le Guide PMBOK et les normes associées.",
-        "de": "Die Summe anerkannter Kenntnisse und Praktiken im Projektmanagement, zusammengestellt von PMI im PMBOK-Leitfaden und verwandten Standards.",
-        "ja": "PMI によって PMBOK ガイドおよび関連基準に収集された、プロジェクト管理における一般に受け入れられている知識と実践の総和。",
-        "ko": "PMBOK 가이드 및 관련 표준을 통해 PMI가 수집한 프로젝트 관리에 대한 인정된 지식과 실무의 합계입니다.",
-        "ar": "مجموع المعرفة والممارسة المقبولة في إدارة المشاريع، والتي تم جمعها بواسطة PMI في دليل PMBOK والمعايير ذات الصلة."
+        "hi": "परियोजना प्रबंधन में स्वीकृत ज्ञान और अभ्यास का योग, जैसा कि इस पेशे के मानकों और मार्गदर्शिकाओं में संकलित है।",
+        "zh": "项目管理中公认的知识与实践的总和，汇集于该行业的标准和指南之中。",
+        "fr": "La somme des connaissances et des pratiques reconnues en gestion de projet, telles que les recueillent les normes et les guides de la profession.",
+        "de": "Die Summe des anerkannten Wissens und der anerkannten Praxis im Projektmanagement, wie sie in den Standards und Leitfäden des Berufsstands gesammelt sind.",
+        "ja": "プロジェクトマネジメントにおいて一般に認められた知識と実践の総体で、この職業の標準やガイドにまとめられているもの。",
+        "ko": "프로젝트 관리에서 인정된 지식과 실무의 총합으로, 이 직업의 표준과 지침에 정리되어 있습니다.",
+        "ar": "مجموع المعارف والممارسات المقبولة في إدارة المشاريع، كما تجمعها معايير المهنة وأدلتها."
       }
     },
     "project-management-focus-areas": {
@@ -2433,13 +2433,13 @@
         "ar": "مجالات التركيز لإدارة المشاريع"
       },
       "definitions": {
-        "hi": "पीएमबीओके 8 में किसी परियोजना के दौरान प्रबंधन कार्य को समूहीकृत करने के पांच तरीके हैं: आरंभ करना, योजना बनाना, क्रियान्वयन करना, निगरानी करना और नियंत्रित करना और समापन करना।",
-        "zh": "PMBOK 8 对项目生命周期中的管理工作进行分组的五种方式：启动、计划、执行、监视和控制以及结束。",
-        "fr": "Les cinq manières de PMBOK 8 de regrouper le travail de gestion sur la durée de vie d'un projet : lancement, planification, exécution, suivi et contrôle, et clôture.",
-        "de": "Die fünf Möglichkeiten von PMBOK 8 zur Gruppierung der Managementarbeit über die Projektlaufzeit: Initiierung, Planung, Ausführung, Überwachung und Kontrolle sowie Abschluss.",
-        "ja": "PMBOK 8 では、プロジェクトの全期間にわたる管理作業を、開始、計画、実行、監視と制御、終了という 5 つの方法でグループ化します。",
-        "ko": "PMBOK 8은 프로젝트 수명 동안 관리 작업을 그룹화하는 5가지 방법(시작, 계획, 실행, 모니터링 및 제어, 종료)을 제공합니다.",
-        "ar": "طرق PMBOK 8 الخمس لتجميع العمل الإداري على مدى حياة المشروع: البدء والتخطيط والتنفيذ والمراقبة والتحكم والإغلاق."
+        "hi": "किसी परियोजना के दौरान प्रबंधन कार्य को समूहीकृत करने के पांच तरीके: आरंभ करना, योजना बनाना, क्रियान्वयन करना, निगरानी करना और नियंत्रित करना और समापन करना।",
+        "zh": "对项目生命周期中的管理工作进行分组的五种方式：启动、计划、执行、监视和控制以及结束。",
+        "fr": "Les cinq manières de regrouper le travail de gestion sur la durée de vie d'un projet : lancement, planification, exécution, suivi et contrôle, et clôture.",
+        "de": "Die fünf Möglichkeiten zur Gruppierung der Managementarbeit über die Projektlaufzeit: Initiierung, Planung, Ausführung, Überwachung und Kontrolle sowie Abschluss.",
+        "ja": "プロジェクトの全期間にわたる管理作業を、開始、計画、実行、監視と制御、終了という 5 つの方法でグループ化します。",
+        "ko": "프로젝트 수명 동안 관리 작업을 그룹화하는 5가지 방법(시작, 계획, 실행, 모니터링 및 제어, 종료)입니다.",
+        "ar": "الطرق الخمس لتجميع العمل الإداري على مدى حياة المشروع: البدء والتخطيط والتنفيذ والمراقبة والتحكم والإغلاق."
       }
     },
     "project-management-office-pmo": {
@@ -3413,13 +3413,13 @@
         "ar": "قياسي"
       },
       "definitions": {
-        "hi": "एक प्रकाशित बेंचमार्क, जैसे ISO 9001 या PMBOK गाइड, जो अच्छे अभ्यास या आवश्यक विशेषताओं को निर्धारित करता है। इसका पालन करना आम तौर पर स्वैच्छिक है जब तक कि किसी अनुबंध या कानून में इसकी आवश्यकता न हो।",
-        "zh": "已发布的基准，例如 ISO 9001 或 PMBOK 指南，规定了良好实践或所需特征。除非合同或法律要求，否则遵守通常是自愿的。",
-        "fr": "Un référentiel publié, tel que la norme ISO 9001 ou le Guide PMBOK, qui définit les bonnes pratiques ou les caractéristiques requises. Le suivre est généralement volontaire, sauf si un contrat ou une loi l’exige.",
-        "de": "Ein veröffentlichter Benchmark wie ISO 9001 oder der PMBOK-Leitfaden, der bewährte Verfahren oder erforderliche Merkmale festlegt. Die Befolgung dieser Verpflichtung ist in der Regel freiwillig, es sei denn, ein Vertrag oder ein Gesetz schreibt dies vor.",
-        "ja": "ISO 9001 や PMBOK ガイドなどの公開されたベンチマーク。グッドプラクティスや必要な特性を定めています。契約や法律で義務付けられていない限り、これに従うのは通常任意です。",
-        "ko": "모범 사례나 필수 특성을 제시하는 ISO 9001 또는 PMBOK 가이드와 같은 공개된 벤치마크입니다. 이를 따르는 것은 계약이나 법률에서 요구하지 않는 한 일반적으로 자발적입니다.",
-        "ar": "معيار منشور، مثل ISO 9001 أو دليل PMBOK، يحدد الممارسات الجيدة أو الخصائص المطلوبة. عادة ما يكون اتباعها طوعيًا ما لم يتطلب العقد أو القانون ذلك."
+        "hi": "एक प्रकाशित बेंचमार्क, जैसे ISO 9001 या ISO 21502, जो अच्छे अभ्यास या आवश्यक विशेषताओं को निर्धारित करता है। इसका पालन करना आम तौर पर स्वैच्छिक है जब तक कि किसी अनुबंध या कानून में इसकी आवश्यकता न हो।",
+        "zh": "已发布的基准，例如 ISO 9001 或 ISO 21502，规定了良好实践或所需特征。除非合同或法律要求，否则遵守通常是自愿的。",
+        "fr": "Un référentiel publié, tel que la norme ISO 9001 ou la norme ISO 21502, qui définit les bonnes pratiques ou les caractéristiques requises. Le suivre est généralement volontaire, sauf si un contrat ou une loi l’exige.",
+        "de": "Ein veröffentlichter Benchmark wie ISO 9001 oder ISO 21502, der bewährte Verfahren oder erforderliche Merkmale festlegt. Die Befolgung dieser Verpflichtung ist in der Regel freiwillig, es sei denn, ein Vertrag oder ein Gesetz schreibt dies vor.",
+        "ja": "ISO 9001 や ISO 21502 などの公開されたベンチマーク。グッドプラクティスや必要な特性を定めています。契約や法律で義務付けられていない限り、これに従うのは通常任意です。",
+        "ko": "모범 사례나 필수 특성을 제시하는 ISO 9001 또는 ISO 21502와 같은 공개된 벤치마크입니다. 이를 따르는 것은 계약이나 법률에서 요구하지 않는 한 일반적으로 자발적입니다.",
+        "ar": "معيار منشور، مثل ISO 9001 أو ISO 21502، يحدد الممارسات الجيدة أو الخصائص المطلوبة. عادة ما يكون اتباعها طوعيًا ما لم يتطلب العقد أو القانون ذلك."
       }
     },
     "statement-of-work-sow": {
